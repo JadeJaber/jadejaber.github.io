@@ -9,13 +9,6 @@ comments: true
 share: true
 ---
 
-<form action="/search.html" method="get">
-  <label for="search-box">Search</label>
-  <input type="text" id="search-box" name="query">
-  <input type="submit" value="search">
-</form>
-
-
 ## A quoi ca sert
 Dans les fonctionnalités offertes par Zookeeper on trouve du Naming Service, de la gestion de configuration, de la synchronisation, Leader Election… Zookeeper est en fait comme une boîte à outils que vous pouvez utiliser dès que coordonner des process déployés sur plusieurs serveurs devient un casse-tête.
 
