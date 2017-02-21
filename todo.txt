@@ -1,0 +1,23 @@
+**GITHUB et SITE  PERSO**
+
+1. Création du compte GitHub => OK
+2. Fork du tempalte SoSimple et renomamge du Fork dans l'onglet setting aec mon de page Github => OK
+3. Je peux rapatrier tous les posts du cheat cheat d'Or
+
+
+
+**PYCHARM**
+1. J'ai connecté le project EDX de Github sur Pycharm. Il faut encore voir comment faire du spark dans pycharm => il faut peut etre instaler spark et sparkpy
+2. J'ai chargé aussi le code de coursera deuis Github
+3. Je peux ensuite faire rediriger mon nom de domaine jadejaber.com vers mon site github.
+
+
+
+
+**QQS COMMANDES GIT**
+~$git clone https://github.com/username/username.github.io
+cd username.github.io
+~$echo "Hello World" > index.html
+git add --all
+~$git commit -m "Initial commit"
+~$git push -u origin master
