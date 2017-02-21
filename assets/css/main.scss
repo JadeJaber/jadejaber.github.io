@@ -53,3 +53,30 @@ sitemap: false
 
 @import "page"; /* layout and styles that apply to posts and pages */
 @import "archives"; /* archive pages (post/tag lists, etc) */
+
+
+/*
+   Search
+   ========================================================================== */
+
+#search-box {
+    width: 80%;
+    margin-right: 10px;
+    padding: 8px 10px;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 1.71429;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    border-width: 2px;
+    border-radius: 3px;
+}
+
+input[type="search"] {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-appearance: textfield;
+}
+
+
