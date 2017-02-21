@@ -1,3 +1,10 @@
+---
+published: true
+layout: page
+title: Latest Posts
+excerpt: A simple and clean responsive Jekyll theme for words and photos.
+search_omit: true
+---
 <form action="/search.html" method="get">
   <label for="search-box">Search</label>
   <input type="text" id="search-box" name="query">
