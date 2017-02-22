@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 excerpt: Linux - How to use the information in proc for troubleshooting
 categories: articles
