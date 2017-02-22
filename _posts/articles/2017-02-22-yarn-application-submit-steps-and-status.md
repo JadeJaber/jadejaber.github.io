@@ -7,6 +7,7 @@ tags:
   - yarn
 share: true
 ---
+
 Source : [https://hortonworks.com/blog/apache-hadoop-yarn-concepts-and-applications/](https://hortonworks.com/blog/apache-hadoop-yarn-concepts-and-applications/)
 
 The application state in YARN can be one of “NEW”, “NEW_SAVING”, “SUBMITTED”, “ACCEPTED”, “RUNNING”, “FINISHED”, “FAILED”, “KILLED”
@@ -25,10 +26,7 @@ The general application flow for YARN is:
 
 6. If the client kills the job in between, the status is set to KILLED.
 
-<figure>
-	<img src="/images/yarnflow.png">
-	<figcaption>Yarn Flow</figcaption>
-</figure>
+![yarnflow.png]({{site.baseurl}}/images/yarnflow.png)
 
 Now, to map this to the 8 execution steps in the image 
 - Step 1 == NEW, NEW_SAVING, SUBMITTED
