@@ -14,10 +14,13 @@ In Linux OS,  '/proc' is a virtual filesystem which doesn't contain real files b
 Some of the files under /proc/PID/ (Process ID) are helpful to investigate process related issues.
 
 ## Common ways of finding a PID are:
-- ps aux (or -elf) | grep -i some_program_name
-- lsof -nPi:some_port_number
-- check pid file under /var/run/program_name/
+```shell
+ps aux (or -elf) | grep -i some_program_name
 
+lsof -nPi:some_port_number
+
+check pid file under /var/run/program_name/
+```
 
 
 ## Common files which would be helpful to investigate an issue:
