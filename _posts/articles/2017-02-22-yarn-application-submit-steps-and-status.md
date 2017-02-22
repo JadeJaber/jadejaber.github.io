@@ -25,7 +25,12 @@ The general application flow for YARN is:
 
 6. If the client kills the job in between, the status is set to KILLED.
 
-![Yarn steps status job sbmission]({{site.baseurl}}/_posts/articles/images/yarnflow.png)
+<figure>
+	<img src="/images/yarnflow.png">
+	<figcaption>Yarn Flow</figcaption>
+</figure>
+
+
 
 Now, to map this to the 8 execution steps in the image 
 - Step 1 == NEW, NEW_SAVING, SUBMITTED
