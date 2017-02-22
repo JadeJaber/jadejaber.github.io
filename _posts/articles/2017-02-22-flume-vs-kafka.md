@@ -15,9 +15,7 @@ share: true
 |:--------|:-------:|--------:|
 | Definition   | Flume is a distributed, reliable, and available system for efficiently collecting, aggregating, and moving large amounts of data from many different sources to a centralized data store, such as HDFS or HBase   | Kafka is a general purpose publish-subscribe model messaging system, which offers strong durability, scalability and fault-tolerance support.   |
 | Integration with Hadoop   | tightly integrated   | It is not specifically designed for Hadoop. Hadoop ecosystem is just be one of its possible consumers.   |
-| Durabilité   | Pas de durabilité (ACID) avec memory channel.
-Ok avec Disk Channel
-   | Oui   |
+| Durabilité   | Pas de durabilité (ACID) avec memory channel.Ok avec Disk Channel   | Oui   |
 | Réplication   | Non. Mais possible avec en mettant du RAID    | Oui   |
 | Scalability   | Adding more consumers to Flume means changing the topology of Flume pipeline design, replicating the channel to deliver the messages to a new sink. It requires some down time    | very easy to add large number of consumers without affecting performance and without down time   |
 | Handle Spikes   | Flume sink supports push model. When event producers suddenly generate a flood of messages, even though flume channel somewhat acts as a buffer between source and sink, the sink endpoints might still be overwhelmed by the write operations   | “shock absorber" between the producers and consumers   |
