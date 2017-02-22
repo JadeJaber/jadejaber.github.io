@@ -11,8 +11,8 @@ share: true
 ---
 ## Tables
 
-
-|  |: Flume :|: Kafka :|
+|:-------:|:-------:|:--------:|
+|  | Flume | Kafka |
 |:--------|:-------|:--------|
 | Definition   | Flume is a distributed, reliable, and available system for efficiently collecting, aggregating, and moving large amounts of data from many different sources to a centralized data store, such as HDFS or HBase   | Kafka is a general purpose publish-subscribe model messaging system, which offers strong durability, scalability and fault-tolerance support.   |
 | Integration with Hadoop   | tightly integrated   | It is not specifically designed for Hadoop. Hadoop ecosystem is just be one of its possible consumers.   |
@@ -24,5 +24,4 @@ share: true
 | Connectors   | The key benefit of Flume is that it supports many built-in sources and sinks, which you can use out of box   | If you use Kafka, most likely you have to write your own producer and consumer. Of course, as Kakfa becomes more and more popular, other frameworks are constantly adding integration support for Kafka.   |
 | Data processing/filtering   | In contrast, Flume supports different data flow models and interceptors chaining, which makes event filtering and transforming very easy. For example, you can filter out messages that you are not interested in the pipeline first before sending it through the network for obvious performance reason   | Kafka does not provider native support for message processing. So mostly likely it needs to integrate with other event processing frameworks such as Apache Storm to complete the job   |
 |=====
-| Foot1   | Foot2   | Foot3   |
 {: .table}
