@@ -13,6 +13,8 @@ url: https://jadejaber.github.io
 permalink:   /:categories/:title/
 markdown:    kramdown
 highlighter: rouge
+comments: true
+
 sass:
   sass_dir: _sass
   style: compressed
@@ -40,7 +42,7 @@ owner:
   name: Jade JABER
   avatar: bio-photo.jpg
   email: you@email.com
-  disqus-shortname:
+  disqus-shortname: jadejaber
   twitter: JadeJaber
   facebook: legabz
   github: JadeJaber
@@ -58,5 +60,3 @@ owner:
     ad-client:
     ad-slot:
   bing-verify:
-
-
