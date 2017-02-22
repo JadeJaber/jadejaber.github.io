@@ -25,12 +25,13 @@ Some of the files under /proc/PID/ (Process ID) are helpful to investigate proce
 **1. /proc/PID/ulimits**
 
 'ulimits' shows all limits set for the specified PID.
+
 Checking this file would be useful when issue might be misconfigured or unset of some particular limit
 
 **2. /proc/PID/io**
 
 By checking numbers in this file a couple of times periodically would be useful to check if this process is actually reading/writing or not and if it's busy due to I/O
-More detail
+[More detail](http://docs.1h.com/Proc_I/O_Explained)
 
 **3. /proc/PID/environ**
 
@@ -51,7 +52,9 @@ CLASSPATH=/etc/hadoop/conf:/usr/hdp/2.2.6.0-2800/hadoop/lib/*:/usr/hdp/2.2.6.0-2
 **4. /proc/PID/fd**
 
 'fd' is a directory which contains links to actual files.
+
 This is useful to check which file is actually used for this process (can do same with 'lsof'), and to check how many file descriptor has been used.
+
 For example:
 ```shell
 [root@node2 ~]# ls -l /proc/5670/fd | grep hadoop-common
