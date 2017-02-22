@@ -1,5 +1,13 @@
 ---
 published: true
+layout: post
+excerpt: Kafka vs Flume
+categories: articles
+tags:
+  - kafka
+  - flume
+comments: true
+share: true
 ---
 ## Tables
 
