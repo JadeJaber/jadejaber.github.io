@@ -4,7 +4,8 @@ layout: post
 excerpt: Linux - How to use the information in proc for troubleshooting
 categories: articles
 tags:
-  - linux troubelshooting
+  - linux
+  - troubleshooting
 share: true
 title: Linux - Troubleshoot using proc
 ---
