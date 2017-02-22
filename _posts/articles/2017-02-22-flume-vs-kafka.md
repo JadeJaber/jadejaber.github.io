@@ -12,8 +12,8 @@ share: true
 ## Tables
 
 |  | Flume | Kafka |
-|:--------|:-------:|--------:|
-| Definition   | p<. Flume is a distributed, reliable, and available system for efficiently collecting, aggregating, and moving large amounts of data from many different sources to a centralized data store, such as HDFS or HBase   | Kafka is a general purpose publish-subscribe model messaging system, which offers strong durability, scalability and fault-tolerance support.   |
+|:--------|:-------|:--------|
+| Definition   | Flume is a distributed, reliable, and available system for efficiently collecting, aggregating, and moving large amounts of data from many different sources to a centralized data store, such as HDFS or HBase   | Kafka is a general purpose publish-subscribe model messaging system, which offers strong durability, scalability and fault-tolerance support.   |
 | Integration with Hadoop   | tightly integrated   | It is not specifically designed for Hadoop. Hadoop ecosystem is just be one of its possible consumers.   |
 | Durabilité   | Pas de durabilité (ACID) avec memory channel.Ok avec Disk Channel   | Oui   |
 | Réplication   | Non. Mais possible avec en mettant du RAID    | Oui   |
