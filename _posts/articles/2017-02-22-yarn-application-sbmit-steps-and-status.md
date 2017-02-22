@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 excerpt: Steps and states of Yarn application
 categories: articles
@@ -24,8 +24,7 @@ The general application flow for YARN is:
 
 6. If the client kills the job in between, the status is set to KILLED.
 
-
-
+![yarnflow.png]({{site.baseurl}}/_posts/articles/yarnflow.png)
 
 Now, to map this to the 8 execution steps in the image 
 - Step 1 == NEW, NEW_SAVING, SUBMITTED
@@ -36,4 +35,3 @@ Now, to map this to the 8 execution steps in the image
 
 As for the resources I used to get that flow, it would help to go through the YARN REST APIs and the resource manager logs. The mapping between the phases becomes much more clearer once you go through the RM logs with the API docs next to you.
 [YARN API](http://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/ResourceManagerRest.html#Cluster_Applications_APISubmit_Application)
-
