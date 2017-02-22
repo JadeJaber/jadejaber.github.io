@@ -30,8 +30,6 @@ The general application flow for YARN is:
 	<figcaption>Yarn Flow</figcaption>
 </figure>
 
-
-
 Now, to map this to the 8 execution steps in the image 
 - Step 1 == NEW, NEW_SAVING, SUBMITTED
 - Step 2 == ACCEPTED
