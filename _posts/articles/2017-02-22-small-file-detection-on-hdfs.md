@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 excerpt: Small file detection on HDFS
 categories: articles
