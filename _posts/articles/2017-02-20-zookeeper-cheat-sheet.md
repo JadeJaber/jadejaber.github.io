@@ -1,12 +1,17 @@
 ---
 published: true
 layout: post
-excerpt: zookeeper
+excerpt: zookeeper cheat sheet
 categories: articles
 tags:
   - zookeeper
-comments: true
 share: true
+tags:
+  - hortonworks
+  - hadoop
+  - cluster manager
+  - cheat sheet
+  - zookeeper
 ---
 
 ## A quoi ca sert

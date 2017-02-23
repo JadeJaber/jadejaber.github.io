@@ -3,11 +3,15 @@ published: true
 layout: post
 excerpt: Steps and states of Yarn application
 categories: articles
-tags:
-  - yarn
 share: true
+tags:
+  - hortonworks
+  - hadoop
+  - resource manager
+  - architecture theory
+  - api
+  - yarn
 ---
-
 Source : [https://hortonworks.com/blog/apache-hadoop-yarn-concepts-and-applications/](https://hortonworks.com/blog/apache-hadoop-yarn-concepts-and-applications/)
 
 The application state in YARN can be one of “NEW”, “NEW_SAVING”, “SUBMITTED”, “ACCEPTED”, “RUNNING”, “FINISHED”, “FAILED”, “KILLED”

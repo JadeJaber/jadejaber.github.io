@@ -1,11 +1,14 @@
 ---
 published: true
 layout: post
-excerpt: Small file detection on HDFS
+excerpt:  Small file detection on HDFS
 categories: articles
 tags:
+  - hortonworks
+  - hadoop
+  - storage
+  - debug troubleshooting optimization
   - hdfs
-share: true
 ---
 To determine the existence of small files in the cluster, please do follow below steps.
 

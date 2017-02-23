@@ -1,12 +1,18 @@
 ---
 published: true
 layout: post
-excerpt: Nifi API
+excerpt: Nifi api heat sheet
 categories: articles
-tags:
-  - nifi
-comments: true
 share: true
+tags:
+  - hortonworks
+  - hadoop
+  - data processing
+  - streaming
+  - data ingestion
+  - cheat sheet
+  - nifi
+  - api
 ---
 Source : [https://nifi.apache.org/docs/nifi-docs/rest-api/](https://nifi.apache.org/docs/nifi-docs/rest-api/)
  

@@ -3,10 +3,11 @@ published: true
 layout: post
 excerpt: Linux - How to use the information in proc for troubleshooting
 categories: articles
+share: yes
 tags:
   - linux
-  - debug troubleshooting
- 
+  - shell  
+  - debug troubleshooting optimization
 ---
 In Linux OS,  '/proc' is a virtual filesystem which doesn't contain real files but runtime system information.
 
