@@ -4,11 +4,17 @@ layout: post
 excerpt: Kafka vs Flume
 categories: articles
 tags:
-  - kafka
+  - hortonworks
+  - hadoop
+  - benchmark
+  - storage
+  - streaming
+  - data ingestion
+  - architecture theory
   - flume
-comments: true
-share: true
+  - kafka
 ---
+
 Kafka  and Flume are different products. Kafka is a message broker and sometimes it is called a data base. Whereas _Flume is a distributed, reliable, and available service for efficiently collecting, aggregating, and moving large amounts of log data_ => Flume does not "store" data which is case for Kafka. Though the products are different, people often get confused on their respective roles.
 
 |  | Flume | Kafka |
