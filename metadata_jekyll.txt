@@ -1,6 +1,9 @@
+---
+published: true
 layout: post
 excerpt: ####
 categories: articles
+share: true
 tags:
 
   # Environnement/Editeur
@@ -18,6 +21,7 @@ tags:
   - pySpark
   - kafka streaming
   - kafka connect
+  - shell
   
   
   #langage
@@ -47,12 +51,12 @@ tags:
   - benchmark
   - tips
   - cheat sheet
-  - debug troubleshooting
-  - optimization
+  - debug troubleshooting optimization
   - security
   - network
   - certificates
   - architecture theory
+  - api
   
   #machine learning 
   - logistic regression
@@ -65,4 +69,4 @@ tags:
  
  [solution-cheat-sheet]
  [solution-tips]
-
+---
