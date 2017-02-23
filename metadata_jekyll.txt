@@ -3,11 +3,7 @@ published: true
 layout: post
 excerpt: ####
 categories: articles
-<<<<<<< HEAD
-share: yes
-=======
 share: true
->>>>>>> 4a677be0076c7817ea0ef2421cd7164619f74453
 tags:
 
   # Environnement/Editeur
