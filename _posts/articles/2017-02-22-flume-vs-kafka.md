@@ -3,6 +3,7 @@ published: true
 layout: post
 excerpt: Kafka vs Flume
 categories: articles
+share: yes
 tags:
   - hortonworks
   - hadoop
