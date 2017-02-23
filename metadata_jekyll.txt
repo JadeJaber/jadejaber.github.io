@@ -1,0 +1,68 @@
+layout: post
+excerpt: ####
+categories: articles
+tags:
+
+  # Environnement/Editeur
+  - linux
+  - hortonworks
+  - hadoop
+  - NoSQL
+  
+  # library
+  - spark streaming
+  - spark SQL
+  - spark ML/MlLib
+  - panda
+  - scikit learn
+  - pySpark
+  - kafka streaming
+  - kafka connect
+  
+  
+  #langage
+  - java
+  - python
+  - spark
+  - scala
+  - hive
+  - pig
+  
+  # Role
+  - execution engine
+  - data visualization
+  - storage
+  - machine learning
+  - data processing
+  - database
+  - streaming
+  - compression
+  - proxy
+  - data ingestion
+  - search engine
+  - resource manager
+  - cluster manager
+  
+  ## subject
+  - tips
+  - cheat sheet
+  - debug troubleshooting
+  - optimization
+  - security
+  - network
+  - certificates
+  - architecture
+  - theory
+  
+  #machine learning 
+  - logistic regression
+  - linear regression
+  - deep learning
+  - neuronal networks
+  
+  #solution
+  - SOLUTION
+ 
+ [solution-cheat-sheet]
+ [solution-tips]
+
