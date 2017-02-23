@@ -44,6 +44,7 @@ tags:
   - cluster manager
   
   ## subject
+  - benchmark
   - tips
   - cheat sheet
   - debug troubleshooting
@@ -51,8 +52,7 @@ tags:
   - security
   - network
   - certificates
-  - architecture
-  - theory
+  - architecture theory
   
   #machine learning 
   - logistic regression
