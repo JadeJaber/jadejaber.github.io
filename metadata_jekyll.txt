@@ -63,6 +63,7 @@ tags:
   - linear regression
   - deep learning
   - neuronal networks
+  - statistics
   
   - SOLUTION
 ---
