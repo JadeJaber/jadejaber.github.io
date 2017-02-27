@@ -54,7 +54,7 @@ In order to have an AC the secured server need to send its public key to the sen
 
 ![man-in-the-middle.jpg]({{site.baseurl}}/images/man-in-the-middle.jpg)
 
-![Man in the middle]({{site.baseurl}}/_posts/articles/images/man-in-the-middle.jpg)!
+![Man in the middle]({{site.baseurl}}/_posts/articles/images/man-in-the-middle.jpg)
 
 
 needs to have the public key of the secured server. 
