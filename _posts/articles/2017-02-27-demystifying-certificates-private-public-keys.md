@@ -44,11 +44,11 @@ keytool -genkey -keyalg RSA -alias ssl -keystore keystore.jks -validity 360 -sto
 ## Keystore & Trustore
 **Definition** : Keystore & Trustsore are are mainly the same type of element. They are safes which contain private/keys/certificates and which are protected with a password. The keystore contains your public/private keys and certificates whereas the Truststore contains the certificates of the authorities or servers that you trust.
 
-## Asymmetric vs symetric cryptography
+## Asymmetric vs symmetric cryptography
 
-**Définition** : A crypted communication may be done either with a symetric (a unique key) or an asymmetric (2 keys : private & public) cryptorpahy.  
+**Définition** : A crypted communication may be done either with a symmetric (a unique key) or an asymmetric (2 keys : private & public) cryptorpahy.  
 
-**Pros and cons** : The problem with symetric cryptography is that a secured server who wants to receive encrypted messages (secured web server for instance) will have to generated a different encryption key for each server that need to communicate with it. If all other servers had the same encryption key, then they would all be able to decrypt each othes messages that they each send to the secured server (the secured web server). => This is why we need asymmetric cryptography (AC).
+**Pros and cons** : The problem with symmetric cryptography is that a secured server who wants to receive encrypted messages (secured web server for instance) will have to generated a different encryption key for each server that need to communicate with it. If all other servers had the same encryption key, then they would all be able to decrypt each othes messages that they each send to the secured server (the secured web server). => This is why we need asymmetric cryptography (AC).
 
 In order to have an AC the secured server need to send its public key to the client. Here comes the man in the middle vulnerability : If the man in the middle catchd the public key of the secured server and sends its own public key to the client, the client would then encrypt its messages with the man in the middle's publick key. The man in the middle would then be able to decrypt the message with its own private key. And then encrypt it again with the secured server public key before sending that message back to the secured server. 
 
@@ -73,7 +73,7 @@ If the man in the middle tried to get into this communication, its certificate w
 
 ## Encrypted communication
 
-Now, since the symetric cryptography needs less CPU calculation then asymmetric cryptography, it is better to have a symmetric cryptography.  The client will generate a symmetric encryption key, encrpyt it with the public key of the secured server and send it to the secured server. 
+Now, since the symmetric cryptography needs less CPU calculation then asymmetric cryptography, it is better to have a symmetric cryptography.  The client will generate a symmetric encryption key, encrpyt it with the public key of the secured server and send it to the secured server. 
 
 Now the 2 servers have the same encryption key and will be able to start an symmetric encrypted communication. Ths encryption key will be used only for that session.
 
