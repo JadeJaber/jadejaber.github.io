@@ -40,6 +40,8 @@ keytool -genkey -keyalg RSA -alias ssl -keystore keystore.jks -validity 360 -sto
 - keypass : Password to access your key pair
 - dname : distinguished name associated to your key pair (these info are supposed to identify you as a unique server/person)
 
+![]({{site.baseurl}}/_posts/articles/Certificate_1.gif)![Certificate_1.gif]({{site.baseurl}}/_posts/articles/Certificate_1.gif)
+
 
 ## Keystore & Trustore
 **Definition** : Keystore & Trustsore are are mainly the same type of element. They are safes which contain private/keys/certificates and which are protected with a password. The keystore contains your public/private keys and certificates whereas the Truststore contains the certificates of the authorities or servers that you trust.
