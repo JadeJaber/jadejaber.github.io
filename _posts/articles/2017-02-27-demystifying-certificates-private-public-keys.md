@@ -54,6 +54,9 @@ In order to have an AC the secured server need to send its public key to the sen
 
 ![man-in-the-middle.jpg]({{site.baseurl}}/images/man-in-the-middle.jpg)
 
+![Man in the middle]({{site.baseurl}}/_posts/articles/images/man-in-the-middle.jpg)!
+
+
 needs to have the public key of the secured server. 
 Le chiffrement asymétrique pose le problème de la transmission de la clé publique qui pourrait être  captée par l'homme du milieu => Il se ferait alors passer par le détenteur de la clé privée et transmettra sa propre clé publique au destinataire. Du coup l'homme du milieu peut déchiffrer  les messages envoyés par le détenteur de la clé privée et peut surtout déchiffrer les messages envoyés par le détenteur de la clé publique. 
 
