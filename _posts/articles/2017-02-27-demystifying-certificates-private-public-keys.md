@@ -61,7 +61,7 @@ We need a solution to garantee to the client (server 3 in the image) that the pu
 
 <figure class="half">
 	<img src="/images/Certificate_1.gif)" alt="Certificate">
-	<img src="/images/certificate_2.gif)" alt="Certificate">
+	<img src="/images/Certificate_2.gif)" alt="Certificate">
 	<figcaption>Certificate</figcaption>
 </figure>
 
