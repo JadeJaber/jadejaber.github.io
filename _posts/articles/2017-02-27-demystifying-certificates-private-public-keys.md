@@ -52,6 +52,8 @@ keytool -genkey -keyalg RSA -alias ssl -keystore keystore.jks -validity 360 -sto
 
 In order to have an AC the secured server need to send its public key to the sender. Here comes the man in the middle vulnerability : If the man in the middle catchd the public key of the secured server and sends its own public key to the sender, the sender would then encrypt its messages with the man in the middle's publick key. The man in the middle would then be able to decrypt the message with its own private key. And then encrypt it again with the secured server public key before sending that message back to the secured server. 
 
+![man-in-the-middle.jpg]({{site.baseurl}}/images/man-in-the-middle.jpg)
+
 needs to have the public key of the secured server. 
 Le chiffrement asymétrique pose le problème de la transmission de la clé publique qui pourrait être  captée par l'homme du milieu => Il se ferait alors passer par le détenteur de la clé privée et transmettra sa propre clé publique au destinataire. Du coup l'homme du milieu peut déchiffrer  les messages envoyés par le détenteur de la clé privée et peut surtout déchiffrer les messages envoyés par le détenteur de la clé publique. 
 
