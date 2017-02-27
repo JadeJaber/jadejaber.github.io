@@ -1,0 +1,12 @@
+---
+published: false
+layout: post
+excerpt: description
+categories: articles
+share: true
+tags:
+  - linux
+  - security
+  - certificates
+  - architecture theory
+---
