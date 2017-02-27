@@ -69,7 +69,7 @@ We need a solution to garantee to the client (server 3 in the image) that the pu
 1. It checks if the public key needed to decrypt the signature is in its trustore. In that case, **it means it can trust the incoming message**. The client decrypts the signature and gets ths digest. 
 2. The client then generates the digest with the same algorithm used by the secured server and it compares both digests. It they match, the client has the guarantee that the public key embeded in the certificate **has not been altered** and thus can be used to encrypt sensitive data. 
 
-If the man in the middle tried to get into this communication, its certificate would have been rejected from the client since the client does not have the public key of the signatory of the man in the middle's certificate (whether it ia self-signed or signed by CA certificate) 
+If the man in the middle tried to get into this communication, its certificate would have been rejected from the client since the client does not have the public key of the signatory of the man in the middle's certificate (whether it is self-signed or signed by CA certificate) 
 
 But symetric cryptography needs less CPU calculation then asymmetric cryptography.
 
