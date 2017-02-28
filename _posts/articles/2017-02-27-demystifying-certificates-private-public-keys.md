@@ -10,7 +10,15 @@ tags:
   - certificates
   - architecture theory
 ---
-We are going to discuss in this article about the following concepts :
+We are going to discuss in this article about the following concepts. The article is divided in 2 parts: a glossary and  the "why and how" of the certificates/public/private keys.
+
+The certificates are mainley used for 4 different uses cases : 
+- authentication
+- non-repudiation
+- cryptography
+- message integrity
+
+
 - Public/Private keys
 - Certificates
 - SHA algorithms
@@ -21,6 +29,19 @@ We are going to discuss in this article about the following concepts :
 > Any comments are welcomed, I'm not an expert, I'm just trying to sum up the why and how of those elements.
 
 ## Glossary
+### PKI
+A typical PKI consists of hardware, software, policies and standards to **manage the creation, administration, distribution and revocation of keys and digital certificates**. 
+
+A typical PKI includes the following key elements:
+
+- A **trusted party**, called a certificate authority (CA), acts as the root of trust and provides services that authenticate the identity of individuals, computers and other entities
+- A **registration authority**, often called a subordinate CA, certified by a root CA to issue certificates for specific uses permitted by the root
+- A **certificate database**, which stores certificate requests and issues and revokes certificates
+- A **certificate store**, which resides on a local computer as a place to store issued certificates and private keys
+
+![pki]({{site.baseurl}}/images/pki.jpe)
+
+
 ### Private & Public keys & asymmetric cryptography
 **Definition** : Private and public keys are randomly generated characters. They are used to encrypt and decrypt messages. The privte key is never revealed to anyone whereas the public key may publicly revealed. 
 
