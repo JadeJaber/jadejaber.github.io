@@ -33,7 +33,7 @@ A typical PKI includes the following key elements:
 ![pki]({{site.baseurl}}/images/pki.jpg)
 
 ### Private & Public keys & asymmetric cryptography
-Private and public keys are randomly generated string of characters. They are used to encrypt and decrypt messages. The privte key is never revealed to anyone whereas the public key may publicly revealed. 
+Private and public keys are randomly generated string of characters. They are used to encrypt and decrypt messages. The private key is never revealed to anyone whereas the public key may publicly revealed. 
 
 A message encrypted with a private key may only be decrypted with the associated public key and vice versa. This is what we call **asymmetric cryptography**. As oppposed to **symmetric cryptography** which needs only a unique key to encrypt and decrypt messages.
 
