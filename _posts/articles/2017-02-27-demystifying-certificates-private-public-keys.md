@@ -30,7 +30,8 @@ A typical PKI includes the following key elements:
 - A **certificate database**, which stores certificate requests and issues and revokes certificates
 - A **certificate store**, which resides on a local computer as a place to store issued certificates and private keys
 
-![pki]({{site.baseurl}}/images/pki.jpe)
+![pki]({{site.baseurl}}/images/pki.jpg)
+
 
 ### Private & Public keys & asymmetric cryptography
 **Definition** : Private and public keys are randomly generated string of characters. They are used to encrypt and decrypt messages. The privte key is never revealed to anyone whereas the public key may publicly revealed. 
