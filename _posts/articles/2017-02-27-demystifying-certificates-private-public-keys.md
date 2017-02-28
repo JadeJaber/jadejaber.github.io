@@ -65,7 +65,7 @@ Now, since the symmetric cryptography needs less CPU calculation then asymmetric
 Now the 2 servers have the same encryption key and will be able to start an symmetric encrypted communication. Ths encryption key will be used only for that session.
 
 ## Why and how
-### Encryption
+### Confidentiality with encryption
 In order to have an asymmetric cryptography the secured server need to send its public key to the client. Here comes the man in the middle vulnerability : If the man in the middle catched the public key of the secured server and sends its own public key to the client, the client would then encrypt its messages with the man in the middle's publick key. The man in the middle would then be able to decrypt the message with its own private key. And then encrypt it again with the secured server public key before sending that message back to the secured server. 
 
 ![Man in the middle]({{site.baseurl}}/images/man-in-the-middle.jpg)
