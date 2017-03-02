@@ -13,29 +13,21 @@ tags:
   - cloud
   - azure
 ---
+## On Amazon AWS
 
-Intro : https://fr.hortonworks.com/blog/quickly-launch-hortonworks-data-platform-amazon-web-services/
+Overview : [https://fr.hortonworks.com/blog/quickly-launch-hortonworks-data-platform-amazon-web-services/](https://fr.hortonworks.com/blog/quickly-launch-hortonworks-data-platform-amazon-web-services/)
 
-Modop : http://hortonworks.github.io/hdp-aws/ 
+Procedure : [http://hortonworks.github.io/hdp-aws/](http://hortonworks.github.io/hdp-aws/)
 
-Il faut sincsrire aux 2 service suivants : 
+### Subscribe to HDP services and Controller Services
+#### Hortonworks Data Cloud - Controller Service
+Controller Service will let you instantiate AMI (Amazon Machine Image)
+[https://aws.amazon.com/marketplace/pp/B01LXOQBOU?qid=1488444197744&sr=0-2&ref_=srh_res_product_title](https://aws.amazon.com/marketplace/pp/B01LXOQBOU?qid=1488444197744&sr=0-2&ref_=srh_res_product_title)
 
-### Hortonworks Data Cloud - HDP Services
+#### Hortonworks Data Cloud - HDP Services
+The HDP services subscription will make the HDP AMI available
 https://aws.amazon.com/marketplace/fulfillment?pricing=hourly&productId=1eeff3e2-5715-4e42-9ef0-023f823095af&ref_=dtl_psb_continue&region=us-east-1
-=> Pour avoir la possiblité d'instancier une AMI (Aamazon Machine Image) de type HDP services
 
-Next Steps:
-
- - You will receive an email once your subscription completes.
- - Once you've received the email, please refer to the Usage Instructions and click one of the "Launch with EC2 Console" buttons on the Launch Page to start an instance of this software.
- - You can also find and launch these AMIs by searching for the AMI IDs (shown below) in the "Community AMIs" tab of the EC2 Console Launch Wizard, or launch with the EC2 APIs.
- - You can view this information at a later time by visiting the Your Software page. For help, see step-by-step instructions for launching Marketplace AMIs from the AWS Console.
-Return to launch page : https://aws.amazon.com/marketplace/fulfillment?productId=1eeff3e2-5715-4e42-9ef0-023f823095af&launch=manualLaunch 
-
-
-### Hortonworks Data Cloud - Controller Service
-https://aws.amazon.com/marketplace/pp/B01LXOQBOU?qid=1488444197744&sr=0-2&ref_=srh_res_product_title
-=> Console qui permettra d'instancier des clusters
 
 Dna sles étaps suivantes, bien vérifier de choisir la même région (Frankfurt) dans le menu heut à droite
 
@@ -48,7 +40,7 @@ cliquer sur  "Launch with CloudFormation Console"
 Remplir les informations email, et laisser les options slectionnées par défaut. Au nvieau de remote access, mettre 0.0.0.0 si l'on veut pouvoir accéer à lal console depuis n'importe quelle IP
 Passer la page option
 Puis cliquer sur "Create" => La création du "Controller Service" peut prendre jusqu'à 15 min
- 
+* 
 Une fois crée, on clique sur output en bas de page et on récupère le lien pour accéder à l'interface du controller service. 
 
 Ensuite on clique sur "Create Cluster", on nomme notre cluster : plus d'infos sur les conf ici http://hortonworks.github.io/hdp-aws/create/index.html 
