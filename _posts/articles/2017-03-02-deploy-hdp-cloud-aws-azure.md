@@ -1,7 +1,9 @@
 ---
-published: true 
+published: true
 layout: post
-excerpt:  How to create my Hirtonworks CLuster on the CLoud with Amazon AWS or Microsoft Azure
+excerpt: >-
+  How to create my Hirtonworks CLuster on the CLoud with Amazon AWS or Microsoft
+  Azure
 categories: articles
 share: true
 tags:
@@ -91,6 +93,7 @@ Je peux m'y connecter en ssh via la commande proposée au niveau de l'ongleet "C
 Il faut maintenant mettre en place un tunnel ssh pour pouvoir s'y connecter : https://fr.hortonworks.com/hadoop-tutorial/port-forwarding-azure-sandbox/
 faire un vi ~/.ssh/config et copier/coller le bloc suivant en mettant bien l'IP publique de notre sandbox en 4ème ligne et le login de mon compte (jajab) en 3ème ligne
 
+```shell
 Host azureSandbox
   Port 22
   User azure
@@ -103,19 +106,7 @@ Host azureSandbox
   LocalForward 10500 127.0.0.1:10500
   LocalForward 4200 127.0.0.1:4200
   LocalForward 2222 127.0.0.1:2222
+```
 
-Il fau ensuite se connecter en ssh sur le serveur en tapant ssh azureSandbox
+Il faut ensuite se connecter en ssh sur le serveur en tapant ssh azureSandbox
 Et puis on peut accéder à la page d'accueil de la sandbox à l'adresse localhost:8888
-
-
-
-
-
-
-
-
-
-
-
-
-
