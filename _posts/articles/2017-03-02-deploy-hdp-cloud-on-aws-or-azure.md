@@ -33,14 +33,16 @@ The HDP services subscription will make the HDP AMI available
 
 In the following steps, be sure to select the same region on the top right corner.
 
-First of all, you need to create a key pair : [Generate my key pair](https://eu-west-1.console.aws.amazon.com/ec2/v2/home?region=eu-west-1#KeyPairs:sort=keyName) 
+First of all, you need to generate a key pair : [Generate my key pair](https://eu-west-1.console.aws.amazon.com/ec2/v2/home?region=eu-west-1#KeyPairs:sort=keyName) 
 
-Once you have subscribed to both these services and generated the key pair you may get back to your "Controller service" dashboard and click on 
-####
+Once you have subscribed to both these services and generated the key pair you may 
 
-Aprés avoir souscrit aux 2 services ci-dessus et génrer la paire de clé, revenir sur la page "Controller Service" et 
-cliquer sur  "Launch with CloudFormation Console"
-Remplir les informations email, et laisser les options slectionnées par défaut. Au nvieau de remote access, mettre 0.0.0.0 si l'on veut pouvoir accéer à lal console depuis n'importe quelle IP
+get back to your "Controller service" [Get back to Controller Service](https://aws.amazon.com/marketplace/pp/B01LXOQBOU?qid=1488444197744&sr=0-2&ref_=srh_res_product_title) and click on "Launch with CloudFormation Console"
+
+Fill in the email field and keep the default options. Concerning the "remote access" you may input 0.0.0.0/0 to permit access to the cluster from any IP address.
+
+
+
 Passer la page option
 Puis cliquer sur "Create" => La création du "Controller Service" peut prendre jusqu'à 15 min
 * 
