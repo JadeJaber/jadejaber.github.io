@@ -26,14 +26,14 @@ Controller Service will let you instantiate AMI (Amazon Machine Image)
 
 #### Hortonworks Data Cloud - HDP Services
 The HDP services subscription will make the HDP AMI available
-https://aws.amazon.com/marketplace/fulfillment?pricing=hourly&productId=1eeff3e2-5715-4e42-9ef0-023f823095af&ref_=dtl_psb_continue&region=us-east-1
+[https://aws.amazon.com/marketplace/fulfillment?pricing=hourly&productId=1eeff3e2-5715-4e42-9ef0-023f823095af&ref_=dtl_psb_continue&region=us-east-1](https://aws.amazon.com/marketplace/fulfillment?pricing=hourly&productId=1eeff3e2-5715-4e42-9ef0-023f823095af&ref_=dtl_psb_continue&region=us-east-1)
 
+In the following steps, be sure to select the same region in the top right corner.
 
-Dna sles étaps suivantes, bien vérifier de choisir la même région (Frankfurt) dans le menu heut à droite
+First of all, you need to create a key pair : [https://eu-west-1.console.aws.amazon.com/ec2/v2/home?region=eu-west-1#KeyPairs:sort=keyName](https://eu-west-1.console.aws.amazon.com/ec2/v2/home?region=eu-west-1#KeyPairs:sort=keyName) 
 
-Il faut assi réer ou importer une paire de clé privée publique sur cette page : https://eu-west-1.console.aws.amazon.com/ec2/v2/home?region=eu-west-1#KeyPairs:sort=keyName 
-
-
+Once you have subscribed to both these services and generated the key pair you may get back to your "Controller service" dashboard and click on 
+####
 
 Aprés avoir souscrit aux 2 services ci-dessus et génrer la paire de clé, revenir sur la page "Controller Service" et 
 cliquer sur  "Launch with CloudFormation Console"
