@@ -22,15 +22,15 @@ Procedure : [http://hortonworks.github.io/hdp-aws/](http://hortonworks.github.io
 ### Subscribe to HDP services and Controller Services
 #### Hortonworks Data Cloud - Controller Service
 Controller Service will let you instantiate AMI (Amazon Machine Image)
-[https://aws.amazon.com/marketplace/pp/B01LXOQBOU?qid=1488444197744&sr=0-2&ref_=srh_res_product_title](https://aws.amazon.com/marketplace/pp/B01LXOQBOU?qid=1488444197744&sr=0-2&ref_=srh_res_product_title)
+[Subscribe to Controller Services](https://aws.amazon.com/marketplace/pp/B01LXOQBOU?qid=1488444197744&sr=0-2&ref_=srh_res_product_title)
 
 #### Hortonworks Data Cloud - HDP Services
 The HDP services subscription will make the HDP AMI available
-[https://aws.amazon.com/marketplace/fulfillment?pricing=hourly&productId=1eeff3e2-5715-4e42-9ef0-023f823095af&ref_=dtl_psb_continue&region=us-east-1](https://aws.amazon.com/marketplace/fulfillment?pricing=hourly&productId=1eeff3e2-5715-4e42-9ef0-023f823095af&ref_=dtl_psb_continue&region=us-east-1)
+[Subscribe to HDP Services](https://aws.amazon.com/marketplace/fulfillment?pricing=hourly&productId=1eeff3e2-5715-4e42-9ef0-023f823095af&ref_=dtl_psb_continue&region=us-east-1)
 
-In the following steps, be sure to select the same region in the top right corner.
+In the following steps, be sure to select the same region on the top right corner.
 
-First of all, you need to create a key pair : [https://eu-west-1.console.aws.amazon.com/ec2/v2/home?region=eu-west-1#KeyPairs:sort=keyName](https://eu-west-1.console.aws.amazon.com/ec2/v2/home?region=eu-west-1#KeyPairs:sort=keyName) 
+First of all, you need to create a key pair : [Generate my key pair](https://eu-west-1.console.aws.amazon.com/ec2/v2/home?region=eu-west-1#KeyPairs:sort=keyName) 
 
 Once you have subscribed to both these services and generated the key pair you may get back to your "Controller service" dashboard and click on 
 ####
