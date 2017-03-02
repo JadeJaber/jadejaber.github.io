@@ -13,7 +13,7 @@ tags:
   - cloud
   - azure
 title: >-
-  How to deploy my Hortonworks HDP cluster in the clou with Amazon AWS and
+  How to deploy my Hortonworks HDP cluster in the cloud with Amazon AWS and
   Microsoft Azure
 ---
 ## On Amazon AWS
