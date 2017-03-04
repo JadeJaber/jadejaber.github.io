@@ -64,6 +64,12 @@ Sélectionner le template
 Sélectionner un mot de passe admin
 Mettre un email pour recevoir la confirmation de création
 
+### Billing
+
+[Check your daily costs for Amazon Services](https://console.aws.amazon.com/cost-reports/home?#/custom?groupBy=InstanceType&forecastTimeRangeOption=None&hasBlended=false&noSubscription=false&excludeTax=false&excludeTaggedResources=false&chartStyle=Group&timeRangeOption=Last7Days&granularity=Daily&reportName=Daily%20costs&reportType=CostUsage&startDate=2017-02-25&endDate=2017-03-03&filter=%5B%5D)
+[Check your detailed bill](https://console.aws.amazon.com/billing/home#/bill?year=2017&month=3)
+
+
 
 ################
 ### AZURE ######
