@@ -76,6 +76,8 @@ Mettre un email pour recevoir la confirmation de création
 
 ## 3 AZURE 
 
+### 3.1 Creating your virtual machine
+
 **Prerequisities** : You needd to have a Micrsoft account (Outlook/Hotmail)
 
 [Official procedure available here](https://fr.hortonworks.com/hadoop-tutorial/deploying-hortonworks-sandbox-on-microsoft-azure/#find-hortonworks-sandbox-on-azure-marketplace)
@@ -120,3 +122,18 @@ ssh azureSandbox
 ```
 
 Once conected you may access the home page of your sandbox using [http://localhost:8888](http://localhost:8888)
+
+### 3.2 Creating an image of your virtual machine
+
+Source : [Step-by-Step: Templating VMs in the Cloud with Windows Azure](https://blogs.technet.microsoft.com/keithmayer/2013/01/17/step-by-step-templating-vms-in-the-cloud-with-windows-azure-and-powershell-31-days-of-servers-in-the-cloud-part-17-of-31/)
+
+You should ssh to your machine and run the following commands : 
+
+```shell
+   sudo su – 
+   waagent –force –deprovision 
+   export HISTSIZE=0 
+   shutdown –h now
+```
+
+Once your machine is stopped on windows Azure interface, you may capture your machine image.
