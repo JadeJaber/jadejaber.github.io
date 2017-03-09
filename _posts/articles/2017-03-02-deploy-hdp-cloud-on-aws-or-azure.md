@@ -95,9 +95,7 @@ Go to to HortonWorks product in [Azure's Marketplace](https://portal.azure.com/#
 
 Once your cluster is created, it will be displayed on your [home page](https://portal.azure.com/#)
 
-In order to connect to our machine, we need to [create a ssh funnel](https://fr.hortonworks.com/hadoop-tutorial/port-forwarding-azure-sandbox/) : 
-
-You nee to edit your own ./.ssh/config file et put the public IP of your sandbox in the 4th line et your login in the 3rd line.
+In order to connect to our machine, we need to [create a ssh funnel](https://fr.hortonworks.com/hadoop-tutorial/port-forwarding-azure-sandbox/). You need to edit your own ./.ssh/config file and enter the public IP of your sandbox in the 4th line et your login in the 3rd line.
 ```shell
 Host azureSandbox
   Port 22
