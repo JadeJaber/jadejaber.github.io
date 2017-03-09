@@ -96,11 +96,27 @@ Go to to HortonWorks product in [Azure's Marketplace](https://portal.azure.com/#
 Once your cluster is created, it will be displayed on your [home page](https://portal.azure.com/#)
 
 In order to connect to your machine, you need to [create a ssh funnel](https://fr.hortonworks.com/hadoop-tutorial/port-forwarding-azure-sandbox/). You need to edit your own ./.ssh/config file and enter the public IP of your sandbox in the 4th line et your login in the 3rd line.
+
+![public_ip.jpg]({{site.baseurl}}/images/public_ip.jpg)
+
 ```shell
-
+Host azureSandbox
+  Port 22
+  User jajab
+  HostName 13.81.244.170
+  LocalForward 8080 127.0.0.1:8080
+  LocalForward 8888 127.0.0.1:8888
+  LocalForward 9995 127.0.0.1:9995
+  LocalForward 9996 127.0.0.1:9996
+  LocalForward 8886 127.0.0.1:8886
+  LocalForward 10500 127.0.0.1:10500
+  LocalForward 4200 127.0.0.1:4200
+  LocalForward 2222 127.0.0.1:2222
 ```
-###Reprendre ici
-You may then connect to your host via ssh using the "Connect" tab. The login/password are the ones you've defined in the first form. 
 
-Il faut ensuite se connecter en ssh sur le serveur en tapant ssh azureSandbox
-Et puis on peut accéder à la page d'accueil de la sandbox à l'adresse localhost:8888
+You may then connect to the your Sandbox 
+```shell
+ssh azureSandbox
+```
+
+Once conected you may access the home page of your sandbox using [http://localhost:8888](http://localhost:8888)
