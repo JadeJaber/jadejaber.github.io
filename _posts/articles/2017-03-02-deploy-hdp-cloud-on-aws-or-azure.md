@@ -16,22 +16,22 @@ title: >-
   How to deploy my Hortonworks HDP cluster in the cloud with Amazon AWS and
   Microsoft Azure
 ---
-## Azure vs AWS
+## 1 Azure vs AWS
 
 The main differences in this article is that I'm using Azure to instantiate a single node HDP sandbox (for training) and I'm using AWS to instantiate a reale multi-node cluster (for real use cases). But you may also instantiate a real cluster using Azure.
 
-## On Amazon AWS
+## 2 Amazon AWS
 
 Overview : [https://fr.hortonworks.com/blog/quickly-launch-hortonworks-data-platform-amazon-web-services/](https://fr.hortonworks.com/blog/quickly-launch-hortonworks-data-platform-amazon-web-services/)
 
 Procedure : [http://hortonworks.github.io/hdp-aws/](http://hortonworks.github.io/hdp-aws/)
 
-### Subscribe to HDP services and Controller Services
-#### Hortonworks Data Cloud - Controller Service
+### 2.1 Subscribe to HDP services and Controller Services
+#### 2.1.1 Hortonworks Data Cloud - Controller Service
 Controller Service will let you instantiate AMI (Amazon Machine Image)
 [Subscribe to Controller Services](https://aws.amazon.com/marketplace/pp/B01LXOQBOU?qid=1488444197744&sr=0-2&ref_=srh_res_product_title)
 
-#### Hortonworks Data Cloud - HDP Services
+#### 2.1.2 Hortonworks Data Cloud - HDP Services
 The HDP services subscription will make the HDP AMI available
 [Subscribe to HDP Services](https://aws.amazon.com/marketplace/fulfillment?pricing=hourly&productId=1eeff3e2-5715-4e42-9ef0-023f823095af&ref_=dtl_psb_continue&region=us-east-1)
 
@@ -51,7 +51,7 @@ Ensuite on clique sur "Create Cluster", on nomme notre cluster : plus d'infos su
 
 J'ai sauvegardé un template qu'il est possibde de dupliquer désormais.
 
-#### Utilisation du clsuter  ########
+### 2.2 Utilisation du clsuter
 
 accéder  à https://aws.amazon.com/fr/
 Mon compte > AWS Mangaement Console
@@ -68,13 +68,13 @@ Sélectionner le template
 Sélectionner un mot de passe admin
 Mettre un email pour recevoir la confirmation de création
 
-### Billing
+### 2.3 Billing
 
 [Check your detailed reports](https://console.aws.amazon.com/billing/home#/costexplorer)
 [Check your detailed bill](https://console.aws.amazon.com/billing/home#/bill?year=2017&month=3)
 
 
-## AZURE 
+## 3 AZURE 
 
 **Prerequisities** : You needd to have a Micrsoft account (Outlook/Hotmail)
 
