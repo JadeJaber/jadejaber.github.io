@@ -24,7 +24,7 @@ Connect to database
 ```
 
 List tables [of a specific schema]
-```shell
+```postgres
 \dt *.*
 \dt
 \dt public.*
@@ -32,7 +32,7 @@ SELECT * FROM information_schema.tables WHERE table_schema = 'public'
 ```
 
 Get tables size
-```shell
+```sql
 SELECT nspname || '.' || relname AS "relation",
 pg_size_pretty(pg_total_relation_size(C.oid)) AS "total_size"
 FROM pg_class C
@@ -45,7 +45,7 @@ LIMIT 20;
 ```
 
 Get tables information
-```shell
+```sql
 SELECT *, pg_size_pretty(total_bytes) AS total
     , pg_size_pretty(index_bytes) AS INDEX
     , pg_size_pretty(toast_bytes) AS toast
