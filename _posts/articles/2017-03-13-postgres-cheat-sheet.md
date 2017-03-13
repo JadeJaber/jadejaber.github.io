@@ -15,6 +15,8 @@ tags:
 Liste of all schema
 ```shell
 \l 
+```
+```sql
 select schema_name from information_schema.schema 
 ```
 
@@ -24,10 +26,12 @@ Connect to database
 ```
 
 List tables [of a specific schema]
-```postgres
+```shell
 \dt *.*
 \dt
 \dt public.*
+```
+```sql
 SELECT * FROM information_schema.tables WHERE table_schema = 'public'
 ```
 
