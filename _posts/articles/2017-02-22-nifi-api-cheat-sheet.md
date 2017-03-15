@@ -23,18 +23,18 @@ Source : [https://nifi.apache.org/docs/nifi-docs/rest-api/](https://nifi.apache.
 ```
 => This token is then use on the next API calls
 
-**Get cluster info (node ids...) **
+**Get cluster info (node ids...)**
 ```shell
 /root/curl/bin/curl -k -i -X GET https://[hostname]:9091/nifi-api/controller/cluster -H 'Authorization: Bearer [TOKEN]'
 ```
 
-**Get process group info **
+**Get process group info**
 Here we're getting the root processor group info
 ```shell
 /root/curl/bin/curl -k -i -X GET https://[hostname]:9091/nifi-api/process-groups/root  -H 'Authorization: Bearer [TOKEN]'
 ```
 
-**Get sub process groups of a process group **
+**Get sub process groups of a process group**
 Here we're getting the root processor group's sub processors info
 ```shell
 /root/curl/bin/curl -k -i -X GET https://[hostname]:9091/nifi-api/process-groups/root/process-groups -H 'Authorization: Bearer TOKEN'
@@ -46,7 +46,7 @@ Here we're getting all the processor od the node_id= 7c84501d-d10c-407c-b9f3-1d8
 /root/curl/bin/curl -k -i -X GET https://[hostname]:9091/nifi-api/process-groups/7c84501d-d10c-407c-b9f3-1d80e38fe36a/processors -H 'Authorization: Bearer TOKEN'
 ```
 
-**Stop a processor **
+**Stop a processor**
 Here we are stopping the processor_id = 87dcf945-0159-1000-ffff-ffffd9f4c984
 ```shell
 /root/curl/bin/curl -k -i -H "Content-Type: application/json" -H 'Authorization: Bearer TOKEN'  -d '{"revision":{"clientId":"[name of user]","version":"[version number]"},"component":{"id":"87dcf945-0159-1000-ffff-ffffd9f4c984","state":"STOPPED"}}' -X PUT https://[hostname]:9091/nifi-api/processors/87dcf945-0159-1000-ffff-ffffd9f4c984
