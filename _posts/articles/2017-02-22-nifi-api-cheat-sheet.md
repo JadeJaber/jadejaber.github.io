@@ -21,7 +21,7 @@ Source : [https://nifi.apache.org/docs/nifi-docs/rest-api/](https://nifi.apache.
 ```shell
 /root/curl/bin/curl -u admin:#####  -k -i  -d "username=admin&password=#####" -X  POST https://[hostname]:9091/nifi-api/access/token 
 ```
-=> This token is then use on the next API calls
+=> This token is then used on the next API calls
 
 **Get cluster info (node ids...)**
 ```shell
@@ -53,7 +53,7 @@ Here we are stopping the processor_id = 87dcf945-0159-1000-ffff-ffffd9f4c984
 ```
 
 **Delete a node (not disconnecting, which is different)**
-Here we're a deleting the node_id = 9116d192-184e-4538-9986-0dc68a04c119
+Here we're deleting the node_id = 9116d192-184e-4538-9986-0dc68a04c119
 ```shell
 /root/curl/bin/curl -k -i -X DELETE https://[hostname]:9091/nifi-api/controller/cluster/nodes/9116d192-184e-4538-9986-0dc68a04c119 -H 'Authorization: Bearer TOKEN'
 ```
