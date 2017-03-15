@@ -59,13 +59,13 @@ A crypted communication may be done either with a unique key -> symmetric (RSA) 
 
 **Pros and cons** : The problem with symmetric cryptography is that a secured server who wants to receive encrypted messages (secured web server for instance) will have to generated a different encryption key for each server that need to communicate with it. If all other servers had the same encryption key, then they would all be able to decrypt each othes messages that they each send to the secured server. **-> This is why we need asymmetric cryptography**.
 
-### Encrypted communication
-Now, since the symmetric cryptography needs less CPU calculation then asymmetric cryptography, it is better to have a symmetric cryptography.  The client will generate a symmetric encryption key, encrpyt it with the public key of the secured server and send it to the secured server. 
+## Why and how  (#### reprendre ici)
+### Encrypted communication (SSL)
+
+Since the symmetric cryptography needs less CPU calculation then asymmetric cryptography, it is better to have a symmetric cryptography.  The 2 servers which need to communicate securely need to have the same encryption key. The client will generate a symmetric encryption key, encrpyt it with the public key of the secured server and send it to the secured server. 
 
 Now the 2 servers have the same encryption key and will be able to start an symmetric encrypted communication. Ths encryption key will be used only for that session.
 
-## Why and how
-### Confidentiality with encryption
 In order to have an asymmetric cryptography the secured server need to send its public key to the client. Here comes the man in the middle vulnerability : If the man in the middle catched the public key of the secured server and sends its own public key to the client, the client would then encrypt its messages with the man in the middle's publick key. The man in the middle would then be able to decrypt the message with its own private key. And then encrypt it again with the secured server public key before sending that message back to the secured server. 
 
 ![Man in the middle]({{site.baseurl}}/images/man-in-the-middle.jpg)
@@ -94,5 +94,3 @@ Dans ce cas précis, le message n’est pas crypté mais son intégrité est ass
 - Open-ssl
 - keytool
 [Link to Cheat sheets]({{site.baseurl}}/articles/2017-02-28-keytool-openssl-cheat-sheet)
- 
- 
