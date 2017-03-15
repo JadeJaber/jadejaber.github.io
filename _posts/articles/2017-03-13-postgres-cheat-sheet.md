@@ -12,7 +12,7 @@ tags:
 ---
 ## Some commands
 
-Liste of all schema
+**Liste of all schema**
 ```shell
 \l 
 ```
@@ -20,12 +20,12 @@ Liste of all schema
 select schema_name from information_schema.schema 
 ```
 
-Connect to database
+**Connect to database**
 ```shell
 \connect [database name]
 ```
 
-List tables [of a specific schema]
+**List tables [of a specific schema]**
 ```shell
 \dt *.*
 \dt
@@ -35,7 +35,7 @@ List tables [of a specific schema]
 SELECT * FROM information_schema.tables WHERE table_schema = 'public'
 ```
 
-Get tables size
+**Get tables size**
 ```sql
 SELECT nspname || '.' || relname AS "relation",
 pg_size_pretty(pg_total_relation_size(C.oid)) AS "total_size"
@@ -48,7 +48,7 @@ ORDER BY pg_total_relation_size(C.oid) DESC
 LIMIT 20;
 ```
 
-Get tables information
+**Get tables information**
 ```sql
 SELECT *, pg_size_pretty(total_bytes) AS total
     , pg_size_pretty(index_bytes) AS INDEX
@@ -67,6 +67,3 @@ SELECT *, pg_size_pretty(total_bytes) AS total
   ) a
 ) a;
 ```
-
-
-
