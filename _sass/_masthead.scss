@@ -49,7 +49,7 @@
     }
 
     @include media($large) {
-      width: 250px;
+      width: 400px;
       height: auto;
       @include rounded(35px); /* crops in a circle */
     }
