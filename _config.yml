@@ -40,8 +40,8 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 # Site owner
 owner:
   name: Jade JABER
-  avatar: bio-photo.jpg
-  email: you@email.com
+  #avatar: bio-photo.jpg
+  email: jaber.jade@gmail.com
   disqus-shortname: https-jadejaber-github-io
   twitter: JadeJaber
   facebook: legabz
