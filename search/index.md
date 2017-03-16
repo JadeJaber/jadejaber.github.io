@@ -1,13 +1,14 @@
 ---
 layout: page
-title: "Search"
-date: 
-modified:
-excerpt:
+title: Search
+date: null
+modified: null
+excerpt: null
 image:
-  feature:
+  feature: null
 search_omit: true
 sitemap: false
+published: true
 ---
   
 <!-- Search form -->
@@ -26,7 +27,7 @@ sitemap: false
 <!-- Search result template -->
 <!--script type="text/x-template" id="search-result">
   <li><article>
-    <a href="##Url##">##Title## <span class="excerpt">##Excerpt##</span></a>
+    <a href="##Url##">##Title## <!--span class="excerpt">##Excerpt##</span--!></a>
   </article></li>
 </script-->
 
@@ -55,4 +56,3 @@ sitemap: false
 </script>
 <script src="/js/lunr.min.js"></script>
 <script src="/js/search.js"></script>
-
