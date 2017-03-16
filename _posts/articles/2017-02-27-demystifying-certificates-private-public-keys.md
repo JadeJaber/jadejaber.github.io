@@ -97,7 +97,7 @@ Dans ce cas précis, le message n’est pas crypté mais son intégrité est ass
 
 ![dream_561d4e54f72.jpg]({{site.baseurl}}/images/dream_561d4e54f72.jpg)
 
-![]({{site.baseurl}}/images/dream_155dc2a313.jpg)![dream_155dc2a313.jpg]({{site.baseurl}}/images/dream_155dc2a313.jpg)
+![dream_155dc2a313.jpg]({{site.baseurl}}/images/dream_155dc2a313.jpg)
 
 
  
