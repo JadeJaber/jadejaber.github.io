@@ -89,6 +89,8 @@ Dans ce cas précis, le message n’est pas crypté mais son intégrité est ass
 
 ![Signature]({{site.baseurl}}/images/Signature.gif)
 
+ ![former-us-vice-president-dick-cheney.jpg]({{site.baseurl}}/_images/former-us-vice-president-dick-cheney.jpg)
+
  
  ## Tools 
 - Open-ssl
