@@ -89,15 +89,6 @@ Dans ce cas précis, le message n’est pas crypté mais son intégrité est ass
 
 ![Signature]({{site.baseurl}}/images/Signature.gif)
 
-![former-us-vice-president-dick-cheney.jpg]({{site.baseurl}}/images/former-us-vice-president-dick-cheney.jpg)
-
-![dream_561d4e54f78.jpg]({{site.baseurl}}/images/dream_561d4e54f78.jpg)
-
-![dream_561d4e54f7.jpg]({{site.baseurl}}/images/dream_561d4e54f7.jpg)
-
-![dream_561d4e54f72.jpg]({{site.baseurl}}/images/dream_561d4e54f72.jpg)
-
-![dream_155dc2a313.jpg]({{site.baseurl}}/images/dream_155dc2a313.jpg)
 
 
  
