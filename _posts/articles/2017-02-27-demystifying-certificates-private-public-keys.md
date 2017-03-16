@@ -59,7 +59,7 @@ A crypted communication may be done either with a unique key -> symmetric (DES &
 
 **Pros and cons** : The problem with symmetric cryptography is that a secured server who wants to receive encrypted messages (secured web server for instance) will have to generated a different encryption key for each server that need to communicate with it. If all other servers had the same encryption key, then they would all be able to decrypt each othes messages that they each send to the secured server. **-> This is why we need asymmetric cryptography**.
 
-## Why and how  (######## reprendre ici)
+## Why and how  (########## reprendre ici)
 ### Encrypted communication (SSL)
 
 Since the symmetric cryptography needs less CPU calculation then asymmetric cryptography, it is better to have a symmetric cryptography.  The 2 servers which need to communicate securely need to have the same encryption key. The client will generate a symmetric encryption key, encrpyt it with the public key of the secured server and send it to the secured server. 
