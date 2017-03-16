@@ -55,7 +55,7 @@ A signature is a message (usually a digest generated with a hashing algorithm) w
 Keystore & Trustsore are are mainly the same type of element. They are safes which contain private keys, public keys and certificates and which are protected with a password. The keystore contains your public/private keys and certificates whereas the Truststore contains the certificates of the authorities or servers that you trust.
 
 ### Asymmetric vs symmetric cryptography
-A crypted communication may be done either with a unique key -> symmetric (RSA) or with 2 key, private & public -> asymmetric (DES & AES)  
+A crypted communication may be done either with a unique key -> symmetric (DES & AES) or with 2 key, private & public -> asymmetric (RSA et DSA)  
 
 **Pros and cons** : The problem with symmetric cryptography is that a secured server who wants to receive encrypted messages (secured web server for instance) will have to generated a different encryption key for each server that need to communicate with it. If all other servers had the same encryption key, then they would all be able to decrypt each othes messages that they each send to the secured server. **-> This is why we need asymmetric cryptography**.
 
