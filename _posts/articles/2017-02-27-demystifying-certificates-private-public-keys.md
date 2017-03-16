@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-excerpt: description
+excerpt: null
 categories: articles
 share: true
 tags:
