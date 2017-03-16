@@ -41,7 +41,8 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 owner:
   name: Jade JABER
   #avatar: dream_561d4e54f78.jpg
-  avatar: dream_561d4e54f7.jpg
+  #avatar: dream_561d4e54f7.jpg
+  avatar: dream_561d4e54f72.jpg
   email: jaber.jade@gmail.com
   disqus-shortname: https-jadejaber-github-io
   twitter: JadeJaber
