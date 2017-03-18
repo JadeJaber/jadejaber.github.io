@@ -9,4 +9,4 @@ tags:
   - machine learning algorithms
   - microsoft
 ---
-Download here : [When and When Not to Use Distributed Machine Learning](/documents/bigdata-bilbao.pdf)
+Download here : [Microsoft machine learning algorithm cheat sheet](/documents/microsoft-machine-learning-algorithm-cheat-sheet-v6.pdf)
