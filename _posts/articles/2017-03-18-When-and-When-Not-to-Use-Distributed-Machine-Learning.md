@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-excerpt: description
+excerpt: When and When Not to Use Distributed Machine Learning
 categories: articles
 share: true
 tags:
