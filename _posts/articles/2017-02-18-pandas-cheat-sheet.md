@@ -10,4 +10,4 @@ tags:
   - cheat sheet
 ---
 
-Download here : [Panda cheat sheet](https://jadejaber.github.io/downloads/Pandas_Cheat_Sheet.pdf)
+Download here : [Panda cheat sheet](https://jadejaber.github.io/documents/Pandas_Cheat_Sheet.pdf)
