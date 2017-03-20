@@ -9,7 +9,7 @@ tags:
   - java
   - debug troubleshooting optimization
 ---
-## 1 JMAP & JCMD: Memory
+## 1. JMAP & JCMD: Memory
 
 The jmap command-line utility prints memory-related statistics for a running VM or core file.
 
@@ -21,7 +21,7 @@ If the jstack pid command does not respond because of a hung process, then the -
 jmap -F [process id]
 ```
 
-## 2 JSTACK: Threads
+## 2. JSTACK: Threads
 
 The jstack command-line utility attaches to the specified process or core file and prints the stack traces of all threads that are attached to the virtual machine, including Java threads and VM internal threads, and optionally native stack frames. The utility also performs deadlock detection.
 
