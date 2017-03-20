@@ -13,13 +13,14 @@ tags:
 
 The jmap command-line utility prints memory-related statistics for a running VM or core file.
 
-It is suggested to use the latest utility, jcmd instead of the previous jmap utility for enhanced diagnostics and reduced performance overhead
+It is suggested to use the latest utility, **jcmd** instead of the previous jmap utility for enhanced diagnostics and reduced performance overhead
 
 If the jstack pid command does not respond because of a hung process, then the -F option can be used (on Oracle Solaris and Linux operating systems only) to force a stack dump
 
 ```shell
 jmap -F [process id]
 ```
+source : (https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr014.html)[https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr014.html]
 
 ## 2. JSTACK: Threads
 
@@ -32,3 +33,5 @@ jstack -F [process _id]
 #OR
 kill -3 [PID] 
 ```
+
+source : (https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr016.html)[https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr016.html]
