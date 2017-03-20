@@ -9,7 +9,7 @@ tags:
   - java
   - debug troubleshooting optimization
 ---
-## 1 JMAP & JCMD : Memory
+## 1 JMAP & JCMD: Memory
 
 The jmap command-line utility prints memory-related statistics for a running VM or core file.
 
