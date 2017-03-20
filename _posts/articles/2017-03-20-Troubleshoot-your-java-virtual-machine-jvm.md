@@ -20,7 +20,7 @@ If the jstack pid command does not respond because of a hung process, then the -
 ```shell
 jmap -F [process id]
 ```
-source : (https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr014.html)[https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr014.html]
+source : [https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr014.html]([https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr014.html)
 
 ## 2. JSTACK: Threads
 
@@ -34,4 +34,4 @@ jstack -F [process _id]
 kill -3 [PID] 
 ```
 
-source : (https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr016.html)[https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr016.html]
+source : [https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr016.html](https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr016.html)
