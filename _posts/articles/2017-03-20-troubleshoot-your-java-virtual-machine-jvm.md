@@ -18,7 +18,7 @@ It is suggested to use the latest utility, **jcmd** instead of the previous jmap
 If the jstack pid command does not respond because of a hung process, then the -F option can be used (on Oracle Solaris and Linux operating systems only) to force a stack dump
 
 ```shell
-jmap -F [process id]
+jmap -F [PID]
 ```
 source : [https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr014.html](https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr014.html)
 
@@ -29,7 +29,7 @@ The jstack command-line utility attaches to the specified process or core file a
 If the jstack pid command does not respond because of a hung process, then the -F option can be used (on Oracle Solaris and Linux operating systems only) to force a stack dump
 
 ```shell
-jstack -F [process _id]
+jstack -F [PID]
 #OR
 kill -3 [PID] 
 ```
