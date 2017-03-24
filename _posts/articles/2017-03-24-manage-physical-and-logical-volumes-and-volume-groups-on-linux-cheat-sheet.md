@@ -26,7 +26,7 @@ pvscan
 ![lvm-cheatsheet.png]({{site.baseurl}}/images/lvm-cheatsheet.png)
 
 
-## 2. How to extend Etendre un volume logique
+## 2. How to extend a logical volume
 ```shell
 lvextend -L+1.5G /dev/rootvg/usr_lv;   # Name of the logical volume
 resize2fs /dev/rootvg/usr_lv  #Name of the mount point
