@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 excerpt: Java compilation cheat sheet
 categories: articles
