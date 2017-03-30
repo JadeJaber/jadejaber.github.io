@@ -11,8 +11,7 @@ tags:
   - compilation
   - cheat sheet
 ---
- 
- ### Compile a java script
+### Compile a java script
  ```shell
  javac -cp "/usr/hdp_mount/hdp/2.3.4.7-4/spark/lib/*:/usr/hdp_mount/hdp/2.3.2.0-2950/spark/lib/*"  ~/requeteKindi.java
  ```
