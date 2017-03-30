@@ -30,7 +30,7 @@ To find which jar contains your class, you may type on google
 - [class name] mvn repository
 - [class name] github
 
-Once you get the jar name, you may chck its content using: 
+Once you get the jar name, you may check its content using: 
 ```shell
 jar tf [jar file]
 ```
