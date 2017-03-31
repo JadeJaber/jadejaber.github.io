@@ -37,7 +37,7 @@ public class RequeteKindiClass{
 }
 ```
 
-**Compile it **
+**Compile it**
 ```shell
 javac -cp "/usr/hdp_mount/hdp/2.3.4.7-4/spark/lib/*:/usr/hdp_mount/hdp/2.3.2.0-2950/spark/lib/*"  ~/RequeteKindiClass.java
 ```
