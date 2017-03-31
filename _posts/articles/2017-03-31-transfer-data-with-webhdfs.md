@@ -1,10 +1,17 @@
 ---
 published: true
 ---
+### Write the following script transferFromCluster1ToCluster2.sh
 
 ```shell 
 for i in $(cat $1);
 do echo $i;
-curl  -k --location-trusted -u 'login:paaswd' -X GET "https://source_server:8443/gateway/default/webhdfs/v1${i}?op=OPEN" | curl -v -k -T - --location-trusted -u 'login:paaswd' -X PUT "https://target_server:8443/gateway/default/webhdfs/v1${i/z_lab_cia_hive_socle/z_app_ccbihadoop_hive_temp}?op=CREATE&overwrite=true" ;
+curl  -k --location-trusted -u 'login:paaswd' -X GET "https://source_server:8443/gateway/default/webhdfs/v1${i}?op=OPEN" | curl -v -k -T - --location-trusted -u 'login:paaswd' -X PUT "https://target_server:8443/gateway/default/webhdfs/v1${i}?op=CREATE&overwrite=true" ;
 done;
 ```
+
+### Launch your script with 
+```shell
+./transferFromCluster1ToCluster2.sh ./file_which_contains_files_transfer.txt
+```
+
