@@ -12,8 +12,11 @@ tags:
   - cheat sheet
 ---
 ### Compile a java script
+
+You class name should have the same name as your filename.
+
  ```shell
- javac -cp "/usr/hdp_mount/hdp/2.3.4.7-4/spark/lib/*:/usr/hdp_mount/hdp/2.3.2.0-2950/spark/lib/*"  ~/requeteKindi.java
+ javac -cp "/usr/hdp_mount/hdp/2.3.4.7-4/spark/lib/*:/usr/hdp_mount/hdp/2.3.2.0-2950/spark/lib/*"  ~/RequeteKindiClass.java
  ```
 
 ### Create your jar
@@ -45,4 +48,3 @@ You may also check all the jars that are on your server using:
 #if you're looking for org.apache.spark.api.java.function.MapFunction
 locate .jar | xargs -n 1 jar tf | grep "org/apache/spark/api/java/function/MapFunction"
 ```
-
