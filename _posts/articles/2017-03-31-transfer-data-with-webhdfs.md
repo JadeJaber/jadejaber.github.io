@@ -1,5 +1,15 @@
 ---
 published: true
+layout: post
+excerpt: Transfer data with webhdfs
+categories: articles
+share: true
+tags:
+  - hortonworks
+  - hadoop
+  - tips
+  - transfer data
+  - webhdfs
 ---
 ### Write the following script transferFromCluster1ToCluster2.sh
 
