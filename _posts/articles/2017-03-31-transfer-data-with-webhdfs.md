@@ -22,6 +22,6 @@ done;
 
 ### Launch your script with 
 ```shell
-./transferFromCluster1ToCluster2.sh ./[file_which_contains_files_transfer.txt]
+./transferFromCluster1ToCluster2.sh ./[file_which_contains_files_to_transfer.txt]
 ```
 
