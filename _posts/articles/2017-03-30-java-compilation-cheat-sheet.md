@@ -15,7 +15,12 @@ tags:
  ```shell
  javac -cp "/usr/hdp_mount/hdp/2.3.4.7-4/spark/lib/*:/usr/hdp_mount/hdp/2.3.2.0-2950/spark/lib/*"  ~/requeteKindi.java
  ```
- 
+
+### Create your jar
+```shell
+jar cf BenchmarkHawk.jar ./RequeteKindiClass.class
+```
+
 ### Find a "not found import"
  
 Exemple : 
@@ -41,5 +46,3 @@ You may also check all the jars that are on your server using:
 locate .jar | xargs -n 1 jar tf | grep "org/apache/spark/api/java/function/MapFunction"
 ```
 
- 
- 
