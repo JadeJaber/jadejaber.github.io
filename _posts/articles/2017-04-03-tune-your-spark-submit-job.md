@@ -13,7 +13,7 @@ tags:
   - optimization
 ---
 
-### A generic sprk-submit call
+### 1. A generic sprk-submit call
 
 When submitting a spark-submit job, you may tune it using its several options
 
@@ -29,9 +29,9 @@ lib/spark-examples*.jar \
 10
 ```
 
-### num-executors and executor-cores
+### 2. num-executors and executor-cores
 
-Considering your nodes are executing this spark job, here is hwo to take advantage of your cluster power : 
+Considering your cluster is executing only this spark job, here is how to take advantage of your cluster's resources: 
 
 Spark recommends not to use more than 5 cores per executor 
 > executor-cores = 5
@@ -53,3 +53,5 @@ Then you set your **num-executors** as follow :
 Result : 
 - executor-cores = 5
 - num-executors = [(16 -1)/5] * 6 -1 = 18 - 1 = 17
+
+source : [http://blog.cloudera.com/blog/2015/03/how-to-tune-your-apache-spark-jobs-part-2/](http://blog.cloudera.com/blog/2015/03/how-to-tune-your-apache-spark-jobs-part-2/)
