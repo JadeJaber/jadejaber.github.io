@@ -33,12 +33,18 @@ lib/spark-examples*.jar \
 
 Considering your nodes are executing this spark job, here is hwo to take advantage of your cluster power : 
 
-Spark recommends not to use more than 5 core/executor (executor-cores = 5). 
+Spark recommends not to use more than 5 cores per executor 
+> executor-cores = 5
 
-Then you set your num-executors as follow : 
-[(Num_of_cores_per_node - 1)/5 ] * number_of_nodes - 1
+Then you set your **num-executors** as follow : 
+> {[(Num_of_cores_per_node - 1)/5 ] x number_of_nodes } - 1
 
-Explanation : 
+**Explanation :** 
+- Num_of_cores_per_node - **1** : We need to keep one core for the OS
+- (Num_of_cores_per_node - 1)**/5** : We divide by the number of cores per executor to get the number of  executors we may instantiate on each node
+- {[(Num_of_cores_per_node - 1)/5 ] **x number_of_nodes** } : We multiply it by the number of nodes to get the total number of cores we'll be able to use on our cluster
+- {[(Num_of_cores_per_node - 1)/5 ] x number_of_nodes } **- 1** : We substract one executor which will be used for the "Application Master/Spark Driver"
+
 
 **Example of cluster:**
 - 6 nodes
