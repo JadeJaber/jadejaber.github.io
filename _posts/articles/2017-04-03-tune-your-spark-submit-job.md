@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 categories: articles
 share: true
@@ -53,5 +53,3 @@ Then you set your **num-executors** as follow :
 Result : 
 - executor-cores = 5
 - num-executors = [(16 -1)/5] * 6 -1 = 18 - 1 = 17
-
-
