@@ -40,7 +40,7 @@ Then you set your **num-executors** as follow :
 > {[(Num_of_cores_per_node - 1)/5 ] x number_of_nodes } - 1
 
 **Explanation :** 
-- Num_of_cores_per_node - **1** : We need to keep one core for the OS
+- Num_of_cores_per_node - **1** : We need to keep one core for the OS  on each node
 - (Num_of_cores_per_node - 1)**/5** : We divide by the number of cores per executor to get the number of  executors we may instantiate on each node
 - {[(Num_of_cores_per_node - 1)/5 ] **x number_of_nodes** } : We multiply it by the number of nodes to get the total number of cores we'll be able to use on our cluster
 - {[(Num_of_cores_per_node - 1)/5 ] x number_of_nodes } **- 1** : We substract one executor which will be used for the "Application Master/Spark Driver"
