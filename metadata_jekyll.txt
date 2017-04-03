@@ -51,7 +51,8 @@ tags:
   - benchmark
   - tips
   - cheat sheet
-  - debug troubleshooting optimization
+  - debug troubleshooting 
+  - optimization
   - security
   - network
   - certificates
