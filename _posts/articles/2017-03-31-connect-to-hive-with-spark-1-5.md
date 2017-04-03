@@ -57,6 +57,6 @@ spark-submit \
 --master yarn \
 --deploy-mode cluster \
 --files /etc/spark/conf/hive-site.xml \
---queue q_datalab   \
-./BenchmarkHawk.jar
+--queue q_datalab \
+BenchmarkHawk.jar
 ```
