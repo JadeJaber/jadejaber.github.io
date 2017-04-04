@@ -65,7 +65,7 @@ PRIMARY KEY (Field1, Field2));
 - First column is the partition key
 - Second column is the cluster
 
-You may partition key or clusters with many fields 
+You may have partition key or clusters with many fields 
 ```sql
 PRIMARY KEY (([Field 1],[Field 2]), ([Field 3],[Field 4]))
 ```
