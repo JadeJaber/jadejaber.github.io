@@ -11,6 +11,8 @@ tags:
   - cheat sheet
   - cassandra
 ---
+## 1. Discover
+
 ##Launch CQL client##
 ```shell
 cassandra-2.1.13/bin/cqlsh [hostnmae] -u [user]
@@ -32,3 +34,5 @@ USE nom_keyspace;
 ```sql
 describe tables;
 ```
+
+## 2. Query
