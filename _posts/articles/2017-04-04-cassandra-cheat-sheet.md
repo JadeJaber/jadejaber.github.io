@@ -70,6 +70,21 @@ You may have partition key or clusters with many fields
 PRIMARY KEY (([Field 1],[Field 2]), ([Field 3],[Field 4]))
 ```
 
+## 3. Insert and Update
+
+**Insert a new record**
+```sql
+INSERT INTO [Table] ([Fields list]) VALUES ([Values List);
+```
+	
+**Update a record**
+```sql
+UPDATE [Table]] set [Field] = [Value]
+```
+
+
+
+
 
 
 
