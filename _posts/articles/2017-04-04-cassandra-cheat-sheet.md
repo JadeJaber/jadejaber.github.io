@@ -76,6 +76,7 @@ PRIMARY KEY (([Field 1],[Field 2]), ([Field 3],[Field 4]))
 ```sql
 INSERT INTO [Table] ([Fields list]) VALUES ([Values List);
 ```
+**Info : ** Use simple quotes for the values
 	
 **Update a record**
 ```sql
