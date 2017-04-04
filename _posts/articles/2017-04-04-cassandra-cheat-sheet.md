@@ -13,24 +13,24 @@ tags:
 ---
 ## 1. Discover
 
-##Launch CQL client##
+**Launch CQL client**
 ```shell
 cassandra-2.1.13/bin/cqlsh [hostnmae] -u [user]
 ```
 
-##List Keyspaces##
+**List Keyspaces**
 ```sql
 DESCRIBE KEYSPACES;
 or
 select * from system.schema_keyspaces ;
 ```
 
-##Change Keyspace##
+**Change Keyspace**
 ```sql
 USE nom_keyspace;
 ```
 
-##List tables of a Keyspace##
+**List tables of a Keyspace**
 ```sql
 describe tables;
 ```
