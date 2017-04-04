@@ -44,8 +44,6 @@ WITH REPLICATION = {‘class’:’SimpleStrategy’,
 				‘replication_factor’ : 3 };
 ```
 
-
-
 **Create table**
 ```sql
 CREATE TABLE 	[Table Name] (
@@ -53,4 +51,26 @@ CREATE TABLE 	[Table Name] (
 [Field 1] [Type])
 WITH COMPACT STORAGE;
 ```
-Info : You may add PRIMARY KEY after the type to set a primary key
+**Info :** You may add PRIMARY KEY after the type to set a primary key
+
+
+Multi field primary key
+```sql
+CREATE TABLE 	[Table Name] (
+[Field 2] [Type],
+[Field 1] [Type])
+PRIMARY KEY (Field1, Field2));
+```
+**Info :** The field order is important: 
+- First column is the partition key
+- Second column is the cluster
+
+You may partition key or clusters with many fields 
+```sql
+PRIMARY KEY (([Field 1],[Field 2]), ([Field 3],[Field 4]))
+```
+
+
+
+
+
