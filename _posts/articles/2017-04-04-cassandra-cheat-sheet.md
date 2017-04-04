@@ -35,4 +35,13 @@ USE nom_keyspace;
 describe tables;
 ```
 
-## 2. Query
+## 2. Table mangement
+
+**Create table**
+```sql
+CREATE TABLE 	[Table Name] (
+[Field 2] [Type],
+[Field 1] [Type])
+WITH COMPACT STORAGE;
+```
+Info : You may add PRIMARY KEY after the type to set a primary key
