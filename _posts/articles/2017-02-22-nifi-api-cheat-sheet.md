@@ -17,7 +17,7 @@ tags:
 Source : [https://nifi.apache.org/docs/nifi-docs/rest-api/](https://nifi.apache.org/docs/nifi-docs/rest-api/)
  
 
-**Get A token **
+**Get A token**
 ```shell
 /root/curl/bin/curl -u admin:#####  -k -i  -d "username=admin&password=#####" -X  POST https://[hostname]:9091/nifi-api/access/token 
 ```
