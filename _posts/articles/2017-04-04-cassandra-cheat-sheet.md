@@ -35,7 +35,16 @@ USE nom_keyspace;
 describe tables;
 ```
 
-## 2. Table mangement
+## 2. Create
+
+**Create Keyspace**
+```sql
+CREATE KEYSPACE Keyspace Name] 
+WITH REPLICATION = {‘class’:’SimpleStrategy’, 
+				‘replication_factor’ : 3 };
+```
+
+
 
 **Create table**
 ```sql
