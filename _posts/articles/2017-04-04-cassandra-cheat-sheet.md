@@ -13,12 +13,14 @@ tags:
 ---
 ##Launch CQL client##
 ```shell
-cassandra-2.1.13/bin/cqlsh inbdfcas01 -u cassandra
+cassandra-2.1.13/bin/cqlsh [hostnmae] -u [user]
 ```
 
 ##List Keyspaces##
 ```sql
 DESCRIBE KEYSPACES;
+or
+select * from system.schema_keyspaces ;
 ```
 
 ##Change Keyspace##
