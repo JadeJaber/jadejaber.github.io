@@ -54,7 +54,7 @@ WITH COMPACT STORAGE;
 **Info :** You may add PRIMARY KEY after the type to set a primary key
 
 
-Multi field primary key
+**Multi field primary key**
 ```sql
 CREATE TABLE 	[Table Name] (
 [Field 2] [Type],
