@@ -25,13 +25,16 @@ curl -X GET http://localhost:9200/person/employee/123
 
 ## 2. Terminology
 ### 2.1 Index 
-A collection of documents (product, account, movie). Each of these elements are a _type_ .
-Corresponds to a database within a RGDBMS
-Identified by names (lowercase)
-Can define as many indexes you want (but most peoaple will have a few of them)
+- A collection of documents (product, account, movie). Each of these elements are a _type_ .
+- Corresponds to a database within a RGDBMS
+- Identified by names (lowercase)
+- Can define as many indexes you want (but most peoaple will have a few of them)
+
 
 ### 2.2 Type
-Represents a class/category of simlar documents
+- Represents a class/category of simlar documents
+- Consists of a name and a mapping
+
 
 
 
