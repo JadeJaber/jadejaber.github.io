@@ -223,11 +223,26 @@ curl -X POST http://localhost:9200/_bulk --data-binary "@requests"
 - Queries in **filter context** do not affect the scores of matching documents (_Does the docuiment match ?_)
 
 ### 6.2. Query String
+All fields are searched.
 ```shell
 curl -X POST http://localhost:9200/ecommerce/product/_search?q=pasta
 ```
-All fields are searched.
 
-### 6.3. 
+### 6.3. Query DSL
+Search by defining queries within the request body JSON
+Supports more features than the query string approach
+
+```shell
+curl -X POST http://localhost:9200/ecommerce/product/_search -d '
+{
+	"query": {
+    	"match": {
+        	"name": zend
+        }
+    }    
+}' 
+```
+
+
 
 
