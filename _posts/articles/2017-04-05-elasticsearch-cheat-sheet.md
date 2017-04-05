@@ -171,6 +171,14 @@ curl -X POST http://localhost:9200/ecommerce/product/1001/_update -d '
 }' 
 ```
 
+### 4.4 Deleting documents
+```shell
+curl -X DELETE http://localhost:9200/ecommerce/product/1001
+```
+**Note:** Basically, we may only delete documents by ID but there is plugin "DeleteByQuery" that lets you delete by query.
+
+
+
 
 
 
