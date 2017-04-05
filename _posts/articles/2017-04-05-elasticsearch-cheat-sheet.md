@@ -208,3 +208,10 @@ You may also DELETE or UPDATE documents using the _bulk API
 ```shell
 curl -X POST http://localhost:9200/_bulk --data-binary "@requests"
 ```
+```json
+{ "update":{"_id":"1003", "_index" : "ecommerce", "_type" : "product" } }
+{ "doc": { "quantity" : 33 } }
+```
+
+
+
