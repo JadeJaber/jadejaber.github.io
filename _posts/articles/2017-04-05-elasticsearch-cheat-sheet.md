@@ -30,6 +30,8 @@ Corresponds to a database within a RGDBMS
 Identified by names (lowercase)
 Can define as many indexes you want (but most peoaple will have a few of them)
 
+### 2.2 Type
+Represents a class/category of simlar documents
 
 
 
