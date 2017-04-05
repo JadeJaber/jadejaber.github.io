@@ -204,3 +204,7 @@ You may also DELETE or UPDATE documents using the _bulk API
 { "update":{"_id":"1003" } }
 { "doc": { "quantity" : 33 } }
 ```
+**Note:** If you need to bulk actions on several type or indexes you may omit them in the API call and specify them in your jsons
+```shell
+curl -X POST http://localhost:9200/_bulk --data-binary "@requests"
+```
