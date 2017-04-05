@@ -11,6 +11,11 @@ tags:
   - cheat sheet
   - elasticsearch
 ---
+## 1. Introduction
+
+- Data is stored in a schema-less JSON docmuents -> You do not need to define fieds and types before your insert data
+- Near-real-time since it's a cluster. An update or an insert must be propagated througout the cluster
+- Java - cross paltform
 
 
 We communicate with ES via its REST API (curl)
@@ -18,6 +23,7 @@ We communicate with ES via its REST API (curl)
 curl -X GET http://localhost:9200/person/employee/123
 ```
 
-Data is stored in a schema-less JSON docmuents -> You do not need to define fieds and types before your insert data
-Near-real-time since it's a cluster. An update or an insert must be propagated towards the cluster
+## 2. Terminology
+
+
 
