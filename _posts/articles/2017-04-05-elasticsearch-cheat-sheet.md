@@ -163,17 +163,11 @@ curl -X POST http://localhost:9200/ecommerce/product/1001 -d '
 ### 4.2 Updating documents
 Updating a doucment lets you add/remove or modify a single field without providing all the information as when we replaced the document.
 ```shell
-curl -X POST http://localhost:9200/ecommerce/product/1001 -d '
+curl -X POST http://localhost:9200/ecommerce/product/1001/_update -d '
 {
-	"name": "Zend framework 2",
-	"price": 30.00,
-	"description": "Learn Zend framwork infew hours",
-	"status": "active",
-	"quantity": 1,
-	"categories": [
-		{ "name": "Software"}
-	],
-	"tags": ["zendframework", "php", "progeamming", "zd2"]
+	"doc": {
+		"price": 50.00
+	}
 }' 
 ```
 
