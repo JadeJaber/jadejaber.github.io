@@ -277,3 +277,5 @@ curl -X POST http://localhost:9200/ecommerce/product/_search -d '
 More query types : [https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html) 
 
 
+
+
