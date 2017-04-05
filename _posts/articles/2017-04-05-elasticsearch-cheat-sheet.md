@@ -12,7 +12,6 @@ tags:
   - elasticsearch
 ---
 ## 1. Introduction
-
 - Data is stored in a schema-less JSON docmuents -> You do not need to define fieds and types before your insert data
 - Near-real-time since it's a cluster. An update or an insert must be propagated througout the cluster
 - Written in Java -> cross platform
@@ -61,6 +60,12 @@ curl -X GET http://localhost:9200/person/employee/123
 - Allows to scale horizontally 
 - Allows to distribute and parallelize operations across shards -> Increaes performance
 
+### 2.6 Replicas
+- A replica is a copy of a shard (default = 1 )
+- Provides High Availability in case a shard or node fails
+- Allows scaling search volume, because search queries can be executed on all replicas
+
+## 3. Creating an Index
 
 
 
