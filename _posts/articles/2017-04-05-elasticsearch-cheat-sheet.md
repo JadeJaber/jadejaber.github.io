@@ -223,6 +223,8 @@ curl -X POST http://localhost:9200/_bulk --data-binary "@requests"
 - Queries in **filter context** do not affect the scores of matching documents (_Does the docuiment match ?_)
 
 ### 6.2. Query String
+- Used for simple queries.
+
 **All fields are searched.**
 ```shell
 curl -X POST http://localhost:9200/ecommerce/product/_search?q=pasta
@@ -234,8 +236,8 @@ curl -X POST http://localhost:9200/ecommerce/product/_search?q=name:pasta
 ```
 
 ### 6.3. Query DSL
-Search by defining queries within the request body JSON
-Supports more features than the query string approach
+- Search by defining queries within the request body JSON
+- Supports more features than the query string approach
 
 ```shell
 curl -X POST http://localhost:9200/ecommerce/product/_search -d '
@@ -250,21 +252,28 @@ curl -X POST http://localhost:9200/ecommerce/product/_search -d '
 
 **You may add some logical operators**
 ```shell
-curl -X POST http://localhost:9200/ecommerce/product/_search?q=name:(pasta AND spaghetti)
-curl -X POST http://localhost:9200/ecommerce/product/_search?q=(name:(pasta OR spaghetti) AND status:active)
+curl -X POST http://localhost:9200/ecommerce/product/_search -d '
+{
+	"query": {
+    	"query_string": {
+        	"query": "(name:Zendtest2 AND description:Learn)"
+            }
+        }
+}' 
 ```
-Adding a "+" before a statement means that the word must be present
-Adding a "-" before a statement means that the word must NOT be present
+
+**Adding a "+" or a "-"  before a statement means that the word must or must not be present**
 ```shell
-curl -X POST http://localhost:9200/ecommerce/product/_search?q=name:+pasta -spaghetti
+curl -X POST http://localhost:9200/ecommerce/product/_search -d '
+{
+	"query": {
+    	"query_string": {
+        	"query": "+name:Zendtest2 +name:Zendtest2"
+            }
+    }
+}'
 ```
 
-By default, an OR operator is applied
-```shell
-curl -X POST "http://localhost:9200/ecommerce/product/_search?q=name:Zend spaghetti"
-```
-
-**Phrase search**
-
+More query types : [https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html) 
 
 
