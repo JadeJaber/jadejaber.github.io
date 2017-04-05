@@ -178,7 +178,7 @@ curl -X DELETE http://localhost:9200/ecommerce/product/1001
 **Note:** Basically, we may only delete documents by ID but there is plugin "DeleteByQuery" that lets you delete by query.
 
 ## 5. Batch processing
-Batch processing with bulk limits the amount of network overhead as it will need a unique network round trip.
+> Batch processing with bulk limits the amount of network overhead as it will need a unique network round trip.
 
 You need to edit a file with the content of your bulk : vi ./requests
 ```json
@@ -199,6 +199,7 @@ You may also DELETE or UPDATE documents using the _bulk API
 { "update":{"_id":"1003" } }
 { "doc": { "quantity" : 33 } }
 ```
+
 
 
 
