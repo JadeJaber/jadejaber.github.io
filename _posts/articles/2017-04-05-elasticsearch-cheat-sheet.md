@@ -69,18 +69,19 @@ curl -X GET http://localhost:9200/person/employee/123
 
 **List all indexes **
 ```shell
- curl -X GET  http://localhost:9200/_cat/indices?v
- ```
+curl -X GET  http://localhost:9200/_cat/indices?v
+```
  
 **Create in index** 
 ```shell
 curl -X PUT http://localhost:9200/ecommerce -d '{ }'
 ```
- **Note:** If you insert a document without defining an index, ES will automatically create an index.
+**Note:** If you insert a document without defining an index, ES will automatically create an index.
  
- **Delete in index"
- ```shell
+**Delete in index"
+```shell
 curl -X DELETE http://localhost:9200/ecommerce
 ```
+
 
 
