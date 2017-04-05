@@ -54,7 +54,7 @@ curl -X GET http://localhost:9200/person/employee/123
 
 
 ### 2.5 Shards
-- An index can be devided intpo multiple pieces called shards -< Useful when an index contains more data than the hardwware of a node can store
+- An index can be devided intpo multiple pieces called shards -> Useful when an index contains more data than the hardwware of a node can store
 - A shard is a fully functional and independant index
 - The number of shards can be specified when creating an index (default = 5)
 - Allows to scale horizontally 
@@ -76,6 +76,8 @@ curl -X GET http://localhost:9200/person/employee/123
 ```shell
 curl -X PUT http://localhost:9200/ecommerce -d '{ }'
 ```
-
+ **Note:** If you insert a document without defining an index, ES will automatically create an index.
+ 
+ 
 
 
