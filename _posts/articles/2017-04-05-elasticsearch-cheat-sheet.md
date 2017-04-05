@@ -45,7 +45,11 @@ curl -X GET http://localhost:9200/person/employee/123
 
 ### 2.4 Document
 - A basic unit of information that can be indexed
-- Consists of fields, which are key/value pairs
+- Consists of fields, which are key/value pairs. A value can be a string, date, object...
+- Corresponds to an object in OOP
+- Documents are expressed in JSON
+
+
 
 
 
