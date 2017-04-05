@@ -218,9 +218,9 @@ curl -X POST http://localhost:9200/_bulk --data-binary "@requests"
 ## 6. Searching with Elastic
 
 ### 6.1. Relevancy & Scoring
-- A score is calculated for each documents that matches a query (This higher the score, the more relevant the document is)
-- Queries in query context affect the scores of matching documents (_How well does the document match ?_)
-- Queries in filter context do not affect the scores of matching documents (_Does the docuiment match ?_)
+- A **score** is calculated for each documents that matches a query (This higher the score, the more relevant the document is)
+- Queries in **query context** affect the scores of matching documents (_How well does the document match ?_)
+- Queries in **filter context** do not affect the scores of matching documents (_Does the docuiment match ?_)
 
 
 
