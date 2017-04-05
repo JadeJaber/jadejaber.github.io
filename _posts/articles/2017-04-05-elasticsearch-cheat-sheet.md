@@ -212,6 +212,8 @@ curl -X POST http://localhost:9200/_bulk --data-binary "@requests"
 { "update":{"_id":"1003", "_index" : "ecommerce", "_type" : "product" } }
 { "doc": { "quantity" : 33 } }
 ```
+**Note:** If an action fails, the remaining actions will still be eecuted. We have an action in the returned json wich lets us identify the errors.
+
 
 
 
