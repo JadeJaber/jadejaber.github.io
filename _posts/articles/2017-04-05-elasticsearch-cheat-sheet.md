@@ -143,6 +143,9 @@ curl -X POST http://localhost:9200/ecommerce/product/1001 -d '
 **Note:** Providing an ID is optional. If not provided ES will generate an ID
 
 ### 4.2 Replacing documents
+
+Replacing documents is done with the same request as adding a document when specifying the ID.
+
 ```shell
 curl -X POST http://localhost:9200/ecommerce/product/1001 -d '
 {
