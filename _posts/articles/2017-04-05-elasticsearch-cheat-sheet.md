@@ -124,7 +124,8 @@ curl -X PUT http://localhost:9200/ecommerce -d '
 ```
 **Note:** We cannot add mappings to existing Data. 
 
-## 4. Adding documents
+## 4. Documents
+### 4.1 Adding documents
 ```shell
 curl -X POST http://localhost:9200/ecommerce/product/1001 -d '
 {
@@ -141,6 +142,7 @@ curl -X POST http://localhost:9200/ecommerce/product/1001 -d '
 ```
 **Note:** Providing an ID is optional. If not provided ES will generate an ID
 
+### 4.2 Replacing documents
 
 
 
