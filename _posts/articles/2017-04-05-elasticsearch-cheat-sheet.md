@@ -228,6 +228,16 @@ All fields are searched.
 curl -X POST http://localhost:9200/ecommerce/product/_search?q=pasta
 ```
 
+You may specify a field
+```shell
+curl -X POST http://localhost:9200/ecommerce/product/_search?q=**name:**pasta
+```
+
+You may add sole logical operators
+```shell
+curl -X POST http://localhost:9200/ecommerce/product/_search?q=name:(pasta **AND** spaghetti)
+```
+
 ### 6.3. Query DSL
 Search by defining queries within the request body JSON
 Supports more features than the query string approach
