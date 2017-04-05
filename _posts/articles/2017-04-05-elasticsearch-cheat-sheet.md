@@ -84,5 +84,45 @@ curl -X DELETE http://localhost:9200/ecommerce
 ```
 
 ## 4. Adding mappings
+```shell
+curl -X PUT http://localhost:9200/ecommerce -d '
+{
+	"mappings": {
+		"product": {
+			"properties": {
+				"name": {
+					"type": "string"
+				},
+				"price": {
+					"type": "double"
+				},
+				"description": {
+					"type": "string"	
+				},
+				"status": {
+					"type": "string" 
+				},
+				"quantity": {
+					"type": "integer"
+				},
+				"categories": {
+					"type": "nested",
+					"properties": {
+						"name": {
+							"type": "string"
+						}
+					}
+				},
+				"tags": {
+					"type": "string"
+				}
+			}
+		}
+		
+	}
+}'
+```
+**Note:** We cannot add mappings to existing Data. 
+
 
 
