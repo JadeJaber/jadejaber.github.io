@@ -32,7 +32,7 @@ curl -X GET http://localhost:9200/person/employee/123
 
 
 ### 2.2 Type
-- Represents a class/category of simlar documents (product, account, movie
+- Represents a class/category of simlar documents (product, account, movie)
 - Consists of a name and a mapping (explained later)
 - Compared to a table within a RDBMS
 - An index can have one or more types defined, each with their own mapping
