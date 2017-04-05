@@ -26,7 +26,7 @@ curl -X GET http://localhost:9200/person/employee/123
 ## 2. Terminology
 ### 2.1 Index 
 - A collection of documents (product, account, movie). Each of these elements are a _type_ .
-- Corresponds to a database within a RDBMS
+- Similar to a database within a RDBMS
 - Identified by names (lowercase)
 - Can define as many indexes you want (but most peoaple will have a few of them)
 
@@ -34,7 +34,7 @@ curl -X GET http://localhost:9200/person/employee/123
 ### 2.2 Type
 - Represents a class/category of simlar documents (product, account, movie)
 - Consists of a name and a mapping (explained later)
-- Compared to a table within a RDBMS
+- Similar to a table within a RDBMS
 - An index can have one or more types defined, each with their own mapping
 - stored within a metadata field named _type -> Searching for specific documents types applies a filter on this field
 
@@ -48,9 +48,10 @@ curl -X GET http://localhost:9200/person/employee/123
 - Consists of fields, which are key/value pairs. A value can be a string, date, object...
 - Corresponds to an object in OOP
 - Documents are expressed in JSON
+- Similar to a raw in RDBMS
 
 
-
+> An **index** contains **documents** which have **types**. Types are defined by **mappings**.
 
 
 
