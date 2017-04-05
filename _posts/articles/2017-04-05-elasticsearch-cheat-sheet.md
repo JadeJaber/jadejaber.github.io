@@ -38,6 +38,11 @@ curl -X GET http://localhost:9200/person/employee/123
 - An index can have one or more types defined, each with their own mapping
 - stored within a metadata field named _type -> Searching for specific documents types applies a filter on this field
 
+### 2.3 Mapping
+- Similar to a database schema for a table in RDBMS
+- Describes the data type of fields that a document of a given type may have + information on how fields should be indexed and stored
+- Defining a mapping is optional (Dynamic mapping)
+
 
 
 
