@@ -177,6 +177,11 @@ curl -X DELETE http://localhost:9200/ecommerce/product/1001
 ```
 **Note:** Basically, we may only delete documents by ID but there is plugin "DeleteByQuery" that lets you delete by query.
 
+### 4.5 Requesting a document
+```shell
+curl http://localhost:9200/ecommerce/product/1003
+```
+
 ## 5. Batch processing
 > Batch processing with bulk limits the amount of network overhead as it will need a unique network round trip.
 
