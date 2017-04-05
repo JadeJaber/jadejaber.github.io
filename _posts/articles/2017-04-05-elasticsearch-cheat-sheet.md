@@ -126,7 +126,18 @@ curl -X PUT http://localhost:9200/ecommerce -d '
 
 ## 4. Adding documents
 ```shell
-
+curl -X POST http://localhost:9200/ecommerce/product/1001 -d '
+{
+	"name": "Zend framework",
+	"price": 30.00,
+	"description": "Leran Zend framwork infew hours",
+	"status": "active",
+	"quantity": 1,
+	"categories": [
+		{ "name": "Software"}
+	],
+	"tags": ["zendframework", "php", "progeamming", "zd2"]
+}' 
 ```
 **Note:** Providing an ID is optional. If not provided ES will generate an ID
 
