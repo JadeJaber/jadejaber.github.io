@@ -67,7 +67,7 @@ curl -X GET http://localhost:9200/person/employee/123
 
 ## 3. Creating/Deleting an Index
 
-**List all indexes **
+**List all indexes**
 ```shell
 curl -X GET  http://localhost:9200/_cat/indices?v
 ```
