@@ -230,13 +230,17 @@ curl -X POST http://localhost:9200/ecommerce/product/_search?q=pasta
 
 You may specify a field
 ```shell
-curl -X POST http://localhost:9200/ecommerce/product/_search?q=**name:**pasta
+curl -X POST http://localhost:9200/ecommerce/product/_search?q=name:pasta
 ```
 
 You may add sole logical operators
 ```shell
-curl -X POST http://localhost:9200/ecommerce/product/_search?q=name:(pasta **AND** spaghetti)
+curl -X POST http://localhost:9200/ecommerce/product/_search?q=name:(pasta AND spaghetti)
+curl -X POST http://localhost:9200/ecommerce/product/_search?q=(name:(pasta OR spaghetti) AND status:active)
 ```
+Adding a "+" before a statement means that the word must be present
+Adding a "-" before a statement means that the word must NOT be present
+
 
 ### 6.3. Query DSL
 Search by defining queries within the request body JSON
