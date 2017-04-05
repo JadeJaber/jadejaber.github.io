@@ -143,9 +143,25 @@ curl -X POST http://localhost:9200/ecommerce/product/1001 -d '
 **Note:** Providing an ID is optional. If not provided ES will generate an ID
 
 ### 4.2 Replacing documents
-
 Replacing documents is done with the same request as adding a document when specifying the ID.
 
+```shell
+curl -X POST http://localhost:9200/ecommerce/product/1001 -d '
+{
+	"name": "Zend framework 2",
+	"price": **40.00**,
+	"description": "Learn Zend framwork infew hours",
+	"status": "active",
+	"quantity": 1,
+	"categories": [
+		{ "name": "Software"}
+	],
+	"tags": ["zendframework", "php", "progeamming", "zd2"]
+}' 
+```
+
+### 4.2 Updating documents
+Updating a doucment lets you add/remove or modify a single field without providing all the information as when we replaced the document.
 ```shell
 curl -X POST http://localhost:9200/ecommerce/product/1001 -d '
 {
