@@ -180,9 +180,8 @@ curl -X DELETE http://localhost:9200/ecommerce/product/1001
 ## 5. Batch processing
 Batch processing with bulk limits the amount of network overhead as it will need a unique network round trip.
 
-You need to edit a file with the content of your bulk 
-```shell
-vi ./requests
+You need to edit a file with the content of your bulk : vi ./requests
+```json
 {"index":{"_id":"1002"}}
 {"name": "Zendtest framework","price": 40.00,"description": "Leran Zend framwork infew hours","status": "active","quantity": 1,"categories": [{ "name": "Software"}],"tags": ["zendframework", "php", "progeamming", "zd2"]}
 {"index":{"_id":"1003"}}
@@ -192,6 +191,13 @@ And then call the _bulk API with reference to your file
 
 ```shell
 curl -X POST http://localhost:9200/ecommerce/product/_bulk --data-binary "@requests"
+```
+
+You may also DELETE or UPDATE documents using the _bulf API
+```json
+{ "delete":{"_id":"1002" } }
+{ "update":{"_id":"1003" } }
+{ "doc": { "quantity" : 33 } }
 ```
 
 
