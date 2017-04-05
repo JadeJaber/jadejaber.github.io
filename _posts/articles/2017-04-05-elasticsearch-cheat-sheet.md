@@ -193,7 +193,7 @@ And then call the _bulk API with reference to your file
 curl -X POST http://localhost:9200/ecommerce/product/_bulk --data-binary "@requests"
 ```
 
-You may also DELETE or UPDATE documents using the _bulf API
+You may also DELETE or UPDATE documents using the _bulk API
 ```json
 { "delete":{"_id":"1002" } }
 { "update":{"_id":"1003" } }
