@@ -15,7 +15,7 @@ tags:
 
 - Data is stored in a schema-less JSON docmuents -> You do not need to define fieds and types before your insert data
 - Near-real-time since it's a cluster. An update or an insert must be propagated througout the cluster
-- Java - cross paltform
+- Written in Java -> cross platform
 
 
 We communicate with ES via its REST API (curl)
@@ -42,6 +42,10 @@ curl -X GET http://localhost:9200/person/employee/123
 - Similar to a database schema for a table in RDBMS
 - Describes the data type of fields that a document of a given type may have + information on how fields should be indexed and stored
 - Defining a mapping is optional (Dynamic mapping)
+
+### 2.4 Document
+- A basic unit of information that can be indexed
+- Consists of fields, which are key/value pairs
 
 
 
