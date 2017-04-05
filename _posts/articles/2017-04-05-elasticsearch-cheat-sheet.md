@@ -215,6 +215,8 @@ curl -X POST http://localhost:9200/_bulk --data-binary "@requests"
 **Note:** If an action fails, the remaining actions will still be executed. We have an action in the returned json wich lets us identify the errors.
 
 
+## 6. Searching with Elastic
+
 
 
 
