@@ -131,7 +131,7 @@ curl -X POST http://localhost:9200/ecommerce/product/1001 -d '
 {
 	"name": "Zend framework",
 	"price": 30.00,
-	"description": "Leran Zend framwork infew hours",
+	"description": "Learn Zend framwork infew hours",
 	"status": "active",
 	"quantity": 1,
 	"categories": [
@@ -143,6 +143,19 @@ curl -X POST http://localhost:9200/ecommerce/product/1001 -d '
 **Note:** Providing an ID is optional. If not provided ES will generate an ID
 
 ### 4.2 Replacing documents
-
+```shell
+curl -X POST http://localhost:9200/ecommerce/product/1001 -d '
+{
+	"name": "Zend framework 2",
+	"price": 30.00,
+	"description": "Learn Zend framwork infew hours",
+	"status": "active",
+	"quantity": 1,
+	"categories": [
+		{ "name": "Software"}
+	],
+	"tags": ["zendframework", "php", "progeamming", "zd2"]
+}' 
+```
 
 
