@@ -54,6 +54,11 @@ curl -X GET http://localhost:9200/person/employee/123
 > An **index** contains **documents** which have **types**. Types are defined by **mappings**.
 
 
+### 2.5 Shards
+- An index can be devided intpo multiple pieces called shards -< Useful when an index contains more data than the hardwware of a node can store
+- A shard is a fully functional and independant index
+- The number of shards can be specified when creating an index
+
 
 
 
