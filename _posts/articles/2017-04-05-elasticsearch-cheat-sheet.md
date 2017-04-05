@@ -178,7 +178,21 @@ curl -X DELETE http://localhost:9200/ecommerce/product/1001
 **Note:** Basically, we may only delete documents by ID but there is plugin "DeleteByQuery" that lets you delete by query.
 
 ## 5. Batch processing
+Batch processing with bulk limits the amount of network overhead as it will need a unique network round trip.
 
+You need to edit a file with the content of your bulk 
+```shell
+vi ./requests
+{"index":{"_id":"1002"}}
+{"name": "Zendtest framework","price": 40.00,"description": "Leran Zend framwork infew hours","status": "active","quantity": 1,"categories": [{ "name": "Software"}],"tags": ["zendframework", "php", "progeamming", "zd2"]}
+{"index":{"_id":"1003"}}
+{"name": "Zendtest2 framework","price": 40.00,"description": "Leran Zend framwork infew hours","status": "active","quantity": 1,"categories": [{ "name": "Software"}],"tags": ["zendframework", "php", "progeamming", "zd2"]}
+```
+And then call the _bulk API with reference to your file
+
+```shell
+curl -X POST http://localhost:9200/ecommerce/product/_bulk --data-binary "@requests"
+```
 
 
 
