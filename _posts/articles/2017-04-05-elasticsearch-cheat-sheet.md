@@ -223,23 +223,28 @@ curl -X POST http://localhost:9200/_bulk --data-binary "@requests"
 - Queries in **filter context** do not affect the scores of matching documents (_Does the docuiment match ?_)
 
 ### 6.2. Query String
-All fields are searched.
+**All fields are searched.**
 ```shell
 curl -X POST http://localhost:9200/ecommerce/product/_search?q=pasta
 ```
 
-You may specify a field
+**You may specify a field**
 ```shell
 curl -X POST http://localhost:9200/ecommerce/product/_search?q=name:pasta
 ```
 
-You may add sole logical operators
+**You may add some logical operators**
 ```shell
 curl -X POST http://localhost:9200/ecommerce/product/_search?q=name:(pasta AND spaghetti)
 curl -X POST http://localhost:9200/ecommerce/product/_search?q=(name:(pasta OR spaghetti) AND status:active)
 ```
 Adding a "+" before a statement means that the word must be present
 Adding a "-" before a statement means that the word must NOT be present
+```shell
+curl -X POST http://localhost:9200/ecommerce/product/_search?q=name:+pasta -spaghetti
+```
+
+**Phrase search**
 
 
 ### 6.3. Query DSL
