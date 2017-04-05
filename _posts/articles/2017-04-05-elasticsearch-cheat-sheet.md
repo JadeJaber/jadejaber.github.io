@@ -124,5 +124,9 @@ curl -X PUT http://localhost:9200/ecommerce -d '
 ```
 **Note:** We cannot add mappings to existing Data. 
 
+## 4. Adding documents
+**Note:** Providing an ID is optional. If not provided ES will generate an ID
+
+
 
 
