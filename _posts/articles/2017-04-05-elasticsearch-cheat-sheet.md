@@ -160,7 +160,7 @@ curl -X POST http://localhost:9200/ecommerce/product/1001 -d '
 }' 
 ```
 
-### 4.2 Updating documents
+### 4.3 Updating documents
 Updating a doucment lets you add/remove or modify a single field without providing all the information as when we replaced the document.
 ```shell
 curl -X POST http://localhost:9200/ecommerce/product/1001/_update -d '
@@ -170,5 +170,7 @@ curl -X POST http://localhost:9200/ecommerce/product/1001/_update -d '
 	}
 }' 
 ```
+
+
 
 
