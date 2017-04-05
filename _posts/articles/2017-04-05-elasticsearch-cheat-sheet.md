@@ -65,7 +65,7 @@ curl -X GET http://localhost:9200/person/employee/123
 - Provides High Availability in case a shard or node fails
 - Allows scaling search volume, because search queries can be executed on all replicas
 
-## 3. Creating an Index
+## 3. Creating/Deleting an Index
 
 **List all indexes **
 ```shell
@@ -83,5 +83,6 @@ curl -X PUT http://localhost:9200/ecommerce -d '{ }'
 curl -X DELETE http://localhost:9200/ecommerce
 ```
 
+## 4. Adding mappings
 
 
