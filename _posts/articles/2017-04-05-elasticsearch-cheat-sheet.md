@@ -67,7 +67,15 @@ curl -X GET http://localhost:9200/person/employee/123
 
 ## 3. Creating an Index
 
-
+**List all indexes **
+```shell
+ curl -X GET  http://localhost:9200/_cat/indices?v
+ ```
+ 
+**Create in index** 
+```shell
+curl -X PUT http://localhost:9200/ecommerce -d '{ }'
+```
 
 
 
