@@ -233,20 +233,6 @@ curl -X POST http://localhost:9200/ecommerce/product/_search?q=pasta
 curl -X POST http://localhost:9200/ecommerce/product/_search?q=name:pasta
 ```
 
-**You may add some logical operators**
-```shell
-curl -X POST http://localhost:9200/ecommerce/product/_search?q=name:(pasta AND spaghetti)
-curl -X POST http://localhost:9200/ecommerce/product/_search?q=(name:(pasta OR spaghetti) AND status:active)
-```
-Adding a "+" before a statement means that the word must be present
-Adding a "-" before a statement means that the word must NOT be present
-```shell
-curl -X POST http://localhost:9200/ecommerce/product/_search?q=name:+pasta -spaghetti
-```
-
-**Phrase search**
-
-
 ### 6.3. Query DSL
 Search by defining queries within the request body JSON
 Supports more features than the query string approach
@@ -262,6 +248,23 @@ curl -X POST http://localhost:9200/ecommerce/product/_search -d '
 }' 
 ```
 
+**You may add some logical operators**
+```shell
+curl -X POST http://localhost:9200/ecommerce/product/_search?q=name:(pasta AND spaghetti)
+curl -X POST http://localhost:9200/ecommerce/product/_search?q=(name:(pasta OR spaghetti) AND status:active)
+```
+Adding a "+" before a statement means that the word must be present
+Adding a "-" before a statement means that the word must NOT be present
+```shell
+curl -X POST http://localhost:9200/ecommerce/product/_search?q=name:+pasta -spaghetti
+```
+
+By default, an OR operator is applied
+```shell
+curl -X POST "http://localhost:9200/ecommerce/product/_search?q=name:Zend spaghetti"
+```
+
+**Phrase search**
 
 
 
