@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 excerpt: ElasticSearch Cheat Sheet
 categories: articles
@@ -204,8 +204,3 @@ You may also DELETE or UPDATE documents using the _bulk API
 { "update":{"_id":"1003" } }
 { "doc": { "quantity" : 33 } }
 ```
-
-
-
-
-
