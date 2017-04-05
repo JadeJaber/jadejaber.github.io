@@ -78,7 +78,7 @@ curl -X PUT http://localhost:9200/ecommerce -d '{ }'
 ```
 **Note:** If you insert a document without defining an index, ES will automatically create an index.
  
-**Delete in index"
+**Delete in index"**
 ```shell
 curl -X DELETE http://localhost:9200/ecommerce
 ```
