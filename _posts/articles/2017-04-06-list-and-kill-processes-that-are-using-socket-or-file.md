@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 excerpt: List and kill processes that are using specific socket or file
 categories: articles
@@ -49,7 +49,7 @@ lsof -i -p 1234
 lsof -i -a -p 1234
 ```
 
-**List of all files opened by user toto or 500 or by process 1234 or by process 12345
+**List of all files opened by user toto or 500 or by process 1234 or by process 12345**
 ```shell
 lsof -p 1234,12345 -u 500,toto
 ```
