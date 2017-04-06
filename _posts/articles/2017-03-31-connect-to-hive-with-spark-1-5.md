@@ -28,10 +28,11 @@ import org.datanucleus.exceptions.NucleusException;
 
 public class RequeteKindiClass{
         public static void main(String[] args) {
+        		String request = args[0];
                 SparkConf conf = new SparkConf().setAppName("BenchHawk");
                 SparkContext sc = new SparkContext(conf);
                 HiveContext hiveContext = new org.apache.spark.sql.hive.HiveContext(sc);
-                DataFrame df = hiveContext.sql("show databases");
+                DataFrame df = hiveContext.sql(request);
                 df.show();
          }
 }
@@ -59,5 +60,7 @@ spark-submit \
 --deploy-mode cluster \
 --files /etc/spark/conf/hive-site.xml \
 --queue q_datalab \
-BenchmarkHawk.jar
+BenchmarkHawk.jar \
+"show databases"
+
 ```
