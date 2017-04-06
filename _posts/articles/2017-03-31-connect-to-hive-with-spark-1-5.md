@@ -28,7 +28,7 @@ import org.datanucleus.exceptions.NucleusException;
 
 public class RequeteKindiClass{
         public static void main(String[] args) {
-        		String request = args[0];
+                String request = args[0];
                 SparkConf conf = new SparkConf().setAppName("BenchHawk");
                 SparkContext sc = new SparkContext(conf);
                 HiveContext hiveContext = new org.apache.spark.sql.hive.HiveContext(sc);
