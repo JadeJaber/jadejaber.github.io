@@ -14,6 +14,7 @@ tags:
   - fuser
 ---
 
+## 1. FUSER
 **Kill all processes using port 80**
 ```shell
 fuser -k -n tcp 80
@@ -23,7 +24,7 @@ fuser -k -n tcp 80
 ```shell
 fuser -k -n file -m /home
 ```
-
+## 2. LSOF
 **List processes using specific sockets**	
 ```shell
 lsof -i                 #all the TCP/UDP connections
@@ -53,3 +54,20 @@ lsof -i -a -p 1234
 ```shell
 lsof -p 1234,12345 -u 500,toto
 ```
+
+## 3. NETSTAT
+There's a few parameters to netstat that are useful for this :
+-l or --listening : Shows only the sockets currently listening for incoming connection.
+-a or --all : Shows all sockets currently in use.
+-t or --tcp : Shows the tcp sockets.
+-u or --udp : Shows the udp sockets.
+-n or --numeric : Shows the hosts and ports as numbers, instead of resolving in dns and looking in /etc/services.
+-p or --program : Shows the PID and name of the program to which each socket belongs
+You use a mix of these to get what you want. To know which port numbers are currently in use, use one of these:
+```shell
+netstat -atn           # For tcp
+netstat -aun           # For udp
+netstat -atun          # For both
+netstat -nlapute | grep LISTEN | grep 11000
+```
+
