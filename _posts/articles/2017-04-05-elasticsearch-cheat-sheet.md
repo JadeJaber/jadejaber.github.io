@@ -83,7 +83,7 @@ curl -X PUT http://localhost:9200/ecommerce -d '{ }'
 curl -X DELETE http://localhost:9200/ecommerce
 ```
 
-## 4. Adding mappings
+**Adding mappings**
 ```shell
 curl -X PUT http://localhost:9200/ecommerce -d '
 {
@@ -274,8 +274,4 @@ curl -X POST http://localhost:9200/ecommerce/product/_search -d '
 }'
 ```
 
-More query types : [https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html) 
-
-
-
-
+More query types : [https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html)
