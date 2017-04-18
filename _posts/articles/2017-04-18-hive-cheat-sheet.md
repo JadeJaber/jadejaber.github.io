@@ -37,11 +37,12 @@ hive.vectorized.execution.enabled
 hive.auto.convert.join;
 ```
 
-Quand hive.auto.convert.join est activé, Hive fera un MAPJOIN (plus rapide grâce à l’utilisation de la mémoire) dans le cas où la taille des n-1 tables de la jointure est inférieure ou égale à la hive.auto.convert.join.noconditionaltask.size.
-Mais cette dernière doit à son tour être inférieure  à la heap size de HiverServer ou HiveCli (suivant le mode d’accès à Hive). Nous devons donc réduire la valeur de hive.auto.convert.join.noconditionaltask.size pour éviter un OOM.
-D’autant plus la compression ORC n’est pas prise en compte par hive.auto.convert.join.noconditionaltask.size. C’est-à-dire qu’une table de 1Go en ORC en fait 10 x plus une fois décompressée et doit donc pouvoir être contenue dans la HeapSize.
-Ccl : Avec 256Mo, nous pouvons garder en mémoire jusqu’à 10 x plus, soit 2Go (qui correspond à la heap de HiveServer2)
+/!\ When hive.auto.convert.join is activated,Hive will make a MAPJOIN in case the n-1 tables of the join a smaller or equel to the value of hive.auto.convert.join.noconditionaltask.size.
+But this paramter should also ne lower than the heap size of the HiverServer or HiveCli (depending how you acess Hive). WThus, we need to lower the value of hive.auto.convert.join.noconditionaltask.size to avoid OOM errors.
 
+Note that the ORC compression is not included in the hive.auto.convert.join.noconditionaltask.size. Which means a table of 1GB in ORC is actually 10 times bigger once uncompressed and it should be contained into the heap memory.
+
+Conclusion: With 256Mo, we may have in memroy up to 10x more, i.e 2GB (which corresponds to the heap of the Hiveserver)
 
 [https://cwiki.apache.org/confluence/display/Hive/Vectorized+Query+Execution](https://cwiki.apache.org/confluence/display/Hive/Vectorized+Query+Execution)
 
