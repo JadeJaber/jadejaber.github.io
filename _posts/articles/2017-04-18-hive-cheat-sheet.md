@@ -36,6 +36,13 @@ hive.vectorized.execution.enabled
 ```shell
 hive.auto.convert.join;
 ```
+
+Quand hive.auto.convert.join est activé, Hive fera un MAPJOIN (plus rapide grâce à l’utilisation de la mémoire) dans le cas où la taille des n-1 tables de la jointure est inférieure ou égale à la hive.auto.convert.join.noconditionaltask.size.
+Mais cette dernière doit à son tour être inférieure  à la heap size de HiverServer ou HiveCli (suivant le mode d’accès à Hive). Nous devons donc réduire la valeur de hive.auto.convert.join.noconditionaltask.size pour éviter un OOM.
+D’autant plus la compression ORC n’est pas prise en compte par hive.auto.convert.join.noconditionaltask.size. C’est-à-dire qu’une table de 1Go en ORC en fait 10 x plus une fois décompressée et doit donc pouvoir être contenue dans la HeapSize.
+Ccl : Avec 256Mo, nous pouvons garder en mémoire jusqu’à 10 x plus, soit 2Go (qui correspond à la heap de HiveServer2)
+
+
 [https://cwiki.apache.org/confluence/display/Hive/Vectorized+Query+Execution](https://cwiki.apache.org/confluence/display/Hive/Vectorized+Query+Execution)
 
 ## 3. Hive queries
