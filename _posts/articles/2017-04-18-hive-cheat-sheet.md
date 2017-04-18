@@ -39,3 +39,13 @@ hive.auto.convert.join;
 [https://cwiki.apache.org/confluence/display/Hive/Vectorized+Query+Execution](https://cwiki.apache.org/confluence/display/Hive/Vectorized+Query+Execution)
 
 ## Hive queries
+
+**Deduplicate lines**
+```shell
+select  <needed fields>
+            from 
+select *, row_number() over (partition by id order by tech_timestampchargement desc) as rank
+from [database.table]
+where rank = 1  // to keep only rhe first occurence
+```
+
