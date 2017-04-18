@@ -37,7 +37,7 @@ hive.vectorized.execution.enabled
 hive.auto.convert.join;
 ```
 
-/!\ When hive.auto.convert.join is activated,Hive will make a MAPJOIN in case the n-1 tables of the join a smaller or equel to the value of hive.auto.convert.join.noconditionaltask.size.
+/!\ When hive.auto.convert.join is activated, Hive will make a MAPJOIN in case the n-1 tables of the join a smaller or equel to the value of hive.auto.convert.join.noconditionaltask.size.
 But this paramter should also ne lower than the heap size of the HiverServer or HiveCli (depending how you acess Hive). WThus, we need to lower the value of hive.auto.convert.join.noconditionaltask.size to avoid OOM errors.
 
 Note that the ORC compression is not included in the hive.auto.convert.join.noconditionaltask.size. Which means a table of 1GB in ORC is actually 10 times bigger once uncompressed and it should be contained into the heap memory.
