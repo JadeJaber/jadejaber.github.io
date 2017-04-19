@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 excerpt: Fix under-replicated block in HDFS
 categories: articles
