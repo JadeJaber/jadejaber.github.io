@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 excerpt: Hive Cheat Sheet
 categories: articles
@@ -62,4 +62,3 @@ where rank = 1  // to keep only rhe first occurence
 If it's an external table, you just need to execute a "show create table" from the source cluster and execute it on the new cluster. You just need to copy paste the content of the table folder from a ccuster to the other in the path specified in the create statement.
 
 For internal tables, the process is the same but you may need to execute an "msck repar table" in order to update the tables pointers.
-
