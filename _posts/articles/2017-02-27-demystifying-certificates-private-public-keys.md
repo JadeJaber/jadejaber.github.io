@@ -59,6 +59,19 @@ A crypted communication may be done either with a unique key -> symmetric (DES &
 
 **Pros and cons** : The problem with symmetric cryptography is that a secured server who wants to receive encrypted messages (secured web server for instance) will have to generated a different encryption key for each server that need to communicate with it. If all other servers had the same encryption key, then they would all be able to decrypt each othes messages that they each send to the secured server. **-> This is why we need asymmetric cryptography**.
 
+### Hashing vs Cryptography
+
+#### Hashing with SHA1
+SHA1 is a hash algorithm, which is a one way function, turning an input of any size into a fixed-length output (128 bit in this case). A cryptographic hash function is one for which it should not be possible to find two inputs giving the same output except by brute force (for instance, with a 128-bit function you should need to try on average 2^64 message to find such a "collision" due to something called the birthday paradox - Google it for more).
+In fact for SHA1 this is no longer the case - the algorithm is (in cryptographic terms at least) broken now, with a collision attack described by Xiaoyun Wang et al that beats a classic birthday attack. The SHA2 family is not broken, and a process is underway by NIST to agree on a SHA3 algorithm or family of algorithms.
+
+#### Crypting with RSA
+RSA is an asymmetric encryption algorithm, encrypting an input into an output that can then be decrypted (contrast a hash algorithm which can't be reversed). It uses a different key for encryption (the public one) than for decryption (the private one). This can therefore be used to receive encrypted messages from others - you can publish your public key, but only you with the private key can then decrypt the messages that have been encrypted with it.
+
+If you reverse the keys for RSA, it can be used to generate a digital signature - by encrypting something with your private key, anyone can decrypt it with the public key and, if they are sure the public key belongs to you, then they have confidence that you were the one who encrypted the original. This is normally done in conjunction with a hash function - you hash your input, then encrypt that with your private key, giving a digital signature of a fixed length for your input message.
+
+
+
 ## Why and how  (########### reprendre ici)
 ### Encrypted communication (SSL)
 
