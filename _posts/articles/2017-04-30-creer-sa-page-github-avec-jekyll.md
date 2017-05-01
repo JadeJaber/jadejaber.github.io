@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 excerpt: description
 categories: articles
@@ -13,7 +13,7 @@ Pour installer Jekyll sur sont poste
 - Il est nstallé ici : usr/local/bin/ruby
 
 
-Il a été installé comme suit : 
+Il a été installé comme suit (ubuntu) : 
 ```shell
 sudo apt-get -y update
 sudo apt-get -y install build-essential zlib1g-dev libssl-dev libreadline6-dev libyaml-dev
