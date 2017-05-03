@@ -47,7 +47,9 @@ import org.apache.hadoop.security.UserGroupInformation;
 ```
 
 You need first to find the corresponding groupId (org.apache.hive) and the artifacatId (hive-jdbc)
-It may be tricky to find the proper artifactId
+
+**It may be tricky to find the proper artifactId. As you may see the artifactId hadoop-common is the one that contains the org.apache.hadoop.security package.**
+
 You need to add this dependency into your pom.xml with its version
 ```xml
 <dependencies>
