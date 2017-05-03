@@ -38,3 +38,45 @@ Create a settings file settings.xml on the specified folder and configure your p
 
 You may then launch your cntlm service using the service manager (Windows)
 
+## Maven / POM
+
+Maven lets you download all the needed dependencies.
+If you need the following classe for instance
+```java
+org.apache.hive.jdbc.HiveDriver
+```
+
+You need first to find the corresponding groupId (org.apache.hive) and the artifacatId (hive-jdbc)
+You need to add this dependency into your pom.xml
+```xml
+<dependencies>
+    <dependency>
+        <groupId>org.apache.hive</groupId>
+        <artifactId>hive-jdbc</artifactId>
+        <version>1.2.1.2.3.4.12-2</version>
+    </dependency>
+</dependencies>
+```    
+
+Your artifacts may be on different repos. Maven lets you define several repos : 
+```xml
+<repositories>
+    <repository>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+        <id>central</id>
+        <name>Central Repository</name>
+        <url>http://repo.maven.apache.org/maven2</url>
+    </repository>
+    <repository>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+        <id>centralhortonn</id>
+        <name>Central Repository</name>
+        <url>http://repo.hortonworks.com/content/repositories/releases/</url>
+    </repository>
+</repositories>
+```
+
