@@ -8,11 +8,11 @@ tags:
   - java
   - intellij
 ---
-## 1. Maven
+## 1 Maven 
 
-## Proxy setup
+### 1.1 Maven Proxy setup
 
-If your company uses a proxy to access internet, you need to download [CNTLM](http://cntlm.sourceforge.net/) 
+If your company uses a proxy to access internet, you need to download and install [CNTLM](http://cntlm.sourceforge.net/) 
 
 Edit your cntlm.ini file
 ```ini
@@ -38,7 +38,7 @@ Create a settings file settings.xml on the specified folder and configure your p
 
 You may then launch your cntlm service using the service manager (Windows)
 
-## Maven / POM
+### 1.2 Maven / POM
 
 Maven lets you download all the needed dependencies.
 If you need the following classe for instance
@@ -84,4 +84,10 @@ Your artifacts may be on different repos. Maven lets you define several repos :
     </repository>
 </repositories>
 ```
+
+## 2 Github
+To push your project on gihub
+Initialize your account on Intellij : File > Settings > Github > 
+go to : VCS > Impor Into Version Control > Share project on github
+
 
