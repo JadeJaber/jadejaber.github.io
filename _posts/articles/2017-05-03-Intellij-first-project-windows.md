@@ -24,6 +24,7 @@ Listen      [port number of cntlm]
 ```
 
 On Intellij, go to File > Default Settings > Other Settings > Maven > User Settings File
+
 Create a settings file settings.xml on the specified folder and configure your proxy
 
 ```xml
