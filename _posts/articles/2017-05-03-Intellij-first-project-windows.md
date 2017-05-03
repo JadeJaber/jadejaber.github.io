@@ -43,17 +43,18 @@ You may then launch your cntlm service using the service manager (Windows)
 Maven lets you download all the needed dependencies.
 If you need the following classe for instance
 ```java
-org.apache.hive.jdbc.HiveDriver
+import org.apache.hadoop.security.UserGroupInformation;
 ```
 
 You need first to find the corresponding groupId (org.apache.hive) and the artifacatId (hive-jdbc)
-You need to add this dependency into your pom.xml
+It may be tricky to find the proper artifactId
+You need to add this dependency into your pom.xml with its version
 ```xml
 <dependencies>
     <dependency>
-        <groupId>org.apache.hive</groupId>
-        <artifactId>hive-jdbc</artifactId>
-        <version>1.2.1.2.3.4.12-2</version>
+        <groupId>org.apache.hadoop</groupId>
+        <artifactId>hadoop-common</artifactId>
+        <version>2.7.1</version>
     </dependency>
 </dependencies>
 ```    
