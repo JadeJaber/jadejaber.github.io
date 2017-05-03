@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 excerpt: description
 categories: articles
@@ -10,9 +10,8 @@ tags:
 ---
 ## 1. Maven
 
-1. Create a maven poject
+### Proxy setup
 
-2. Proxy setup
 If your company uses a proxy to access internet, you need to download [CNTLM](http://cntlm.sourceforge.net/) 
 
 Edit your cntlm.ini file
@@ -25,9 +24,9 @@ Listen      [port number of cntlm]
 ```
 
 Go to File > Default Settings > Other Settings > Maven > User Settings File
-Create a settings file on the specified folder and configure your proxy
+Create a settings file settings.xml on the specified folder and configure your proxy
 
-```shell
+```xml
 <proxy>
    <id>optional</id>
    <active>true</active>
