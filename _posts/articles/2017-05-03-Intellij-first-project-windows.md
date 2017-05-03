@@ -50,6 +50,8 @@ You need first to find the corresponding groupId (org.apache.hive) and the artif
 
 **It may be tricky to find the proper artifactId. As you may see the artifactId hadoop-common is the one that contains the org.apache.hadoop.security package.**
 
+You may use the following tool : [http://search.maven.org/#advancedsearch|gav](http://search.maven.org/#advancedsearch|gav)
+
 You need to add this dependency into your pom.xml with its version
 ```xml
 <dependencies>
