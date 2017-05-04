@@ -51,7 +51,7 @@ You need first to find the corresponding groupId (org.apache.hive) and the artif
 
 **It may be tricky to find the proper artifactId. As you may see the artifactId hadoop-common is the one that contains the org.apache.hadoop.security package.**
 
-You may use the following tool : [http://search.maven.org/#advancedsearch|gav](http://search.maven.org/#advancedsearch|gav)
+You may use the following tool : [http://search.maven.org/#advancedsearch](http://search.maven.org/#advancedsearch)
 
 You need to add this dependency into your pom.xml with its version
 ```xml
@@ -90,5 +90,3 @@ Your artifacts may be on different repos. Maven lets you define several repos :
 To push your project on gihub
 Initialize your account on Intellij : File > Settings > Github > 
 go to : VCS > Impor Into Version Control > Share project on github
-
-
