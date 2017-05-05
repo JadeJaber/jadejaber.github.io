@@ -26,7 +26,7 @@ su mqm -c "/opt/mqm/maintenance/8.0.0.3/MQSeriesServer/backup/opt/mqm/bin/amqmfs
 3.  amqmfsck -w   Test waiting for and releasing file locks.
 ```shell
 su mqm -c "/opt/mqm/maintenance/8.0.0.3/MQSeriesServer/backup/opt/mqm/bin/amqmfsck -wv /var/opt/data/flat/mqm/qmgrs"
-``
+```
 **!!! Bizarement le fichier lock n'a pas été supprimé et j'ai pu mocké à partir des 2 noeuds, est ce normal ?**
 
 ## 2. crtmqm
