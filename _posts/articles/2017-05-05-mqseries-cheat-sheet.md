@@ -32,13 +32,17 @@ amqmfsck -wv /var/opt/data/flat/mqm/qmgrs
 ## 2. crtmqm : Create Queue Manager
 Use the crtmqm command to create a queue manager and define the default and system objects
 
+```shell
 -q Makes this queue manager the default queue manager. 
 -ld The directory used to store log files. 
--md The directory used to hold the data files for a queue manager. 
-```shell
-crtmqm -ld /var/opt/data/flat/mqm/qmgrs/logs -md /var/opt/data/flat/mqm/qmgrs/data -q QM_TESTJADE
+-md The directory used to hold the data files for a queue manager
+-d The name of the local transmission queue where remote messages are put if a transmission queue is not explicitly defined for their destination. There is no default.
+
+./crtmqm -ld /var/opt/data/flat/mqm/qmgrs/logs -md /var/opt/data/flat/mqm/qmgrs/data  -d DEFAULT.XMIT.QUEUE -ll -q QM_TESTJADE
 ```
 
-## 3. List Quueu Managers
+## 3. List Queue Managers
 ./dspmq
+
+
 
