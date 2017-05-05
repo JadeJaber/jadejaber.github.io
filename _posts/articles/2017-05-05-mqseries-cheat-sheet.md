@@ -61,7 +61,7 @@ You must not start a second instance of a queue manager on the same server.
 
 Use the runmqsc command to issue MQSC commands to a queue manager. MQSC commands enable you to perform administration tasks. For example, you can define, alter, or delete a local queue objec
 
-### Il faut reprendre à partir de la création des QLOCAL et comprendre la création du channel, du listener et des QLOCAL sui sont configurées en tant que "transmission queue" (USAGE(XMITQ)) (https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_9.0.0/com.ibm.mq.ref.adm.doc/q083460_.htm) 
+### Il faut reprendre à partir de la création des QLOCAL (à partir du mail d'Anis) et comprendre la création du channel, du listener et des QLOCAL sui sont configurées en tant que "transmission queue" (USAGE(XMITQ)) (https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_9.0.0/com.ibm.mq.ref.adm.doc/q083460_.htm) 
 ./runmqsc QM_PILCOM
 DEFINE CHANNEL(CHNL_PILCOM) CHLTYPE(SVRCONN) TRPTYPE(TCP) MCAUSER('mqm')
 DEFINE LISTENER(LSNR_PILCOM) TRPTYPE(TCP) PORT(1414)
