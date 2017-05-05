@@ -41,8 +41,22 @@ Use the crtmqm command to create a queue manager and define the default and syst
 ./crtmqm -ld /var/opt/data/flat/mqm/qmgrs/logs -md /var/opt/data/flat/mqm/qmgrs/data  -d DEFAULT.XMIT.QUEUE -ll -q QM_TESTJADE
 ```
 
-## 3. List Queue Managers
+## 3. dspmq : List Queue Managers
+```shell
 ./dspmq
+```
+
+## 4. strmqm : Start Queue Manager
+```shell
+-x Start an instance of a multi-instance queue manager on the local server, permitting it to be highly available. If an instance of the queue manager is not already running elsewhere, the queue manager starts and the instance becomes active. The active instance is ready to accept local and remote connections to the queue manager on the local server.
+
+If a multi-instance queue manager instance is already active on a different server the new instance becomes a standby, permitting it to takeover from the active queue manager instance. While it is in standby, it cannot accept local or remote connections.
+
+You must not start a second instance of a queue manager on the same server. 
+
+./strmqm -x QM_TESTJADE
+```
+
 
 
 
