@@ -57,6 +57,13 @@ You must not start a second instance of a queue manager on the same server.
 ./strmqm -x QM_TESTJADE
 ```
 
+## 5. runmqsc : Create Local Queues
+
+Use the runmqsc command to issue MQSC commands to a queue manager. MQSC commands enable you to perform administration tasks. For example, you can define, alter, or delete a local queue objec
+
+
+
+
 
 
 
