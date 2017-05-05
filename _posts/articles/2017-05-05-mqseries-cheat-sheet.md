@@ -31,3 +31,7 @@ su mqm -c "/opt/mqm/maintenance/8.0.0.3/MQSeriesServer/backup/opt/mqm/bin/amqmfs
 
 ## 2. crtmqm
 Use the crtmqm command to create a queue manager and define the default and system objects
+
+-q Makes this queue manager the default queue manager. 
+-ld The directory used to store log files. 
+-md The directory used to hold the data files for a queue manager. 
