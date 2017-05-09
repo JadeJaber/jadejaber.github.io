@@ -10,6 +10,8 @@ tags:
   - ibm
   - message broker
 ---
+[http://bencane.com/2013/04/22/websphere-mq-cheat-sheet-for-system-administrators/](http://bencane.com/2013/04/22/websphere-mq-cheat-sheet-for-system-administrators/)
+
 ## Definitions 
 
 ### Queue VS Topic
