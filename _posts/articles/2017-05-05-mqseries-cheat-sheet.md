@@ -10,7 +10,7 @@ tags:
   - ibm
   - message broker
 ---
-[http://bencane.com/2013/04/22/websphere-mq-cheat-sheet-for-system-administrators/](http://bencane.com/2013/04/22/websphere-mq-cheat-sheet-for-system-administrators/)
+[http://bencane.com/2013/04/22/websphere-mq-cheat-sheet-for-system-administrators/](http://bencane.com/2013/04/22/websphere-mq-cheat-sheet-for-system-administrators/)q
 
 ## Definitions 
 
@@ -106,7 +106,7 @@ You must not start a second instance of a queue manager on the same server.
 Use the runmqsc command to issue MQSC commands to a queue manager. MQSC commands enable you to perform administration tasks. For example, you can define, alter, or delete a local queue object.
 ```shell
 #Start the prompt
-./runmqsc QM_PILCOM 
+./runmqsc [QMANAGER] 
 # 
 DEFINE CHANNEL(CHNL_PILCOM) CHLTYPE(SVRCONN) TRPTYPE(TCP) MCAUSER('mqm')
 ```
