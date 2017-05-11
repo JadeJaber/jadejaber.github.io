@@ -101,7 +101,7 @@ DISPLAY QUEUE(*)
 ```
 
 
-### 4. strmqm : Start Queue Manager
+### 2.4 strmqm : Start Queue Manager
 ```shell
 -x Start an instance of a multi-instance queue manager on the local server, permitting it to be highly available. If an instance of the queue manager is not already running elsewhere, the queue manager starts and the instance becomes active. The active instance is ready to accept local and remote connections to the queue manager on the local server.
 
@@ -112,7 +112,7 @@ You must not start a second instance of a queue manager on the same server.
 ./strmqm -x QM_TESTJADE
 ```
 
-### 5. runmqsc : Create Local Queues
+### 2.5 runmqsc : Create Local Queues
 
 Use the runmqsc command to issue MQSC commands to a queue manager. MQSC commands enable you to perform administration tasks. For example, you can define, alter, or delete a local queue object.
 ```shell
