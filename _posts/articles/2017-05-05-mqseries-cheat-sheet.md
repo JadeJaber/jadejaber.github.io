@@ -12,9 +12,9 @@ tags:
 ---
 [http://bencane.com/2013/04/22/websphere-mq-cheat-sheet-for-system-administrators/](http://bencane.com/2013/04/22/websphere-mq-cheat-sheet-for-system-administrators/)
 
-## Definitions 
+## 1 Definitions 
 
-### Queue VS Topic
+### 1.1 Queue VS Topic
 
 **Queue**:
 
@@ -36,25 +36,25 @@ tags:
  - The subscriber / JMS client needs to the active when the messages are produced by the producer, unless the subscription was a durable subscription.
  - No, Every message successfully processed is not acknowledged by the consumer/subscriber.
 
-### Types of queue
+### 1.2 Types of queue
 src : [https://www.ibm.com/support/knowledgecenter/SSFKSJ_7.0.1/com.ibm.mq.csqzal.doc/fg10950_.htm](https://www.ibm.com/support/knowledgecenter/SSFKSJ_7.0.1/com.ibm.mq.csqzal.doc/fg10950_.htm)
 
-#### Local and remote queues
+#### 1.2.1 Local and remote queues
 A queue is known to a program as local if it is owned by the queue manager to which the program is connected; the queue is known as remote if it is owned by a different queue manager. The important difference between these two types of queue is that you can get messages only from local queues. (You can put messages on both types of queue.)
 
 The queue definition object, created when you define a local queue, holds the definition information of the queue as well as the physical messages put on the queue. The queue definition object, created when you define a remote queue, only holds the information necessary for the local queue manager to locate the queue to which you want your message to go. This object is known as the local definition of a remote queue. All the attributes of the remote queue are held by the queue manager that owns it, because it is a local queue to that queue manager.
 
-#### Alias queues
+#### 1.2.2 Alias queues
 To your program, an alias queue appears to be a queue, but it is really a WebSphere MQ object that you can use to access another queue or a topic. This means that more than one program can work with the same queue, accessing it using different names.
 
-#### Cluster queues
+#### 1.2.3 Cluster queues
 A cluster queue is a queue that is hosted by a cluster queue manager and made available to other queue managers in the cluster.
 
 The cluster queue manager makes a local queue definition for the queue specifying the name of the cluster that the queue is to be available in. This definition has the effect of advertising the queue to the other queue managers in the cluster. The other queue managers in the cluster can put messages to a cluster queue without needing a corresponding remote-queue definition. A cluster queue can be advertised in more than one cluster.
 
-## Commands
+## 2 Commands
 
-### 1. amqmfsck : File system Check
+### 2.1 amqmfsck : File system Check
 **amqmfsck** checks whether a shared file system on UNIX and IBM systems meets the requirements for storing the queue manager data of a multi-instance queue manager. 
 
 1. If no option is specified, the program tests the basic behavior of the filesystem for use by WebSphere MQ for queue manager data and logs
@@ -71,9 +71,8 @@ amqmfsck -c /var/opt/data/flat/mqm/qmgrs
 ```shell
 amqmfsck -wv /var/opt/data/flat/mqm/qmgrs
 ```
-**!!! Bizarement le fichier lock n'a pas été supprimé et j'ai pu mocké à partir des 2 noeuds, est ce normal ?**
 
-### 2. crtmqm : Create Queue Manager
+### 2.2 crtmqm : Create Queue Manager
 Use the crtmqm command to create a queue manager and define the default and system objects
 
 ```shell
@@ -85,10 +84,22 @@ Use the crtmqm command to create a queue manager and define the default and syst
 ./crtmqm -ld /var/opt/data/flat/mqm/qmgrs/logs -md /var/opt/data/flat/mqm/qmgrs/data  -d DEFAULT.XMIT.QUEUE -ll -q QM_TESTJADE
 ```
 
-### 3. dspmq : List Queue Managers
+### 2.3 List elements
+
+#### 2.3.1 dspmq : List Queue Managers
 ```shell
 ./dspmq
 ```
+
+#### 2.3.2 runmqsc : List all elements related to a Queue Manager
+```shell
+./runmqsc [QMANAGER]
+DISPLAY CHANNEL(*)
+DISPLAY LISTENER(*)
+DISPLAY QUEUE(*)
+...
+```
+
 
 ### 4. strmqm : Start Queue Manager
 ```shell
