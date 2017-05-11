@@ -111,16 +111,3 @@ Use the runmqsc command to issue MQSC commands to a queue manager. MQSC commands
 DEFINE CHANNEL(CHNL_PILCOM) CHLTYPE(SVRCONN) TRPTYPE(TCP) MCAUSER('mqm')
 ```
 
-
-### Il faut reprendre à partir de la création des QLOCAL (à partir du mail d'Anis) et comprendre la création du channel, du listener et des QLOCAL sui sont configurées en tant que "transmission queue" (USAGE(XMITQ)) (https://www.ibm.com/support/knowledgecenter/en/SSFKSJ_9.0.0/com.ibm.mq.ref.adm.doc/q083460_.htm) 
-./runmqsc QM_PILCOM
-DEFINE CHANNEL(CHNL_PILCOM) CHLTYPE(SVRCONN) TRPTYPE(TCP) MCAUSER('mqm')
-DEFINE LISTENER(LSNR_PILCOM) TRPTYPE(TCP) PORT(1414)
-DEFINE QLOCAL('PilcomErdvQueue') DEFPSIST(YES) STATQ(ON) USAGE(XMITQ) DESCR('Queue Pour WS ERDV')
-DEFINE QLOCAL('PilcomSoftQueue') DEFPSIST(YES) STATQ(ON) USAGE(XMITQ) DESCR('Queue Pour WS SOFT')
-DEFINE QLOCAL('PilcomAGCQueue') DEFPSIST(YES) STATQ(ON) USAGE(XMITQ) DESCR('Queue Pour WS AGC')
-DEFINE QLOCAL('PilcomPOCDQueue') DEFPSIST(YES) STATQ(ON) USAGE(XMITQ) DESCR('Queue Pour WS POCD')
-DEFINE QLOCAL('PilcomGRVQueue') DEFPSIST(YES) STATQ(ON) USAGE(XMITQ) DESCR('Queue Pour WS GRV')
-START LISTENER(LSNR_PILCOM)
-START CHANNEL(CHNL_PILCOM)
-end
