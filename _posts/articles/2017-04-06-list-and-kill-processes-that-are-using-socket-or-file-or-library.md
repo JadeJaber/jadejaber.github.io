@@ -84,4 +84,10 @@ ldd /bin/ls
 lsof -p PID
 #can also look at /proc/$PID/maps
 pldd pid
+
+##example
+# Write all dependencies into a file
+lsof -p 20346 >> temp.txt &&  lsof -p 20328 >> temp.txt && lsof -p  20330 >> temp.txt
+# grep the specific library you're looking for and deduplicate them
+cat ./temp.txt | grep mqm | awk -F " " '{  print $9 }' |  sort -u 
 ```
