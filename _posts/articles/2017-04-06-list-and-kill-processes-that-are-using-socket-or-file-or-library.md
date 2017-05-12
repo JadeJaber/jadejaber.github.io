@@ -75,8 +75,13 @@ netstat -nlapute | grep LISTEN | grep 11000
 ```
 
 ## 4. pldd & ldd : List dependencies/libraries used by a process
+
 ```shell
+#using the executable
 ldd /bin/ls
 
+#using the PID
+lsof -p PID
+#can also look at /proc/$PID/maps
 pldd pid
 ```
