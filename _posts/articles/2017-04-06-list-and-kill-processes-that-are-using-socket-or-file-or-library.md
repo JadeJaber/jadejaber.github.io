@@ -74,7 +74,7 @@ netstat -atun          # For both
 netstat -nlapute | grep LISTEN | grep 11000
 ```
 
-## 4. pldd adn ldd : List dependencies used by a process
+## 4. pldd & ldd : List dependencies used by a process
 ```shell
 ldd /bin/ls
 
