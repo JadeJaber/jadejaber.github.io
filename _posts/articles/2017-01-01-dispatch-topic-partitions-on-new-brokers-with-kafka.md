@@ -18,8 +18,9 @@ tags:
 ## Topic Creation
 ```shell
 /usr/hdp/current/kafka-broker/bin/kafka-topics.sh --create --zookeeper [Zookeeper URL]:2181 --replication-factor 1 --partitions 1 --topic [topic name]
-
 ```
+Note : Replica factor has to be lower or equal to the total number of brokers.
+
 ## List topic
 ```shell
 /usr/hdp/current/kafka-broker/bin/kafka-topics.sh --list --zookeeper [Zookeeper URL]:2181
