@@ -26,3 +26,7 @@ tags:
 ```
 
 ## Get partitions
+```shell
+/usr/hdp/current/kafka-broker/bin/kafka-topics.sh --describe --zookeeper [Zookeeper URL]:2181 --topic repartition
+```
+
