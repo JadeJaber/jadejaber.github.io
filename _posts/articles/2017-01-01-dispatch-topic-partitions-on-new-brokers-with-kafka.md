@@ -52,4 +52,8 @@ Note : Replica factor has to be lower or equal to the total number of brokers.
 ```
 Note : This comamnd will generate a json configuration file that should be given as a parameter to the next command which will aplly the redistribution.
 
-##
+## Apply the redistribution
+```json
+{"version":1,"partitions":[{"topic":"repartition","partition":0,"replicas":[1005]},{"topic":"repartition","partition":1,"replicas":[1006]}]}
+```
+
