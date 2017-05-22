@@ -37,6 +37,6 @@ tags:
 
 ## Get broker detail
 ```shell
-/usr/hdp_mount/hdp/2.3.4.7-4/zookeeper/bin/zkCli.sh -server [Zookeeper URL]:2181 get /brokers/ids/1006
+/usr/hdp_mount/hdp/2.3.4.7-4/zookeeper/bin/zkCli.sh -server [Zookeeper URL]:2181 get /brokers/ids/[broker id]
 ```
 
