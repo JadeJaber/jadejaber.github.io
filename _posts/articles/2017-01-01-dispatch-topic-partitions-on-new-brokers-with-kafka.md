@@ -57,3 +57,12 @@ Note : This comamnd will generate a json configuration file that should be given
 {"version":1,"partitions":[{"topic":"repartition","partition":0,"replicas":[1005]},{"topic":"repartition","partition":1,"replicas":[1006]}]}
 ```
 
+```shell
+ ./bin/kafka-reassign-partitions.sh --zookeeper [Zookeeper URL]:2181 --reassignment-json-file expand-cluster-reassignment.json --execute
+```
+
+## Verify the redistribution
+```shell
+ ./bin/kafka-reassign-partitions.sh --zookeeper [Zookeeper URL]:2181 --reassignment-json-file expand-cluster-reassignment.json --verify
+```
+
