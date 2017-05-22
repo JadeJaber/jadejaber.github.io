@@ -17,18 +17,18 @@ tags:
 
 ## Topic Creation
 ```shell
-/usr/hdp/current/kafka-broker/bin/kafka-topics.sh --create --zookeeper [Zookeeper URL]:2181 --replication-factor 1 --partitions 1 --topic [topic name]
+./bin/kafka-topics.sh --create --zookeeper [Zookeeper URL]:2181 --replication-factor 1 --partitions 1 --topic [topic name]
 ```
 Note : Replica factor has to be lower or equal to the total number of brokers.
 
 ## List topic
 ```shell
-/usr/hdp/current/kafka-broker/bin/kafka-topics.sh --list --zookeeper [Zookeeper URL]:2181
+./bin/kafka-topics.sh --list --zookeeper [Zookeeper URL]:2181
 ```
 
 ## Get partitions
 ```shell
-/usr/hdp/current/kafka-broker/bin/kafka-topics.sh --describe --zookeeper [Zookeeper URL]:2181 --topic [topi name]
+./bin/kafka-topics.sh --describe --zookeeper [Zookeeper URL]:2181 --topic [topi name]
 ```
 
 ## Get borker IDs
@@ -41,3 +41,15 @@ Note : Replica factor has to be lower or equal to the total number of brokers.
 /usr/hdp_mount/hdp/2.3.4.7-4/zookeeper/bin/zkCli.sh -server [Zookeeper URL]:2181 get /brokers/ids/[broker id]
 ```
 
+## Generate json file to re-distribute topic partitions
+
+```json
+{"topics": [{"topic": "[topic name"}],"version":1}
+```
+
+```shell
+./bin/kafka-reassign-partitions.sh --zookeeper [Zookeeper URL]:2181 --topics-to-move-json-file ./topics-to-move.json --broker-list "1005,1006"  --generate
+```
+Note : This comamnd will generate a json configuration file that should be given as a parameter to the next command which will aplly the redistribution.
+
+##
