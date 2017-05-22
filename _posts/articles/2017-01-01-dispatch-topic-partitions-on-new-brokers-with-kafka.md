@@ -27,6 +27,16 @@ tags:
 
 ## Get partitions
 ```shell
-/usr/hdp/current/kafka-broker/bin/kafka-topics.sh --describe --zookeeper [Zookeeper URL]:2181 --topic repartition
+/usr/hdp/current/kafka-broker/bin/kafka-topics.sh --describe --zookeeper [Zookeeper URL]:2181 --topic [topi name]
+```
+
+## Get borker IDs
+```shell
+/usr/hdp_mount/hdp/2.3.4.7-4/zookeeper/bin/zkCli.sh -server [Zookeeper URL]:2181 ls /brokers/ids
+```
+
+## Get broker detail
+```shell
+/usr/hdp_mount/hdp/2.3.4.7-4/zookeeper/bin/zkCli.sh -server [Zookeeper URL]:2181 get /brokers/ids/1006
 ```
 
