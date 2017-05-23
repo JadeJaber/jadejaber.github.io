@@ -44,7 +44,7 @@ Note : Replica factor has to be lower or equal to the total number of brokers.
 ## Generate json file to re-distribute topic partitions
 
 ```json
-{"topics": [{"topic": "[topic name"}],"version":1}
+{"topics": [{"topic": "topic name"}],"version":1}
 ```
 
 ```shell
@@ -65,4 +65,3 @@ Note : This comamnd will generate a json configuration file that should be given
 ```shell
  ./bin/kafka-reassign-partitions.sh --zookeeper [Zookeeper URL]:2181 --reassignment-json-file expand-cluster-reassignment.json --verify
 ```
-
