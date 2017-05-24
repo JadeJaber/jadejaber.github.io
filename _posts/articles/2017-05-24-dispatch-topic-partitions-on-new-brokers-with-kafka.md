@@ -11,9 +11,9 @@ tags:
   - partitions
 ---
 ## Environement
-- 3 brokers
-- Initial topic with 2 partitions
-- Expand topic with additionnal partition on 3rd broker
+- 2 brokers
+- Initial topic with 1 partitions
+- Expand topic with additionnal partition on 2nd broker
 
 ## Topic Creation
 ```shell
