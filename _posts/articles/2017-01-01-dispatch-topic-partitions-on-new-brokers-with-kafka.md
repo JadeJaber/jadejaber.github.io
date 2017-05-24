@@ -28,7 +28,7 @@ Note : Replica factor has to be lower or equal to the total number of brokers.
 
 ## Get partitions
 ```shell
-./bin/kafka-topics.sh --describe --zookeeper [Zookeeper URL]:2181 --topic [topi name]
+./bin/kafka-topics.sh --describe --zookeeper [Zookeeper URL]:2181 --topic [topic name]
 ```
 
 ## Get borker IDs
@@ -39,6 +39,10 @@ Note : Replica factor has to be lower or equal to the total number of brokers.
 ## Get broker detail
 ```shell
 /usr/hdp_mount/hdp/2.3.4.7-4/zookeeper/bin/zkCli.sh -server [Zookeeper URL]:2181 get /brokers/ids/[broker id]
+```
+## Add partitions to you topic
+```shell
+ /usr/hdp/current/kafka-broker/bin/kafka-topics.sh  --alter --topic [topic name] --partitions 2  --zookeeper Zookeeper URL]:2181 
 ```
 
 ## Generate json file to re-distribute topic partitions
