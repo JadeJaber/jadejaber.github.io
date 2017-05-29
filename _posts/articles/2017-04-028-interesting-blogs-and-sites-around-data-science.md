@@ -25,6 +25,7 @@ tags:
 
 [Try Deep Learning in Python now with a fully pre-configured VM](https://medium.com/@ageitgey/try-deep-learning-in-python-now-with-a-fully-pre-configured-vm-1d97d4c3e9b)
 
+
 ### Other stuff
 
 [Getting Started with Kaggle: House Prices Competition](https://www.dataquest.io/blog/kaggle-getting-started/)
@@ -40,4 +41,7 @@ tags:
 ## 3 Assets
 
 [http://bigdata-madesimple.com/top-10-machine-learning-frameworks/](http://bigdata-madesimple.com/top-10-machine-learning-frameworks/)
+
+[Tensor playground](http://playground.tensorflow.org/)
+[Article about Tensor Playground](http://www.datasciencecentral.com/profiles/blogs/open-source-deep-learning-frameworks-and-visual-analytics)
 
