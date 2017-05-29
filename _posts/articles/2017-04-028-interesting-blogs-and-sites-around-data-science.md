@@ -23,6 +23,18 @@ tags:
 
 ## Tutorials & Trainings
 
+### Python in 3 big steps
+
+[Learn Python The Hard Way](https://learnpythonthehardway.org/book/)
+
+[Becoming a Data Analyst](https://www.dataquest.io/path/data-analyst)
+
+[Inferential Statistics](https://www.udacity.com/course/intro-to-inferential-statistics--ud201)
+
+### Other stuff
+
+[Getting Started with Kaggle: House Prices Competition](https://www.dataquest.io/blog/kaggle-getting-started/)
+
 [How to Simulate a Self-Driving Car](https://www.youtube.com/watch?v=EaY5QiZwSP4)
 
 [Try Deep Learning in Python now with a fully pre-configured VM](https://medium.com/@ageitgey/try-deep-learning-in-python-now-with-a-fully-pre-configured-vm-1d97d4c3e9b)
