@@ -15,6 +15,8 @@ tags:
 
 ### Python 
 
+[A Beginner’s Guide to Neural Networks in Python and SciKit Learn](https://www.springboard.com/blog/beginners-guide-neural-network-in-python-scikit-learn-0-18/)
+
 [Learn Python The Hard Way](https://learnpythonthehardway.org/book/)
 
 [Becoming a Data Analyst](https://www.dataquest.io/path/data-analyst)
