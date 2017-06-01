@@ -72,3 +72,4 @@ links: [http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/Hd
 ALTER TABLE [table] PARTITION([partition]) CONCATENATE;
 ALTER TABLE [table] PARTITION([partition]) CONCATENATE;
 ````
+> Best solution remains to do a select insert to get rid of multiple small files.
