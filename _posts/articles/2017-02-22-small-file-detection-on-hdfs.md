@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-excerpt:  Small file detection on HDFS
+excerpt: Small file detection on HDFS
 categories: articles
 tags:
   - hortonworks
@@ -65,5 +65,10 @@ create view lsr_view as select (case substr(permissions,1,1) when 'd' then 'dir'
 select relative_size,fileaccessdate,file_path as total from (select (case size < 1048576 when true then 'small' else 'large' end) as relative_size,fileaccessdate,file_path from lsr_view where file_type='file') tmp where relative_size='small' limit 100;
 ```
  
-
 links: [http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HdfsImageViewer.html](http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HdfsImageViewer.html)
+
+### Concatenate files in partitions
+```sql
+ALTER TABLE [table] PARTITION([partition]) CONCATENATE;
+ALTER TABLE [table] PARTITION([partition]) CONCATENATE;
+````
