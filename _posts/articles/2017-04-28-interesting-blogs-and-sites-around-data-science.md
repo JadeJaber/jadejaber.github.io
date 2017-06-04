@@ -44,3 +44,7 @@ tags:
 
 [Tensor playground](http://playground.tensorflow.org/)
 [Article about Tensor Playground](http://www.datasciencecentral.com/profiles/blogs/open-source-deep-learning-frameworks-and-visual-analytics)
+
+[10 types of regressions. Which one to use?](http://www.datasciencecentral.com/forum/topics/10-types-of-regressions-which-one-to-use?groupUrl=resources)
+
+
