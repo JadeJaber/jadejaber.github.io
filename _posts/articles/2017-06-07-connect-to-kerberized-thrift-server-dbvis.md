@@ -16,7 +16,7 @@ tags:
 
 > Your thrift server may be SparkThriftServer or Hiveserver2
 
-| Prérequisites | Direct connexion | Via  a proxy (VPN) |
+| Prerequisites | Direct connexion | Via  a proxy (VPN) |
 |--------|:-------|:--------|
 | 1. The thriftserver but be reachable through the proxy | N | Y |
 | 2. Kerberos server must be reachable  through the proxy | N | Y |
