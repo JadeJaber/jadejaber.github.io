@@ -22,7 +22,7 @@ tags:
 | 2. Kerberos server must be reachable  through the proxy | N | Y |
 | 3. Add the following parameter to DbVisualizer in DBViz Tools > Tools Properties > General > Specify overriden Java VM properties -Djavax.security.auth.useSubjectCredsOnly=false | Y | Y |
 | 4. Create a environment varaible KRB5CCNAME = c:\tmp\CCCACHE | N | Y |
-| 5. The kinit mustr be done with the java used by DbVisualizer| Y | Y |
+| 5. The kinit must be done with the java used by DbVisualizer| Y | Y |
 | 6. Add -A option to your Kinit | N | Y |
 | 7. The krb5.ini file must be in c:/Windows | Y | Y |
 | 8. Specify the correct hostnames in the krb5.conf. And the defautl REALM ( default_realm) should be the one used for your cluster | Y | Y |
