@@ -13,7 +13,8 @@ tags:
 # 1 Some theory
 
 **JKS**, Java Key Store. You can find this file at sun.security.provider.JavaKeyStore. This keystore is Java specific, it usually has an extension of jks. This type of keystore can contain private keys and certificates, but it cannot be used to store secret keys. Since it's a Java specific keystore, so it cannot be used in other programming languages. The private keys stored in JKS cannot be extracted in Java.
-JCEKS, JCE key store(Java Cryptography Extension KeyStore). It is a super set of JKS with more algorithms supported. It is an enhanced standard added later by Sun. You can find this file at com.sun.crypto.provider.JceKeyStore. This keystore has an extension of jceks. The entries which can be put in the JCEKS keystore are private keys, secret keys and certificates. This keystore provides much stronger protection for stored private keys by using Triple DES encryption.
+
+**JCEKS**, JCE key store(Java Cryptography Extension KeyStore). It is a super set of JKS with more algorithms supported. It is an enhanced standard added later by Sun. You can find this file at com.sun.crypto.provider.JceKeyStore. This keystore has an extension of jceks. The entries which can be put in the JCEKS keystore are private keys, secret keys and certificates. This keystore provides much stronger protection for stored private keys by using Triple DES encryption.
 The provider of JCEKS is SunJCE, it was introduced in Java 1.4. Hence prior to Java 1.4, only JKS can be used.
 
 # 2 Some commands for JCEKS
