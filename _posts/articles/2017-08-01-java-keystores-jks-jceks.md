@@ -20,8 +20,9 @@ The provider of JCEKS is SunJCE, it was introduced in Java 1.4. Hence prior to J
 
 How to get a password for keytsore using JCEKS as a provider. Follow the following procedure to get the password for your keystore, if it uses JCEKS as a password provider:
  
-1. Get The list of aliases in the jceks file using hadoop credential
-'''shell
+Get The list of aliases in the jceks file using hadoop credential
+
+```shell
 hadoop credential list -provider jceks://file</root/path/to/jceks/file>
 
 hadoop credential list -provider jceks://file/etc/ranger/admin/rangeradmin.jceks
@@ -29,10 +30,11 @@ hadoop credential list -provider jceks://file/etc/ranger/admin/rangeradmin.jceks
 bash-4.1$ hadoop credential list -provider jceks://file/etc/ranger/admin/rangeradmin.jceks
 Listing aliases for CredentialProvider: jceks://file/etc/ranger/admin/rangeradmin.jceks
 rangeradmin
-'''  
+```  
  
-2. Use the ranger credential API to get the password of the corresponding alias
-'''shell
+Use the ranger credential API to get the password of the corresponding alias
+
+```shell
 java -cp "/usr/hdp/current/ranger-admin/cred/lib/*" org.apache.ranger.credentialapi.buildks get "yourAlias" -provider jceks://file</root/path/to/jceks/file>
 java -cp "/usr/hdp/current/ranger-admin/cred/lib/*" org.apache.ranger.credentialapi.buildks get "rangeradmin" -provider jceks://file/etc/ranger/admin/rangeradmin.jceks
-'''
+```
