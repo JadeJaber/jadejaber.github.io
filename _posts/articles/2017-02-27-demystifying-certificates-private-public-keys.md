@@ -10,7 +10,7 @@ tags:
   - certificates
   - architecture theory
 ---
-We are going to discuss in this article about the following concepts. The article is divided in 2 parts: a glossary and  the "why and how" of the certificates/public/private keys. hey.
+We are going to discuss in this article about the following concepts. The article is divided in 2 parts: a glossary and  the "why and how" of the certificates/public/private keys. 
 
 The certificates are mainly used for 3 uses cases : 
 - **Authentication**: The assurance to one entity that another entity is who he/she/it claims to be.
