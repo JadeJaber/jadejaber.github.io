@@ -40,3 +40,9 @@ python -m venv --without-pip [project name]
 source [env]/bin/activate
 ```
 
+Check that your python is now the one that is in your environment
+
+```shell
+which python
+````
+
