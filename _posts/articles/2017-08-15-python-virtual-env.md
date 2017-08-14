@@ -35,7 +35,7 @@ Exclude pip from your environment and install it separately : [More info](https:
 python -m venv --without-pip [project name] 
 
 source [project name]/bin/activate
-curl https://bootstrap.pypa.io/get-pip.py | python
+curl https://bootstrap.pypa.io/get-pip.py | python   
 deactivate
 source [project name]/bin/activate
 ```
