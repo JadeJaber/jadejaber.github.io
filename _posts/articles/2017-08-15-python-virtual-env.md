@@ -44,5 +44,10 @@ Check that your python is now the one that is in your environment
 
 ```shell
 which python
-````
+```
+
+# 4. Deactivate your environment
+```shell
+deactivate
+```
 
