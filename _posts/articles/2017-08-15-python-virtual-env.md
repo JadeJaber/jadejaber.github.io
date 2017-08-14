@@ -22,3 +22,17 @@ pip install --user virtualenv
 ```shell
 python -m venv  [project name] 
 ```
+
+If you get the following error 
+
+```shell
+Error: Command '['/Users/jadejaber/source/v20-python-samples/envv20/bin/python', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1.
+```
+
+Exclude pip from your environment
+
+```shell
+python -m venv --without-pip [project name] 
+```
+
+[More info](https://stackoverflow.com/questions/26215790/venv-doesnt-create-activate-script-python3)
