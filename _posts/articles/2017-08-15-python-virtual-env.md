@@ -29,10 +29,15 @@ If you get the following error
 Error: Command ... -Im, ensurepip, --upgrade, --default-pip returned non-zero exit status 1.
 ```
 
-Exclude pip from your environment: [More info](https://stackoverflow.com/questions/26215790/venv-doesnt-create-activate-script-python3)
+Exclude pip from your environment and install it separately : [More info](https://stackoverflow.com/questions/26215790/venv-doesnt-create-activate-script-python3)
 
 ```shell
 python -m venv --without-pip [project name] 
+
+source [project name]/bin/activate
+curl https://bootstrap.pypa.io/get-pip.py | python
+deactivate
+source [project name]/bin/activate
 ```
 
 # 3. Activate your environment
