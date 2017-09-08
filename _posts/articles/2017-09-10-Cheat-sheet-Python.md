@@ -43,3 +43,48 @@ tags:
 |	%dirs	|	Return a list containing the current directory stack	|
 |	%dhist	|	Print the history of visited directories	|
 |	%env 	|	Return the system environment variables as a dict 	|
+
+
+## Interactive Debugger
+
+```python
+ipdb>
+```
+Once inside the debugger, you can execute arbitrary Python code and explore all of the objects and data (which have been “kept alive” by the interpreter) inside each stack frame. By default you start in the lowest level, where the error occurred. By pressing u (up) and d (down), you can switch between the levels of the stack trace:
+```python
+ipdb> u
+> /home/wesm/book_scripts/ch03/ipython_bug.py(13)calling_things()
+12 works_fine()
+---> 13 throws_an_exception()
+14
+```
+Executing the %pdb command makes it so that IPython automatically invokes the de-
+bugger after any exception, a mode that many users will find especially useful.
+It’s also easy to use the debugger to help develop code, especially when you wish to set breakpoints or step through the execution of a function or script to examine the state at each stage. There are several ways to accomplish this. The first is by using %run with the -d flag, which invokes the debugger before executing any code in the passed script. You must immediately press s (step) to enter the script:
+```python
+In [5]: run -d ch03/ipython_bug.py
+Breakpoint 1 at /home/wesm/book_scripts/ch03/ipython_bug.py:1 NOTE: Enter 'c' at the ipdb> prompt to start your script.
+> <string>(1)<module>()
+ipdb> s
+--Call--
+> /home/wesm/book_scripts/ch03/ipython_bug.py(1)<module>() 1---> 1 def works_fine():
+2 a=5
+3 b=6
+```
+
+
+|	Command 	|	Action 	|
+|	---	|	---	|
+|	h(elp)	|	Display command list	|
+|	help command	|	Show documentation for command	|
+|	c(ontinue)	|	Resume program execution	|
+|	q(uit)	|	Exit debugger without executing any more code	|
+|	b(reak) number	|	Set breakpoint at number in current file	|
+|	b path/to/file.py:number 	|	Set breakpoint at line number in specified file	|
+|	s(step)	|	Step into function call	|
+|	n(ext)	|	Execute current line and advance to next line at current level 	|
+|	u(p) / d(down)	|	Move up/down in function call stack	|
+|	a(rgs)	|	Show arguments for current function	|
+|	debug statement	|	Invoke statement statement in new (recursive) debugger 	|
+|	l(ist) statement	|	Show current position and context at current level of stack	|
+|	w(here) 	|	 Print full stack trace with context at current position 	|
