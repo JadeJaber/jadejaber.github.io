@@ -8,6 +8,8 @@ tags:
   - python
   - cheat sheet
 ---
+## Magic Commands
+
 |Command|Description|
 |---|---|
 |%quickref|Display the IPython Quick Reference Card|
@@ -26,4 +28,18 @@ tags:
 |%who, %who_ls, %whos| Display variables defined in interactive namespace, with varying levels of information / verbosity| 
 |%xdel variable|Delete a variable and attempt to clear any references to the object in the IPython internals|
 
+## Interacting with the Operating System
 
+|	Command 	|	Description 	|
+|	---	|	---	|
+|	!cmd	|	Execute cmd in the system shell	|
+|	output = !cmd args 	|	Run cmd and store the stdout in output	|
+|	%alias alias_name cmd 	|	Define an alias for a system (shell) command	|
+|	%bookmark	|	Utilize IPython’s directory bookmarking system	|
+|	%cd directory	|	Change system working directory to passed directory	|
+|	%pwd	|	Return the current system working directory	|
+|	%pushd directory	|	Change to directory popped off the top of the stack	|
+|	%popd	|	Place current directory on stack and change to target directory 	|
+|	%dirs	|	Return a list containing the current directory stack	|
+|	%dhist	|	Print the history of visited directories	|
+|	%env 	|	Return the system environment variables as a dict 	|
