@@ -47,10 +47,14 @@ tags:
 
 ## Interactive Debugger
 
+Execute juste after exception is raised
 ```python
+> %debug
 ipdb>
-```
-Once inside the debugger, you can execute arbitrary Python code and explore all of the objects and data (which have been “kept alive” by the interpreter) inside each stack frame. By default you start in the lowest level, where the error occurred. By pressing u (up) and d (down), you can switch between the levels of the stack trace:
+````
+
+> Once inside the debugger, you can execute arbitrary Python code and explore all of the objects and data (which have been “kept alive” by the interpreter) inside each stack frame. 
+
 ```python
 ipdb> u
 > /home/wesm/book_scripts/ch03/ipython_bug.py(13)calling_things()
@@ -58,9 +62,11 @@ ipdb> u
 ---> 13 throws_an_exception()
 14
 ```
-Executing the %pdb command makes it so that IPython automatically invokes the de-
+
+> Executing the %pdb command makes it so that IPython automatically invokes the de-
 bugger after any exception, a mode that many users will find especially useful.
-It’s also easy to use the debugger to help develop code, especially when you wish to set breakpoints or step through the execution of a function or script to examine the state at each stage. There are several ways to accomplish this. The first is by using %run with the -d flag, which invokes the debugger before executing any code in the passed script. You must immediately press s (step) to enter the script:
+
+You may use %run with the -d flag, which invokes the debugger before executing any code in the passed script. You must immediately press s (step) to enter the script:
 ```python
 In [5]: run -d ch03/ipython_bug.py
 Breakpoint 1 at /home/wesm/book_scripts/ch03/ipython_bug.py:1 NOTE: Enter 'c' at the ipdb> prompt to start your script.
