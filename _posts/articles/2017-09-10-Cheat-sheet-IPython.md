@@ -116,6 +116,22 @@ st = [x*x for x in range(3)]
 
 > Genrator cannot be read again and again since it generates values on the fly
 
+Yield
+```python
+>>> def creerGenerateur() :
+...     mylist = range(3)
+...     for i in mylist:
+...         yield i*i
+...
+>>> generateur = creerGenerateur() # crée un générateur
+>>> print(generateur) # generateur est un objet !
+< generator object creerGenerateur at 0x2b484b9addc0>
+>>> for i in generateur:
+...     print(i)
+0
+1
+4
+````
 
 ### Transform a liste
 
