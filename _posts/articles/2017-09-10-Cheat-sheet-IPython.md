@@ -98,10 +98,57 @@ ipdb> s
 
 ## Lists
 
-### Transforem a liste
+### Transform a liste
+
+Standard transformation
+```python
 sequence = [element.upper() for element in sequence]
-
+```
+Mix chars and int
+```python
 print(['a' * nombre for nombre in sequence]) ## returns as much "a" as "nombre"  
+```
 
+Apply filters
+```python
 nombres = range(10)
 print([nombre for nombre in nombres if nombre % 2 == 0]) ## keeps only even numbers
+````
+
+Nice one
+
+Looser
+```python
+>>> nombres = range(10)
+>>> sommes = []
+>>> for nombre in nombres:
+...     if nombre % 2 == 0:
+...         somme = 0
+...         for i in range(nombre):
+...             somme += i
+...         sommes.append(somme)
+...
+>>> print(sommes)
+[0, 1, 6, 15, 28]
+```
+
+Intermediate
+```python
+>>> sommes = []
+>>> for nombre in range(10):
+...     if nombre % 2 == 0:
+...         sommes.append(sum(range(nombre)))
+...
+>>> print(sommes)
+[0, 1, 6, 15, 28]
+```
+
+Advanced
+```python
+>>> print([sum(range(nombre)) for nombre in range(10) if nombre % 2 == 0])
+```
+
+Guru
+```python
+>>> [sum(range(nombre)) for nombre in range(0, 10, 2)]
+```
