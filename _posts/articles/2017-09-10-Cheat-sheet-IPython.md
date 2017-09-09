@@ -100,3 +100,4 @@ ipdb> s
 
 ### Transforemer une liste
 sequence = [element.upper() for element in sequence]
+print(['a' * nombre for nombre in sequence]) ## renvoie autaut de "a" que le multiplicateur
