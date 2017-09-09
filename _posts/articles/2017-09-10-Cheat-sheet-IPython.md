@@ -94,3 +94,9 @@ ipdb> s
 |	debug statement	|	Invoke statement statement in new (recursive) debugger 	|
 |	l(ist) statement	|	Show current position and context at current level of stack	|
 |	w(here) 	|	 Print full stack trace with context at current position 	|
+
+
+## Lists
+
+### Transforemer une liste
+sequence = [element.upper() for element in sequence]
