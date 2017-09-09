@@ -98,6 +98,25 @@ ipdb> s
 
 ## Lists
 
+### Iterable and generators
+
+Iterable
+```python
+lst = [1, 2, 3]
+>>> for i in lst :
+...     print(i)
+```
+
+Generator
+```python
+st = [x*x for x in range(3)]
+>>> for i in lst :
+...     print(i)
+```
+
+> Genrator cannot be read again and again since it generates values on the fly
+
+
 ### Transform a liste
 
 Standard transformation
