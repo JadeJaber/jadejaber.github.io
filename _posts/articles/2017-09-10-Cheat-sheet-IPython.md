@@ -98,6 +98,10 @@ ipdb> s
 
 ## Lists
 
-### Transforemer une liste
+### Transforem a liste
 sequence = [element.upper() for element in sequence]
-print(['a' * nombre for nombre in sequence]) ## renvoie autaut de "a" que le multiplicateur
+
+print(['a' * nombre for nombre in sequence]) ## returns as much "a" as "nombre"  
+
+nombres = range(10)
+print([nombre for nombre in nombres if nombre % 2 == 0]) ## keeps only even numbers
