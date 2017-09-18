@@ -34,3 +34,8 @@ resize2fs /dev/rootvg/usr_lv  #Name of the mount point
 
 
 source : [https://www.howtogeek.com/howto/40702/how-to-manage-and-use-lvm-logical-volume-management-in-ubuntu/](https://www.howtogeek.com/howto/40702/how-to-manage-and-use-lvm-logical-volume-management-in-ubuntu/)
+
+## 3. Get number of inodes per folder
+```shell
+find / -xdev -printf '%h\n' | sort | uniq -c | sort -k 1 -n 
+```
