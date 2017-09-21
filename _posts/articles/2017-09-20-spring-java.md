@@ -71,3 +71,10 @@ The key unit of modularity in OOP is the class, whereas in **AOP** the unit of m
 
 # Spring architecture 
 https://www.tutorialspoint.com/spring/spring_architecture.htm 
+
+# IoC
+The Spring container is at the core of the Spring Framework. **The container will create the objects, wire them together, configure them, and manage their complete life cycle from creation till destruction**. The Spring container uses DI to manage the components that make up an application. These objects are called Spring Beans, which we will discuss in the next chapter.
+There are 2 types of containers : 
+- Spring BeanFactory Container
+- Spring ApplicationContext Container
+
