@@ -83,11 +83,11 @@ There are 2 types of containers :
 
 # Bean Definition
 https://www.tutorialspoint.com/spring/spring_bean_definition.htm
-Beans' metadata can be defined in JAvaCode, Annotations or XML files.
+Beans' metadata can be defined in JavaCode, Annotations or XML files.
 
 ## Scopes
 - Singleton
-- prototype
+- prototype (= not sigleton)
 
 ## Bean Life Cycle
 You may set up post instanciation and pre-destroy actions for each object using : 
@@ -98,4 +98,6 @@ You may set up post instanciation and pre-destroy actions for each object using 
 BeanPostProcessor lets you define actions to be done on all beans just before init and right after init. Yo uneed to create a separate class which implements the BeanPostProcessor interface and declare that new Class/Bean into your xml configuration file.
 
 
+## Bean Inheritance
+Beans definition can inherit from other beans usinf the "parent" keyword.
 
