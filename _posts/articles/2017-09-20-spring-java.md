@@ -79,5 +79,6 @@ There are 2 types of containers :
 - Spring BeanFactory Container (lightweight)
 - Spring ApplicationContext Container (includes BeanFactoryContainer + more feature as the ability to resolve textual messages from a properties file and the ability to publish application events to interested event listeners
 
-
+# Bean Definition
+https://www.tutorialspoint.com/spring/spring_bean_definition.htm
 
