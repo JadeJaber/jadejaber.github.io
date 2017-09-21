@@ -74,7 +74,10 @@ https://www.tutorialspoint.com/spring/spring_architecture.htm
 
 # IoC
 The Spring container is at the core of the Spring Framework. **The container will create the objects, wire them together, configure them, and manage their complete life cycle from creation till destruction**. The Spring container uses DI to manage the components that make up an application. These objects are called Spring Beans, which we will discuss in the next chapter.
+
 There are 2 types of containers : 
-- Spring BeanFactory Container
-- Spring ApplicationContext Container
+- Spring BeanFactory Container (lightweight)
+- Spring ApplicationContext Container (includes BeanFactoryContainer + more feature as the ability to resolve textual messages from a properties file and the ability to publish application events to interested event listeners
+
+
 
