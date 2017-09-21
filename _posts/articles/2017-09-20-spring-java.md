@@ -83,4 +83,4 @@ There are 2 types of containers :
 
 # Bean Definition
 https://www.tutorialspoint.com/spring/spring_bean_definition.htm
-
+Beans' metadata can be defined in JAvaCode, Annotations or XML files.
