@@ -88,3 +88,11 @@ Beans' metadata can be defined in JAvaCode, Annotations or XML files.
 ## Scopes
 - Singleton
 - prototype
+
+## Bean Life Cycle
+You may set up post instanciation and pre-destroy actions for each object using : 
+- init-method and destroy-method using the xml Bean definition file OR
+- by implemeting InitializingBean interface (function -> init) and DisposableBean interface (function -> destroy)
+
+
+
