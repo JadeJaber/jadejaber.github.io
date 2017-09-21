@@ -66,8 +66,8 @@ tags:
 - Dependency Injection
 - Inversion of Control (IoC) is a general concept, and it can be expressed in many different ways. Dependency Injection is merely one concrete example of Inversion of Control.
 
-The key unit of modularity in OOP is the class, whereas in AOP the unit of modularity is the aspect. 
-**DI** helps you decouple your application objects from each other, while **AOP** helps you decouple cross-cutting concerns from the objects that they affect.
+The key unit of modularity in OOP is the class, whereas in **AOP** the unit of modularity is the aspect. 
+**DI** helps you decouple your application objects from each other, while **AOP** helps you decouple **cross-cutting concerns** from the objects that they affect.
 
 # Spring architecture 
 https://www.tutorialspoint.com/spring/spring_architecture.htm 
