@@ -94,5 +94,8 @@ You may set up post instanciation and pre-destroy actions for each object using 
 - init-method and destroy-method using the xml Bean definition file OR
 - by implemeting InitializingBean interface (function -> init) and DisposableBean interface (function -> destroy)
 
+## BeanPostProcessor 
+BeanPostProcessor lets you define actions to be done on all beans just before init and right after init. Yo uneed to create a separate class which implements the BeanPostProcessor interface and declare that new Class/Bean into your xml configuration file.
+
 
 
