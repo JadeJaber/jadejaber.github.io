@@ -101,3 +101,8 @@ BeanPostProcessor lets you define actions to be done on all beans just before in
 ## Bean Inheritance
 Beans definition can inherit from other beans usinf the "parent" keyword.
 
+## Bean template
+You may create Bean Teamplates into the XML conf file. Bean templates may be used by Bean templates using the parent keyword.
+Bean template should not have classes and should be declared as templates using the abstract = "true" keyword.
+
+
