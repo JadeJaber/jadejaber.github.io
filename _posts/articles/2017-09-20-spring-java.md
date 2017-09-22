@@ -166,9 +166,18 @@ With Setter based DI, you need to  :
 ```
 > In this case we did not need to set a _constructor_
 
+### Inner beans
+Beans can be encapsulated in each other, no need to use the _ref_ keyword in that case:
+```xml
+   <bean id = "textEditor" class = "com.jadejaberdi.TextEditor">
+      <property name = "spellChecker">
+         <bean id = "spellChecker" class = "com.jadejaberdi.SpellChecker"/>
+      </property>
+   </bean>
+```
+
 ### p-namespace
 The above xml tag can be shorter (usefull when you have many setters) written as follow using namespaces :
-
 ```xml
 ...
       xmlns:p = "http://www.springframework.org/schema/p"
@@ -177,3 +186,4 @@ The above xml tag can be shorter (usefull when you have many setters) written as
     <bean id="spellChecker" class="com.jadejaberdi.SpellChecker" />
 ```
 > Here, you should note the difference in specifying primitive values and object references with p-namespace. The -ref part indicates that this is not a straight value but rather a reference to another bean.
+
