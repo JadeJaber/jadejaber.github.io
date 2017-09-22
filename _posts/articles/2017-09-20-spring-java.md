@@ -235,6 +235,20 @@ private SpellChecker spellChecker;
 <bean id="spellChecker" class="com.jadejaberdi.SpellChecker" />
 ```
 
+#### @Autowired on Constructors 
+Autowiring consutructors indicates that the constructor should be autowired when creating the bean, even if no <constructor-arg> elements are used while configuring the bean in XML file. 
+```java
+   @Autowired
+   public TextEditor(SpellChecker spellChecker){
+      System.out.println("Inside TextEditor constructor." );
+      this.spellChecker = spellChecker;
+   }
+```
+```xml
+<bean id = "textEditor" class = "com.tutorialspoint.TextEditor"></bean>
+<bean id = "spellChecker" class = "com.tutorialspoint.SpellChecker"></bean>
+```
+
 ### @Qualifier
 
 ### JSR-250 Annotations
