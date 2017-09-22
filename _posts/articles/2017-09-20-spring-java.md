@@ -193,3 +193,13 @@ Auto wiring lets Spring detect the dependencies with the same name/type in the X
     <bean id = "textEditor" class = "com.jadejaberdi.TextEditor" autowire="byName" />
     <bean id="spellChecker" class="com.jadejaberdi.SpellChecker" />
 ```
+
+## Spring annotations
+### @Required
+
+### @Autowired
+
+### @Qualifier
+
+### JSR-250 Annotations
+
