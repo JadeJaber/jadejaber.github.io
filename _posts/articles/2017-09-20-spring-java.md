@@ -213,6 +213,27 @@ public void setName (String name) {
 ```
 
 ### @Autowired
+The @Autowired annotation can apply to bean property setter methods, non-setter methods, constructor and properties.
+#### @Autowired on Setter Methods
+Autowiring a setter method spares specifying the autowire tag in the beans xml file.
+```java
+@Autowired
+public void setSpellChecker(SpellChecker SpellChecker) {
+  this.spellChecker=SpellChecker;
+  System.out.println("Inside setter");
+}
+```
+
+#### @Autowired on Properties
+Autowiring an attribute spares creating a setter. Spring will automatically assign those properties with the passed values or references.
+```java
+@Autowired
+private SpellChecker spellChecker;
+```
+```xml
+<bean id = "textEditor" class = "com.jadejaberdi.TextEditor"  />
+<bean id="spellChecker" class="com.jadejaberdi.SpellChecker" />
+```
 
 ### @Qualifier
 
