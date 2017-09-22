@@ -196,7 +196,22 @@ Auto wiring lets Spring detect the dependencies with the same name/type in the X
 
 ## Spring annotations
 ### @Required
-The required annoation is associated to a setter. It will force you to define the attribute value in the beans xml file.
+The required annoation is applied to bean property setter methods. It **will force** you to define the attribute value in the beans xml file.
+```java
+...
+import org.springframework.beans.factory.annotation.Required;
+...
+@Required
+public void setName (String name) {
+  this.name=name;
+}
+```
+```xml
+<bean id="student" class="com.jadejabersa.Student" >
+  <property name="name" value="jade" />
+</bean>
+```
+
 ### @Autowired
 
 ### @Qualifier
