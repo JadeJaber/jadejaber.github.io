@@ -167,7 +167,7 @@ With Setter based DI, you need to  :
 > In this case we did not need to set a _constructor_
 
 ### p-namespace
-The above xml tag can be written as foolow using namespaces :
+The above xml tag can be shorter (usefull when you have many setters) written as follow using namespaces :
 
 ```xml
 ...
@@ -176,3 +176,4 @@ The above xml tag can be written as foolow using namespaces :
     <bean id = "textEditor" class = "com.jadejaberdi.TextEditor" p:spellChecker-ref="spellChecker" />  
     <bean id="spellChecker" class="com.jadejaberdi.SpellChecker" />
 ```
+> Here, you should note the difference in specifying primitive values and object references with p-namespace. The -ref part indicates that this is not a straight value but rather a reference to another bean.
