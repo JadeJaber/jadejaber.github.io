@@ -196,7 +196,7 @@ Auto wiring lets Spring detect the dependencies with the same name/type in the X
 
 ## Spring annotations
 ### @Required
-
+The required annoation is associated to a setter. It will force you to define the attribute value in the beans xml file.
 ### @Autowired
 
 ### @Qualifier
