@@ -166,3 +166,13 @@ With Setter based DI, you need to  :
 ```
 > In this case we did not need to set a _constructor_
 
+### p-namespace
+The above xml tag can be written as foolow using namespaces :
+
+```xml
+...
+      xmlns:p = "http://www.springframework.org/schema/p"
+...
+    <bean id = "textEditor" class = "com.jadejaberdi.TextEditor" p:spellChecker-ref="spellChecker" />  
+    <bean id="spellChecker" class="com.jadejaberdi.SpellChecker" />
+```
