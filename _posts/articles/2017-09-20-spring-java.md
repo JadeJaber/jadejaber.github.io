@@ -249,6 +249,18 @@ Autowiring consutructors indicates that the constructor should be autowired when
 <bean id = "spellChecker" class = "com.tutorialspoint.SpellChecker"></bean>
 ```
 
+#### @Autowired with (required=false) option
+By default, the @Autowired annotation implies the dependency is required similar to @Required annotation, however, you can turn off the default behavior by using the (required=false) option with @Autowired.
+```java
+   @Autowired(required=false)
+   public void setAge(Integer age) {
+      this.age = age;
+   }
+```
+
+
+
+
 ### @Qualifier
 
 ### JSR-250 Annotations
