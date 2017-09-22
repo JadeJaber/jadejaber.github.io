@@ -105,4 +105,29 @@ Beans definition can inherit from other beans usinf the "parent" keyword.
 You may create Bean Teamplates into the XML conf file. Bean templates may be used by Bean templates using the parent keyword.
 Bean template should not have classes and should be declared as templates using the abstract = "true" keyword.
 
+## Dependency injection
+Dependency injection can be made in 2 ways : 
+### Constructor-based Dependency Injection
+With contructor-based DI, you need to : 
+1. Pass as an argument the dependency to the contructor and set the arguement in the contructor. Here we have passed the SpellChecker dependency into the TextEditor contructor
+```java
+   public TextEditor(SpellChecker spellChecker) {
+      System.out.println("Inside TextEditor constructor." );
+      this.spellChecker = spellChecker;
+   }
+   public void spellCheck() {
+      spellChecker.checkSpelling();
+   }
+```
+2. In the XML metada conf file, you need to link the dependecies using the ref keyword
+```xml
+   <bean id = "textEditor" class = "com.tutorialspoint.TextEditor">
+      <constructor-arg ref = "spellChecker"/>
+   </bean>
 
+   <!-- Definition for spellChecker bean -->
+   <bean id = "spellChecker" class = "com.tutorialspoint.SpellChecker"></bean>
+```
+
+
+### Spring Setter-based Dependency Injection
