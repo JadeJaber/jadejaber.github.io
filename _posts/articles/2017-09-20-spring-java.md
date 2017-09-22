@@ -128,6 +128,16 @@ With contructor-based DI, you need to :
    <!-- Definition for spellChecker bean -->
    <bean id = "spellChecker" class = "com.tutorialspoint.SpellChecker"></bean>
 ```
+We did not need a setter in that case.
 
+You may also pass simple types to you constructor and specify the type. In that case you use the _value_ keyword instead of _ref_.
+```xml
+   <bean id = "exampleBean" class = "examples.ExampleBean">
+      <constructor-arg type = "int" value = "2001"/>
+      <constructor-arg type = "java.lang.String" value = "Zara"/>
+   </bean>
+```
 
 ### Spring Setter-based Dependency Injection
+With Setter based DI, you need to  : 
+1.
