@@ -187,3 +187,9 @@ The above xml tag can be shorter (usefull when you have many setters) written as
 ```
 > Here, you should note the difference in specifying primitive values and object references with p-namespace. The -ref part indicates that this is not a straight value but rather a reference to another bean.
 
+### Beans Auto-Wiring
+Auto wiring lets Spring detect the dependencies with the same name/type in the XML file. Yo do not need to add _contructor-ref_ or _properties_ tags in that case.
+```xml
+    <bean id = "textEditor" class = "com.jadejaberdi.TextEditor" autowire="byName" />
+    <bean id="spellChecker" class="com.jadejaberdi.SpellChecker" />
+```
