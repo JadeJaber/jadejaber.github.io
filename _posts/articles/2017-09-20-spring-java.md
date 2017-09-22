@@ -124,13 +124,12 @@ With contructor-based DI, you need to :
    <bean id = "textEditor" class = "com.tutorialspoint.TextEditor">
       <constructor-arg ref = "spellChecker"/>
    </bean>
-
    <!-- Definition for spellChecker bean -->
    <bean id = "spellChecker" class = "com.tutorialspoint.SpellChecker"></bean>
 ```
-We did not need a setter in that case.
+> In this case, we did not need a _setter_.
 
-You may also pass simple types to you constructor and specify the type. In that case you use the _value_ keyword instead of _ref_.
+You may also pass simple types to you constructor and specify the type. In that case you use the _value_ keyword instead of _ref_. Be careful the order of the contructor-arg should match the one of the constructor.
 ```xml
    <bean id = "exampleBean" class = "examples.ExampleBean">
       <constructor-arg type = "int" value = "2001"/>
@@ -138,6 +137,32 @@ You may also pass simple types to you constructor and specify the type. In that 
    </bean>
 ```
 
+You may also use index : 
+```xml
+   <bean id = "exampleBean" class = "examples.ExampleBean">
+      <constructor-arg index = "0" value = "2001"/>
+      <constructor-arg index = "1" value = "Zara"/>
+   </bean>
+```
+
 ### Spring Setter-based Dependency Injection
 With Setter based DI, you need to  : 
-1.
+1. Create a setter and a getter in your class to set the dependcy
+```java
+    public void setSpellChecker(SpellChecker SpellChecker) {
+        this.spellChecker=SpellChecker;
+        System.out.println("Inside setter");
+    }
+    public SpellChecker getSpellChecker() {
+        return spellChecker;
+    }
+```
+2. And replace the _contructor-arg_ tag with a _property_ tag
+```xml
+    <bean id = "textEditor" class = "com.jadejaberdi.TextEditor">
+        <property name="spellChecker" ref="spellChecker" />
+    </bean>
+    <bean id="spellChecker" class="com.jadejaberdi.SpellChecker" />
+```
+> In this case we did not need to set a _constructor_
+
