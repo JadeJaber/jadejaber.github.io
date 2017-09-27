@@ -73,6 +73,6 @@ hdfs fsck /tmp -list-corruptfileblocks
 
 ### Include file opened for write
 ```shell 
-hdfs fsck /tmp -openforwrite
+hdfs fsck /tmp -openforwrite | egrep -v '^\.+$' 
 ```
 
