@@ -35,7 +35,7 @@ FSCK ended at Wed Sep 27 10:04:28 CEST 2017 in 2 milliseconds
 The filesystem under path '/' is HEALTHY
 ```
 
-### Display detailed report about replication & deletion
+### Display detailed report about block replication & deletion
 1. Datanodes heart beating with Namenode
 2. Blocks waiting to be replicated
 3. Blocks currently being replicated
