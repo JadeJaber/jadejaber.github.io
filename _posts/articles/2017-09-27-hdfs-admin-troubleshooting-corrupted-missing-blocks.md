@@ -71,4 +71,17 @@ DatanodeInfoWithStorage[255.10.16.47:1019,DS-d3f85392-34bf-4156-93ef-c47e661d,DI
 hdfs fsck /tmp -list-corruptfileblocks
 ```
 
+### Display file related to block
+```shell
+hdfs fsck -blockId <block_id>
+```
+
+### Some theory 
+[http://blog.cloudera.com/blog/2015/02/understanding-hdfs-recovery-processes-part-1/](http://blog.cloudera.com/blog/2015/02/understanding-hdfs-recovery-processes-part-1/)
+
+**lease recovery** : Before a client can write an HDFS file, it must obtain a lease, which is essentially a lock. This ensures the single-writer semantics. The lease must be renewed within a predefined period of time if the client wishes to keep writing. If a lease is not explicitly renewed or the client holding it dies, then it will expire. When this happens, HDFS will close the file and release the lease on behalf of the client so that other clients can write to the file.
+```shell
+hdfs debug recoverLease -path <path> [-retries <num-retries>]
+```
+
 
