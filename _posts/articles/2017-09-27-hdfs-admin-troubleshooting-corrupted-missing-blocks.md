@@ -10,9 +10,9 @@ tags:
   - HDFS
   - debug troubleshooting
 ---
-### Display global report 
+### Display missing blocks for a file or under-replicated blocks
 ```shell
-hdfs fsck / | egrep -v '^\.+$' 
+hdfs fsck / [-openforwrite] | egrep -v '^\.+$' 
 
 ......................Status: HEALTHY
  Total size:    430929 B
@@ -71,8 +71,4 @@ DatanodeInfoWithStorage[255.10.16.47:1019,DS-d3f85392-34bf-4156-93ef-c47e661d,DI
 hdfs fsck /tmp -list-corruptfileblocks
 ```
 
-### Include file opened for write
-```shell 
-hdfs fsck /tmp -openforwrite | egrep -v '^\.+$' 
-```
 
