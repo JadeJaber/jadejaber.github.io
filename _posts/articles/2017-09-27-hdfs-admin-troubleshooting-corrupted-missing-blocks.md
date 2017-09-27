@@ -12,7 +12,7 @@ tags:
 ---
 ### Display global report 
 ```shell
-hdfs fsck / 
+hdfs fsck / | egrep -v '^\.+$' 
 
 ......................Status: HEALTHY
  Total size:    430929 B
