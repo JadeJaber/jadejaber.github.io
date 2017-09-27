@@ -10,6 +10,10 @@ tags:
   - HDFS
   - debug troubleshooting
 ---
+### Note 
+When the bellow commands do not display the blocks/files that are corrupted/missing... you may find more info in the namenode and datanode logs.
+You may find in the namenode log the block info and in the datanode the replica info.
+
 ### Display missing blocks for a file or under-replicated blocks
 ```shell
 hdfs fsck / [-openforwrite] | egrep -v '^\.+$' 
