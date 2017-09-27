@@ -84,4 +84,8 @@ hdfs fsck -blockId <block_id>
 hdfs debug recoverLease -path <path> [-retries <num-retries>]
 ```
 
+**block recovery** : Before lease recovery causes the file to be closed, it’s necessary to ensure that all replicas of the last block have the same length; this process is known as block recovery. Block recovery is only triggered during the lease recovery process, and lease recovery only triggers block recovery on the last block of a file if that block is not in COMPLETE state
+
+**pipeline recovery** : During write pipeline operations, some DataNodes in the pipeline may fail. When this happens, the underlying write operations can’t just fail. Instead, HDFS will try to recover from the error to allow the pipeline to keep going and the client to continue to write to the file.
+
 
