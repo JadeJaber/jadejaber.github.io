@@ -35,6 +35,16 @@ FSCK ended at Wed Sep 27 10:04:28 CEST 2017 in 2 milliseconds
 The filesystem under path '/' is HEALTHY
 ```
 
+### Display more detailed report
+1. Datanodes heart beating with Namenode
+2. Blocks waiting to be replicated
+3. Blocks currently being replicated
+4. Blocks waiting to be deleted
+
+```shell 
+hdfs dfsadmin -metasave filename
+```
+
 ### Display files, their blocks name and replication factor
 ```shell
 hdfs fsck /tmp/ -blocks -files
@@ -66,12 +76,3 @@ hdfs fsck /tmp -list-corruptfileblocks
 hdfs fsck /tmp -openforwrite
 ```
 
-### Display 
-1. Datanodes heart beating with Namenode
-2. Blocks waiting to be replicated
-3. Blocks currently being replicated
-4. Blocks waiting to be deleted
-
-```shell 
-hdfs dfsadmin -metasave filename
-```
