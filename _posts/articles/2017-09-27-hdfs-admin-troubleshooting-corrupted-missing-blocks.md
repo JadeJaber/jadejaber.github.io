@@ -71,7 +71,7 @@ DatanodeInfoWithStorage[255.10.16.47:1019,DS-d3f85392-34bf-4156-93ef-c47e661d,DI
 hdfs fsck /tmp -list-corruptfileblocks
 ```
 
-### Include file opened for wrrite
+### Include file opened for write
 ```shell 
 hdfs fsck /tmp -openforwrite
 ```
