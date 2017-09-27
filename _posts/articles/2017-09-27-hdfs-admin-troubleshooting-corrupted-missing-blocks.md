@@ -11,7 +11,6 @@ tags:
   - debug troubleshooting
 ---
 ### Display global report 
-
 ```shell
 hdfs fsck / 
 
@@ -37,7 +36,6 @@ The filesystem under path '/' is HEALTHY
 ```
 
 ### Display files, their blocks name and replication factor
-
 ```shell
 hdfs fsck /tmp/ -blocks -files
 
@@ -45,6 +43,7 @@ hdfs fsck /tmp/ -blocks -files
 OK
 0. BP-1132991310-255.1.1.1-1443607933266:blk_1907772515_134126362 len=1686 repl=3
 ```
+
 ### Display files, their blocks name, replication factor and locations
 ```shell
 hdfs fsck /tmp/ -blocks -files -locations
