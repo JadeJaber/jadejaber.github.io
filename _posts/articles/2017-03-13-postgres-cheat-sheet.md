@@ -12,6 +12,12 @@ tags:
 ---
 ## Some commands
 
+**Connect to postgres**
+```shell
+sudo su – postgres
+psql
+```
+
 **Liste of all schema**
 ```shell
 \l 
