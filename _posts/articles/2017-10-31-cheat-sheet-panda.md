@@ -136,5 +136,28 @@ s = pd.Series(np.random.randn(5), name='something') -> Give it a name
 s2 = s.rename("different") -> Rename it
 ````
 
+## DataFrames
+### Create a dataframe
+#### From dict of series
+```shell
+In [32]: d = {'one' : pd.Series([1., 2., 3.], index=['a', 'b', 'c']),
+   ....:      'two' : pd.Series([1., 2., 3., 4.], index=['a', 'b', 'c', 'd'])}
+In [33]: df = pd.DataFrame(d)
+```
+Select some raws(index) and columns
+```python
+pd.DataFrame(d, index=['d', 'b', 'a'], columns=['two', 'three'])
+```
+#### From dict of ndarrays / lists
+```python
+In [39]: d = {'one' : [1., 2., 3., 4.],
+   ....:      'two' : [4., 3., 2., 1.]}   
+```
+
+You may add an index afterwards
+```python
+pd.DataFrame(d, index=['a', 'b', 'c', 'd'])
+```
 
 
+reprendre ici http://pandas.pydata.org/pandas-docs/stable/dsintro.html#from-structured-or-record-array
