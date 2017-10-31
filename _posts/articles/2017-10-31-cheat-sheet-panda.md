@@ -9,13 +9,6 @@ tags:
   - python
   - data processing
 ---
-# Imports
-```python
-In [1]: import pandas as pd
-In [2]: import numpy as np
-In [3]: import matplotlib.pyplot as plt
-```
-
 # Data Structures
 [source](http://pandas.pydata.org/pandas-docs/stable/dsintro.html)
 
@@ -71,9 +64,7 @@ Apply filters
 ```python
 nombres = range(10)
 print([nombre for nombre in nombres if nombre % 2 == 0]) ## keeps only even numbers
-````
-
-Nice one
+```
 
 Looser
 ```python
@@ -115,8 +106,13 @@ Guru
 ## Series 
 Series is a one-dimensional labeled array capable of holding any data type (integers, strings, floating point numbers, Python objects, etc.). The axis labels are collectively referred to as the index.
 
+
 ### Create a serie
-```pyhton
+# Imports
+```python
+import pandas as pd
+import numpy as np
+
 s = pd.Series(data, index=index)
 ```
 
