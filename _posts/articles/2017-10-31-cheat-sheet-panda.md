@@ -10,10 +10,7 @@ tags:
   - data processing
 ---
 # Data Structures
-[source](http://pandas.pydata.org/pandas-docs/stable/dsintro.html)
-
 ## Lists
-
 ### Iterable and generators
 
 Iterable
@@ -104,11 +101,11 @@ Guru
 
 
 ## Series 
+[source](http://pandas.pydata.org/pandas-docs/stable/dsintro.html)
 Series is a one-dimensional labeled array capable of holding any data type (integers, strings, floating point numbers, Python objects, etc.). The axis labels are collectively referred to as the index.
 
 
 ### Create a serie
-# Imports
 ```python
 import pandas as pd
 import numpy as np
