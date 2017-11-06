@@ -9,9 +9,9 @@ tags:
   - python
   - data processing
 ---
-# Data Structures
-## Lists
-### Iterable and generators
+# 1 Data Structures
+## 1.1 Lists
+### 1.1.1 Iterable and generators
 
 Iterable
 ```python
@@ -46,7 +46,7 @@ Yield
 4
 ````
 
-### Transform a liste
+### 1.1.2 Transform a liste
 
 Standard transformation
 ```python
@@ -100,12 +100,12 @@ Guru
 ```
 
 
-## Series 
+## 1.2 Series 
 [source](http://pandas.pydata.org/pandas-docs/stable/dsintro.html)
 Series is a one-dimensional labeled array capable of holding any data type (integers, strings, floating point numbers, Python objects, etc.). The axis labels are collectively referred to as the index.
 
 
-### Create a serie
+### 1.2.1 Create a serie
 ```python
 import pandas as pd
 import numpy as np
@@ -124,7 +124,7 @@ s = pd.Series(np.random.randn(5), index=['a', 'b', 'c', 'd', 'e'])
 pd.Series(5., index=['a', 'b', 'c', 'd', 'e'])
 ```
 
-### Manipulate Series
+### 1.2.2 Manipulate Series
 ```python
 s[:3] & s[:-2] -> select
 s[s > s.median()] -> filter
@@ -136,9 +136,9 @@ s = pd.Series(np.random.randn(5), name='something') -> Give it a name
 s2 = s.rename("different") -> Rename it
 ````
 
-## DataFrames
-### Create a dataframe
-#### From dict of series
+## 1.3 DataFrames
+### 1.3.1 Create a dataframe
+#### 1.3.1.1 From dict of series
 ```shell
 In [32]: d = {'one' : pd.Series([1., 2., 3.], index=['a', 'b', 'c']),
    ....:      'two' : pd.Series([1., 2., 3., 4.], index=['a', 'b', 'c', 'd'])}
@@ -148,7 +148,7 @@ Select some raws(index) and columns
 ```python
 pd.DataFrame(d, index=['d', 'b', 'a'], columns=['two', 'three'])
 ```
-#### From dict of ndarrays / lists
+#### 1.3.1.2 From dict of ndarrays / lists
 ```python
 In [39]: d = {'one' : [1., 2., 3., 4.],
    ....:      'two' : [4., 3., 2., 1.]}   
