@@ -27,6 +27,9 @@ tags:
 
 [A Python Automated Machine Learning tool that optimizes machine learning pipelines using genetic programming.](https://github.com/rhiever/tpot)
 
+[A Complete Tutorial to Learn Data Science with Python from Scratch](http://www.datasciencecentral.com/profiles/blogs/a-complete-tutorial-to-learn-data-science-with-python-from?utm_content=buffer987fc&utm_medium=social&utm_source=linkedin.com&utm_campaign=buffer)
+
+
 ### Other stuff
 
 [Getting Started with Kaggle: House Prices Competition](https://www.dataquest.io/blog/kaggle-getting-started/)
