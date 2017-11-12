@@ -29,6 +29,7 @@ tags:
 
 [A Complete Tutorial to Learn Data Science with Python from Scratch](http://www.datasciencecentral.com/profiles/blogs/a-complete-tutorial-to-learn-data-science-with-python-from?utm_content=buffer987fc&utm_medium=social&utm_source=linkedin.com&utm_campaign=buffer)
 
+[Tutorial on Automated Machine Learning using MLBox](https://www.analyticsvidhya.com/blog/2017/07/mlbox-library-automated-machine-learning/)
 
 ### Other stuff
 
