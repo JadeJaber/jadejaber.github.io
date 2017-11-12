@@ -25,6 +25,7 @@ tags:
 
 [Try Deep Learning in Python now with a fully pre-configured VM](https://medium.com/@ageitgey/try-deep-learning-in-python-now-with-a-fully-pre-configured-vm-1d97d4c3e9b)
 
+[A Python Automated Machine Learning tool that optimizes machine learning pipelines using genetic programming.](https://github.com/rhiever/tpot)
 
 ### Other stuff
 
@@ -46,5 +47,3 @@ tags:
 [Article about Tensor Playground](http://www.datasciencecentral.com/profiles/blogs/open-source-deep-learning-frameworks-and-visual-analytics)
 
 [10 types of regressions. Which one to use?](http://www.datasciencecentral.com/forum/topics/10-types-of-regressions-which-one-to-use?groupUrl=resources)
-
-
