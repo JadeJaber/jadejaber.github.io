@@ -159,5 +159,28 @@ You may add an index afterwards
 pd.DataFrame(d, index=['a', 'b', 'c', 'd'])
 ```
 
+#### 1.3.1.3 From list of dicts
+```python
+In [47]: data2 = [{'a': 1, 'b': 2}, {'a': 5, 'b': 10, 'c': 20}]
+
+In [48]: pd.DataFrame(data2)
+Out[48]: 
+   a   b     c
+0  1   2   NaN
+1  5  10  20.0
+
+In [49]: pd.DataFrame(data2, index=['first', 'second'])
+Out[49]: 
+        a   b     c
+first   1   2   NaN
+second  5  10  20.0
+
+In [50]: pd.DataFrame(data2, columns=['a', 'b'])
+Out[50]: 
+   a   b
+0  1   2
+1  5  10
+```
+
 
 reprendre ici http://pandas.pydata.org/pandas-docs/stable/dsintro.html#from-structured-or-record-array
