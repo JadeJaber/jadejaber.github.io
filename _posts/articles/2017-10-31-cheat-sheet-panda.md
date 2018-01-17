@@ -206,8 +206,12 @@ df.loc[df['column_name'] != some_value]
 
 isin returns a boolean Series, so to select rows whose value is not in some_values, negate the 
 boolean Series using ~:
+
 ```python
 df.loc[~df['column_name'].isin(some_values)]
 ```
+### 1.3.3 Basic Statitics & groupBy
+[Cheat sheet](https://medium.com/@kasiarachuta/basic-statistics-in-pandas-dataframe-594208074f85)
+
 
 reprendre ici http://pandas.pydata.org/pandas-docs/stable/dsintro.html#from-structured-or-record-array
