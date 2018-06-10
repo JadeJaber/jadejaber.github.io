@@ -17,7 +17,7 @@ tags:
 ```shell
 git clone [project Git URL]Ò
 ```
-3. In order to make pull requests, we need to link to an upstream remote
+3. In order to make pull requests, we need to sync to our distant repo, and we need an upstream remote to do that: 
 ```shell
 git remote add upstream [username/repo]
 ```
@@ -46,15 +46,20 @@ git commit -m 'Add some feature'
 # OR
 git commit -am 'Add some feature' 
 ```
-4. Merge the upstream with your branch 
+4. Pull rebase the master origin into your branch 
 ```shell
-git pull --rebase upstream
+git pull --rebase master origin
 ```
-5. Fix conflicts 
+5. Fix conflicts and re-pull
 
-6. Create a pull request on Github
+6. Push to your upstream / branch
+```git
+git push my-new-feature upstream
+```
 
-7. Once the pull request is validated you may delete your branch
+7. Create a pull request on Github
+
+8. Once the pull request is validated you may delete your branch
 ```shell
 git branch --d my-new-feature
 OR
