@@ -70,8 +70,8 @@ If you reverse the keys for RSA, it can be used to generate a digital signature 
 
 
 
-## Why and how  (########### reprendre ici)
-### Encrypted communication (SSL)
+## 2. Why and how
+### 2.1 Encrypted communication (SSL)
 
 Since the symmetric cryptography needs less CPU calculation then asymmetric cryptography, it is better to have a symmetric cryptography.  The 2 servers which need to communicate securely need to have the same encryption key. The client will generate a symmetric encryption key, encrpyt it with the public key of the secured server and send it to the secured server. 
 
@@ -89,14 +89,16 @@ We need a solution to garantee to the client (server 3 in the image) that the pu
 
 If the man in the middle tried to get into this communication, its certificate would have been rejected from the client since the client does not have the public key of the signatory of the man in the middle's certificate (whether it is self-signed or signed by CA certificate) 
  
-### Message integrity
-L’intégrité des données est assurée par la signature : 
-Un digest est calculé à partir du message envoyé
-Le digest est crypté avec la clé privée de l’envoyeur
-Le digest est embarqué avec le message envoyé
-Le client décrypte le digest avec la clé publique de l’envoyeur et recalcule le digest à partir du message
-Et si les digests correspondent c’est que le message est intègre et on est sûr de l’identité de l’envoyeur.
-Dans ce cas précis, le message n’est pas crypté mais son intégrité est assurée.
+### 2.2 Message integrity
+Data integrity is guranteed: 
+1. When data is sent, a digest is calculated from this data
+2. Sender encryps the digest with his private key and sends the encrypted with the message
+3. The receiver uncrypts the digest with the public key of the sender
+4. The receiver calculates the hash of the message and compares it to the one he received
+5. If the difests are the same, than that means that the message has not ben altered
+
+In that case, the message itself is not encrypted but is certainly **not altered**
+
 
 ![Signature]({{site.baseurl}}/images/Signature.gif)
 
