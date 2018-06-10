@@ -15,9 +15,9 @@ tags:
 
 2. Clone the forked repo on your working machine  
 ```shell
-git clone [poject Git URL]
+git clone [project Git URL]
 ```
-3. In order to make pull requests, we need to link to an upstream repo
+3. In order to make pull requests, we need to link to an upstream remote
 ```shell
 git remote add upstream [username/repo]
 ```
@@ -44,9 +44,9 @@ git pull --rebase upstream
 
 11. Once the pull request is validated you may delete your branch
 ```shell
-git branch --d upstream
+git branch --d my-new-feature
 OR
-git branch --D upstream #--D is to force
+git branch --D my-new-feature #--D is to force
 ```
 
 ### 1.2 Next contributions
@@ -55,7 +55,9 @@ git branch --D upstream #--D is to force
 
 2. Update your local repository with the source project
 ```git
-git pull --rebase master origin
+git pull --rebase master origin 
 ```
+
+3. Update 
 
  
