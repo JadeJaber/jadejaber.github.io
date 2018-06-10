@@ -100,7 +100,7 @@ git stash --show -v [stash number]
 And then retrieve back your modifications
 ```shell
 # by creating a new branch
-git stash branch new branch] [stash number]
+git stash branch [new branch] [stash number]
 
 # or by applying it to your current branch
 git stash apply [stash number]
