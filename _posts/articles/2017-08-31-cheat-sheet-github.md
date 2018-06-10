@@ -68,6 +68,8 @@ git branch --D my-new-feature #--D is to force
 
 ## 2. Deleting a commit and git stash
 
+
+### 2.1 Git reset
 Assuming you are sitting on that commit, then this command will wack it...
 ```shell
 git reset --hard HEAD~1
@@ -84,11 +86,15 @@ If you want to keep your current modifications you may use git stash
 git stash 
 ```
 
+And then retrieve your modifications using git stash commands.
+
+### 2.2 Stash
+
 You may list/show all your stashes
 ```shell
 git stash --list 
 
-git stash --show -v  [stash number]
+git stash --show -v [stash number]
 ```
 
 And then retrieve back your modifications
@@ -103,6 +109,5 @@ git stash apply [stash number]
  
 
 
-And then retrieve your modifications using git stash commands : 
 
 
