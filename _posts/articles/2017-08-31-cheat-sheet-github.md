@@ -7,34 +7,55 @@ tags:
   - github
   - git
 ---
-# From cloning to pull request
+## 1. Forking and contributing a repo
 
-1. Add ytou public key on your Github settings
+### 1.1 First contribution
 
-2. Fork the repo from the UI
+1. Fork the repo from the UI
 
-3. Clone the repo  
+2. Clone the forked repo on your working machine  
 ```shell
 git clone [poject Git URL]
 ```
-4. In order to make pull requests, we need to link to an upstream repo
+3. In order to make pull requests, we need to link to an upstream repo
 ```shell
 git remote add upstream [username/repo]
 ```
-5. Create a new branch for your new feature 
+4. Create a new branch for your new feature 
 ```shell
 git checkout -b my-new-feature
 ```
-6. Make your own modifications
+5. Make your own modifications
 
-7. Commit your modifications 
+6. Commit your modifications 
 ```shell
-git commit -am 'Add some feature'
+git add -all
+git commit -m 'Add some feature'   
+# OR
+git commit -am 'Add some feature' 
 ```
-8. Merge the upstream with your branch 
+7. Merge the upstream with your branch 
 ```shell
 git pull --rebase upstream
 ```
 9. Fix conflicts 
 
 10. Create a pull request on Github
+
+11. Once the pull request is validated you may delete your branch
+```shell
+git branch --d upstream
+OR
+git branch --D upstream #--D is to force
+```
+
+### 1.2 Next contributions
+
+1. Go to working directory 
+
+2. Update your local repository
+```git
+git checkout -b my-new-feature
+```
+
+ 
