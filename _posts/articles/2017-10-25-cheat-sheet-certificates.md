@@ -36,9 +36,9 @@ because the server will reject the file if its permissions are more liberal than
 
 A self-signed certificate can be used for testing, but a certificate signed by a certificate authority (CA) (either one of the global CAs or a local one) should be used in production so that clients can verify the server's identity. If all the clients are local to the organization, using a local CA is recommended.
 
-## 2.1 Certificate manipulation
+## 2 Certificate manipulation
 
-### 1.2 Import a private key and signed certificate to a jks file
+### 2.1 Import a private key and signed certificate to a jks file
 ```shell
 # You need the certification chain, the signed certificate and the private key
 # 1. Import them into a p12 store
@@ -47,7 +47,7 @@ openssl pkcs12 -export -in certificate.cer -inkey key.key -CAfile cacerts.pem > 
 keytool -importkeystore -srckeystore ./server.p12 -destkeystore keystore.jks -srcstoretype pkcs12 
 ```
 
-### 1.3 Modify an alias
+### 2.2 Modify an alias
 ```shell
 keytool -changealias -alias 'old_alias' -destalias 'new_alias' -keystore keystore.jks
 ```
