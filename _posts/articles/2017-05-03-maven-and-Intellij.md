@@ -87,5 +87,5 @@ Your artifacts may be on different repos. Maven lets you define several repos :
 
 ## 3 Github
 To push your project on gihub
-Initialize your account on Intellij : File > Settings > Github > 
-go to : VCS > Impor Into Version Control > Share project on github
+Initialize your account on Intellij : File > Settings > Github 
+Go to : VCS > Import Into Version Control > Share project on github
