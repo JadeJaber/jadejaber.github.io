@@ -65,3 +65,44 @@ git branch --d my-new-feature
 OR
 git branch --D my-new-feature #--D is to force
 ```
+
+## 2. Deleting a commit and git stash
+
+Assuming you are sitting on that commit, then this command will wack it...
+```shell
+git reset --hard HEAD~1
+```
+The HEAD~1 means the commit before head.
+
+Or, you could look at the output of git log, find the commit id of the commit you want to back up to, and then do this:
+```shell
+git reset --hard <sha1-commit-id>
+```
+
+If you want to keep your current modifications you may use git stash
+```shell
+git stash 
+```
+
+You may list/show all your stashes
+```shell
+git stash --list 
+
+git stash --show -v  [stash number]
+```
+
+And then retrieve back your modifications
+```shell
+# by creating a new branch
+git stash branch new branch] [stash number]
+
+# or by applying it to your current branch
+git stash apply [stash number]
+```
+ 
+ 
+
+
+And then retrieve your modifications using git stash commands : 
+
+
