@@ -58,6 +58,11 @@ git branch --D my-new-feature #--D is to force
 git pull --rebase master origin 
 ```
 
-3. Update 
+3. Update your distant repository
+```git
+git push --rebase master origin 
+```
+
+
 
  
