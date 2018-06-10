@@ -53,9 +53,9 @@ git branch --D upstream #--D is to force
 
 1. Go to working directory 
 
-2. Update your local repository
+2. Update your local repository with the source project
 ```git
-git checkout -b my-new-feature
+git pull --rebase master origin
 ```
 
  
