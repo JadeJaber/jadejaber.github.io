@@ -28,7 +28,7 @@ git remote add upstream [username/repo]
 
 2. Update your local repository with the source project
 ```git
-git pull --rebase master origin 
+git pull --rebase origin master
 ```
 
 ### 1.3 Common procedure
@@ -48,13 +48,13 @@ git commit -am 'Add some feature'
 ```
 4. Pull rebase the master origin into your branch 
 ```shell
-git pull --rebase master origin
+git pull --rebase origin master
 ```
 5. Fix conflicts and re-pull
 
 6. Push to your upstream / branch
 ```git
-git push my-new-feature upstream
+git push upstream my-new-feature
 ```
 
 7. Create a pull request on Github
@@ -65,5 +65,3 @@ git branch --d my-new-feature
 OR
 git branch --D my-new-feature #--D is to force
 ```
-
-
