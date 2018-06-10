@@ -1,17 +1,21 @@
 ---
 layout: post
-title: "Override Author Byline Test Post"
-excerpt: "An article to test overriding the default site author."
+title: Override Author Byline Test Post
+excerpt: An article to test overriding the default site author.
 categories: articles
-tags: [sample-post, readability, test]
+tags:
+  - sample-post
+  - readability
+  - test
 author: billy_rick
 comments: true
 share: true
-modified: 2016-06-01T14:18:57-04:00
+modified: {}
 image:
   feature: so-simple-sample-image-7.jpg
   credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  creditlink: 'http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/'
+published: true
 ---
 
 For those of you who may have content written by multiple authors on your site you can now assign different authors to each post if desired.
