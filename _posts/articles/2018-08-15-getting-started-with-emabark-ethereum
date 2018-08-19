@@ -67,6 +67,7 @@ nvm use --lts
 **Install emabrk**
 ```shell
 $ npm -g install embark --python=/usr/bin/python2.7
+$ embark --version #to check installation
 ```
 >> Python v2.5<v<v3.0 is needed. If your default python is not appropriate you may set a different path using --python
 
