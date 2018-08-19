@@ -15,6 +15,7 @@ tags:
 - https://embark.readthedocs.io/en/2.6.6/
 - https://ethereumdev.io/getting-started-with-embark-framework/
 - https://embark.status.im/docs/index.html
+- https://nodesource.com/blog/installing-node-js-tutorial-using-nvm-on-mac-os-x-and-ubuntu/
 
 
 # 2. Introduction
@@ -50,10 +51,19 @@ Decentralized Communication (Whisper, Orbit)
 ## 3.1 Prerequisites
 
 ### Node.js 8.11.3 LTS or higher
-[Install nvm (Node Version Manager)](https://github.com/creationix/nvm/blob/master/README.md#install-script)
+
+[Install nvm (Node Version Manager)](https://nodesource.com/blog/installing-node-js-tutorial-using-nvm-on-mac-os-x-and-ubuntu/)
 ```shell
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+nvm --version ## Check installation
 ```
+
+**Install Node **
+```shell
+nvm install --lts
+nvm use --lts
+```
+
 
 
 
