@@ -10,13 +10,14 @@ tags:
   - smart contract
   - embark
 ---
-Sources : 
+# 1. Sources : 
 - https://github.com/embark-framework/embark
 - https://embark.readthedocs.io/en/2.6.6/
 - https://ethereumdev.io/getting-started-with-embark-framework/
 - https://embark.status.im/docs/index.html
 
 
+# 2. Introduction
 Embark is a **framework** that allows you to easily **develop and deploy Decentralized Applications** (DApps).
 
 A Decentralized Application is a serverless html5 application that uses one or more decentralized technologies.
@@ -44,3 +45,27 @@ Decentralized Communication (Whisper, Orbit)
 **Web Technologies**
 - Integrate with any web technology including React, Foundation, etc..
 - Use any build pipeline or tool you wish, including grunt, gulp and webpack.
+
+# 3. Installation
+## 3.1 Prerequisites
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
