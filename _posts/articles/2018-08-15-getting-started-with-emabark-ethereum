@@ -71,6 +71,8 @@ $ embark --version #to check installation
 ```
 >> Python v2.5<v<v3.0 is needed. If your default python is not appropriate you may set a different path using --python
 
+#####   TO BE CONTINUED  ######
+
 **With Ethereum Support**
 If you want to use Embark with Ethereum and want embark to run a node for you (with the embark blockchain command), then you need to install Go-Ethrereum 1.6.7 or higher.
 ```shell
