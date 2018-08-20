@@ -137,7 +137,7 @@ Daemon is ready
 
 http://localhost:8080/ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/ (the hash used here is the one generated after the ipfs init command).
 You may access every local file/dir using its hash as http://localhost:8080/[hash].
-Data on you node is also available to the outside world (since you're running the deamon) and you can try to retrieve any of your local data using https://gateway.ipfs.io/ipfs/[hash].
+Data on you node is also available to the outside world (since you're running the deamon) and you can retrieve your local data using https://gateway.ipfs.io/ipfs/[hash].
 
 **Node Web UI and API** 
 http://localhost:5001/webui
