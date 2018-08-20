@@ -89,6 +89,7 @@ To use IPFS you need first to install a IPFS node and run it. There two availabl
 tar -xvzf ./go-ipfs_v0.4.17_darwin-amd64.tar.gz
 cd go-ipfs
 ./install.sh
+/usr/local/bin/ipfs #check installation
 ```
 
 
