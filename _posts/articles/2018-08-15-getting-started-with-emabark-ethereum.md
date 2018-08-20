@@ -97,8 +97,10 @@ cd go-ipfs
 ```
 
 #### 3.2.3.2 Getting started with IPFS
+
 Source : https://ipfs.io/docs/getting-started/
 
+**Init**
 ```shell
 > ipfs init
 initializing IPFS node at /Users/jadejaber/.ipfs
@@ -106,12 +108,27 @@ generating 2048-bit RSA keypair...done
 peer identity: QmNPUynBD5Dvg698rAqNeb6EtBVGY3iEZFUB8qJwgeZALM
 to get started, enter:
 
-	ipfs cat /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/readme
+ipfs cat /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/readme
 ```
 
-####### TO BE CONTINUED #######
-https://ipfs.io/docs/getting-started/
-
+**Going online**
+Once you’re ready to take things online, run the daemon in another terminal
+```shell
+> ipfs daemon
+Initializing daemon...
+Successfully raised file descriptor limit to 2048.
+Swarm listening on /ip4/127.0.0.1/tcp/4001
+Swarm listening on /ip4/192.168.1.72/tcp/4001
+Swarm listening on /ip6/::1/tcp/4001
+Swarm listening on /p2p-circuit/ipfs/QmNPUynBD5Dvg698rAqNeb6EtBVGY3iEZFUB8qJwgeZALM
+Swarm announcing /ip4/127.0.0.1/tcp/4001
+Swarm announcing /ip4/192.168.1.72/tcp/4001
+Swarm announcing /ip4/86.74.223.122/tcp/41331
+Swarm announcing /ip6/::1/tcp/4001
+API server listening on /ip4/127.0.0.1/tcp/5001
+Gateway (readonly) server listening on /ip4/127.0.0.1/tcp/8080
+Daemon is ready
+```
 
 
 
