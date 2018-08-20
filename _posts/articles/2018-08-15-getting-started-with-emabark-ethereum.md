@@ -87,6 +87,7 @@ To use IPFS you need first to install a IPFS node and run it. There two availabl
 
 1. Get the tarball : https://dist.ipfs.io/go-ipfs/v0.4.17/go-ipfs_v0.4.17_darwin-amd64.tar.gz
 2. Untar and install it. Ipfs binary will be moved to /usr/local
+
 ```shell
 tar -xvzf ./go-ipfs_v0.4.17_darwin-amd64.tar.gz
 cd go-ipfs
