@@ -50,7 +50,7 @@ Decentralized Communication (Whisper, Orbit)
 # 3. Installation
 ## 3.1 Prerequisites
 
-### Node.js 8.11.3 LTS or higher
+**Node Version Manager**
 
 [Install nvm (Node Version Manager)](https://nodesource.com/blog/installing-node-js-tutorial-using-nvm-on-mac-os-x-and-ubuntu/)
 ```shell
@@ -64,6 +64,7 @@ nvm install --lts
 nvm use --lts
 ```
 
+## 3.2 Installation
 **Install emabrk**
 ```shell
 $ npm -g install embark --python=/usr/bin/python2.7
@@ -72,12 +73,34 @@ $ embark --version #to check installation
 >> Python v2.5<v<v3.0 is needed. If your default python is not appropriate you may set a different path using --python
 
 **With Ethereum Support**
-If you want to use Embark with Ethereum and want embark to run a node for you (with the embark blockchain command), then you need to install Go-Ethrereum 1.6.7 or higher.
+If you want to use Embark with Ethereum and want embark to run a node for you (with the embark blockchain command), then you need to install [Go-Ethrereum 1.6.7 or higher](https://geth.ethereum.org/).
 ```shell
 $ brew tap ethereum/ethereum
 $ brew install ethereum
 ```
+Go Ethereum will be installed in /usr/local/Cellar 
 
-#####   TO BE CONTINUED  with IPFS support ######
+**With IPFS support**
+To use IPFS you need first to install a IPFS node and run it. There two available, go-ipfs and js-ipfs. We will go with go-ipfs.
 
-https://embark.status.im/docs/
+1. Get tar.gz : https://dist.ipfs.io/go-ipfs/v0.4.17/go-ipfs_v0.4.17_darwin-amd64.tar.gz
+2. Untar and install it. Ipfs binary will be moved to /usr/local
+```shell
+tar -xvzf ./go-ipfs_v0.4.17_darwin-amd64.tar.gz
+cd go-ipfs
+./install.sh
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
