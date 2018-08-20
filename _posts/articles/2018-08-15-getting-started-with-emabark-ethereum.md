@@ -112,6 +112,7 @@ ipfs cat /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/readme
 ```
 
 **Going online**
+
 Once you’re ready to take things online, run the daemon in another terminal
 ```shell
 > ipfs daemon
