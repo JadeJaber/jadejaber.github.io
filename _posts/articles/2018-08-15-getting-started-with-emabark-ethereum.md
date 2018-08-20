@@ -99,6 +99,18 @@ cd go-ipfs
 #### 3.2.3.2 Getting started with IPFS
 Source : https://ipfs.io/docs/getting-started/
 
+```shell
+> ipfs init
+initializing IPFS node at /Users/jadejaber/.ipfs
+generating 2048-bit RSA keypair...done
+peer identity: QmNPUynBD5Dvg698rAqNeb6EtBVGY3iEZFUB8qJwgeZALM
+to get started, enter:
+
+	ipfs cat /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/readme
+```
+
+
+
 
 
 
