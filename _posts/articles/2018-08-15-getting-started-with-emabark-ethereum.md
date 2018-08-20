@@ -132,7 +132,7 @@ Daemon is ready
 
 A Web UI can be accessed on this address :http://localhost:5001/
 
-Private notes
+**Private notes**
 ipfs ls  /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uV (init hash)
 ipfs cat  /ipfs/QmZULkCELmmk5XNfCgTnCyFgAVxBRBXyDHGGMVoLFLiXEN (first put file test)
 
