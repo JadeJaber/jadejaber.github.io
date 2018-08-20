@@ -132,7 +132,9 @@ Gateway (readonly) server listening on /ip4/127.0.0.1/tcp/8080
 Daemon is ready
 ```
 
-A Web UI can be accessed on this address: http://localhost:5001/
+IPFS Web UI and API: http://localhost:5001/
+
+IPFS gateway: http://localhost:8080/ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/ (the hash used here is the one generated after the ipfs init command)
 
 **Private notes**
 
