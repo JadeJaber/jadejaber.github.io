@@ -109,7 +109,8 @@ to get started, enter:
 	ipfs cat /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/readme
 ```
 
-
+####### TO BE CONTINUED #######
+https://ipfs.io/docs/getting-started/
 
 
 
