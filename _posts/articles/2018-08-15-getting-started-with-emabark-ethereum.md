@@ -112,6 +112,8 @@ to get started, enter:
 > ipfs cat /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/quick-start
 ```
 
+Check the quick-start file bellow to get started.
+
 **Going online**
 
 Once you’re ready to take things online, run the daemon in another terminal
@@ -135,9 +137,10 @@ Daemon is ready
 **IPFS gateway:** 
 
 You may access every file/dir (local or external) using its hash as http://localhost:8080/[hash].
+
 You may also use this generic gateway: https://gateway.ipfs.io/ipfs/[hash].
 
-ex : http://localhost:8080/ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/ (the hash used here is the one generated after the ipfs init command)
+ex : http://localhost:8080/ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/ (this hash is the one generated after the ipfs init command)
 
 
 **Node Web UI and API** 
@@ -145,8 +148,30 @@ http://localhost:5001/webui
 
 Lets you manage your IPFS node. 
 - access data on the network using the DAG tab and copy/pasting the target hash
-- add files to the MFS (Mutable FS) (ie : ipfs files cp/read) using the Files tab. For info, files added within the webUI are flushed on disk by default.
-- 
+- add files to the MFS (Mutable FS) (ie: ipfs files cp/read/...) using the Files tab. For info, files added within the webUI are flushed on disk by default.
+- list all peers to which you are connected (ie: ipfs swarm peers)
+
+**MFS**
+
+MFS stands for Mutable File System which are files located locally and that can be modified. The commands to interact with MFS are 
+```shell
+ipfs files [command]
+```
+
+By default, the files on MFS are flushed to disk. To avoid auto-flush add "--flush:=false" to your MFS commands. If the daemon is restarted/crashed without flushing, your data is lost.
+
+You may copy/get between IPFS <=> local FS
+```shell
+ipfs add -r ./test														   # local FS => IPFS
+ipfs get /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv 			   # IPFS => local FS
+```
+and copy from IPFS/MFS to MFS
+```shell
+ipfs files cp /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv /       # IPFS => MFS
+ipfs files cp --flush=false  /folder/test.txt /folder_unflushed/test.txt   # MFS => MFS
+```
+
+#### TO BE CONTINUED WITH PIN ###
 
 
 **Private notes**
