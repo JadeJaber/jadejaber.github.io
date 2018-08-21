@@ -98,7 +98,7 @@ cd go-ipfs
 
 #### 3.2.3.2 Getting started with IPFS
 
-Source : https://ipfs.io/docs/getting-started/
+Source : [https://ipfs.io/docs/getting-started/](https://ipfs.io/docs/getting-started/)
 
 ##### 3.2.3.2.1 Init
 ```shell
@@ -144,7 +144,8 @@ ex : http://localhost:8080/ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/ 
 
 
 ##### 3.2.3.2.4 Node Web UI and API
-http://localhost:5001/webui
+
+[http://localhost:5001/webui](http://localhost:5001/webui)
 
 Lets you manage your IPFS node. 
 - access data on the network using the DAG tab and copy/pasting the target hash
