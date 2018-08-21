@@ -171,7 +171,7 @@ ipfs files cp /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv /       # IPF
 ipfs files cp --flush=false  /folder/test.txt /folder_unflushed/test.txt   # MFS => MFS
 ```
 
-#### TO BE CONTINUED WITH PIN ###
+#### TO BE CONTINUED WITH PIN ####
 
 
 **Private notes**
