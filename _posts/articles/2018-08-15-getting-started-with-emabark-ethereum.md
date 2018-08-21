@@ -100,7 +100,7 @@ cd go-ipfs
 
 Source : https://ipfs.io/docs/getting-started/
 
-**Init**
+##### 3.2.3.2.1 Init
 ```shell
 > ipfs init
 initializing IPFS node at /Users/jadejaber/.ipfs
@@ -114,7 +114,7 @@ to get started, enter:
 
 Check the quick-start file bellow to get started.
 
-**Going online**
+##### 3.2.3.2.2 Going online
 
 Once you’re ready to take things online, run the daemon in another terminal
 ```shell
@@ -134,7 +134,7 @@ Gateway (readonly) server listening on /ip4/127.0.0.1/tcp/8080
 Daemon is ready
 ```
 
-**IPFS gateway:** 
+##### 3.2.3.2.3 IPFS gateway
 
 You may access every file/dir (local or external) using its hash as http://localhost:8080/[hash].
 
@@ -143,7 +143,7 @@ You may also use this generic gateway: https://gateway.ipfs.io/ipfs/[hash].
 ex : http://localhost:8080/ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/ (this hash is the one generated after the ipfs init command)
 
 
-**Node Web UI and API** 
+##### 3.2.3.2.4 Node Web UI and API
 http://localhost:5001/webui
 
 Lets you manage your IPFS node. 
@@ -151,7 +151,7 @@ Lets you manage your IPFS node.
 - add files to the MFS (Mutable FS) (ie: ipfs files cp/read/...) using the Files tab. For info, files added within the webUI are flushed on disk by default.
 - list all peers to which you are connected (ie: ipfs swarm peers)
 
-**MFS**
+##### 3.2.3.2.5 MFS
 
 MFS stands for Mutable File System which are files located locally and that can be modified. The commands to interact with MFS are 
 ```shell
