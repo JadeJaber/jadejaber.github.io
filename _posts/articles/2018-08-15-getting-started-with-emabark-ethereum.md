@@ -162,8 +162,8 @@ By default, the files on MFS are flushed to disk. To avoid auto-flush add "--flu
 
 You may copy/get between IPFS <=> local FS
 ```shell
-ipfs add -r ./test														   # local FS => IPFS
-ipfs get /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv 			   # IPFS => local FS
+ipfs add -r ./test                                                       # local FS => IPFS
+ipfs get /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv 			 # IPFS => local FS
 ```
 and copy from IPFS/MFS to MFS
 ```shell
