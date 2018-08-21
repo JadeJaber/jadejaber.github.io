@@ -50,7 +50,7 @@ Decentralized Communication (Whisper, Orbit)
 # 3. Installation
 ## 3.1 Prerequisites
 
-**Node Version Manager**
+### 3.1.1 Node Version Manager
 
 [Install nvm (Node Version Manager)](https://nodesource.com/blog/installing-node-js-tutorial-using-nvm-on-mac-os-x-and-ubuntu/)
 ```shell
@@ -58,7 +58,7 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | 
 nvm --version ## Check installation
 ```
 
-**Install Node Long Term Support**
+### 3.1.2 Install Node Long Term Support
 ```shell
 nvm install --lts
 nvm use --lts
