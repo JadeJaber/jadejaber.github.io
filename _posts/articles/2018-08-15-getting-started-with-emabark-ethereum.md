@@ -134,13 +134,19 @@ Daemon is ready
 
 **IPFS gateway:** 
 
-http://localhost:8080/ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/ (the hash used here is the one generated after the ipfs init command).
-You may access every local file/dir using its hash as http://localhost:8080/[hash].
-Data on you node is also available to the outside world (since you're running the deamon) and you can retrieve your local data using https://gateway.ipfs.io/ipfs/[hash].
+You may access every file/dir (local or external) using its hash as http://localhost:8080/[hash].
+You may also use this generic gateway: https://gateway.ipfs.io/ipfs/[hash].
+
+ex : http://localhost:8080/ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/ (the hash used here is the one generated after the ipfs init command)
 
 
 **Node Web UI and API** 
 http://localhost:5001/webui
+
+Lets you manage your IPFS node. 
+- access data on the network using the DAG tab and copy/pasting the target hash
+- add files to the MFS (Mutable FS) (ie : ipfs files cp/read) using the Files tab. For info, files added within the webUI are flushed on disk by default.
+- 
 
 
 **Private notes**
