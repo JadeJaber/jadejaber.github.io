@@ -107,7 +107,7 @@ $ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods "[\"PUT\", \"P
 ```
 
 # 4. Setup
-#### TO Be CONTINED #####
+#### TO Be CONTINUED #####
 https://embark.status.im/docs/setup.html
 
 
