@@ -98,7 +98,13 @@ cd go-ipfs
 More on IPFS here : [Getting started with IPFS](http://www.jadejaber.com/articles/getting-started-with-ipfs/)
 
 
-
+**Notes: ** Once installed and setup you will need to make sure the headers are setup
+properly for your app.
+```shell
+$ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin "[\"http://example.com\"]"
+$ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Credentials "[\"true\"]"
+$ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods "[\"PUT\", \"POST\", \"GET\"]"
+```
 
 
 
