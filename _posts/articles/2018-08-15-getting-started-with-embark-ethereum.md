@@ -83,7 +83,6 @@ Go Ethereum will be installed in /usr/local/Cellar
 
 ### 3.2.3 With IPFS support
 
-#### 3.2.3.1 IPFS Installation
 To use IPFS you need first to install a IPFS node and run it. There two available, go-ipfs and js-ipfs. We will go with go-ipfs.
 
 1. [Get the tarball](https://dist.ipfs.io/go-ipfs/v0.4.17/go-ipfs_v0.4.17_darwin-amd64.tar.gz)
@@ -96,101 +95,5 @@ cd go-ipfs
 /usr/local/bin/ipfs #check installation
 ```
 
-#### 3.2.3.2 Getting started with IPFS
-
-Source : [https://ipfs.io/docs/getting-started/](https://ipfs.io/docs/getting-started/)
-
-##### 3.2.3.2.1 Init
-```shell
-> ipfs init
-initializing IPFS node at /Users/jadejaber/.ipfs
-generating 2048-bit RSA keypair...done
-peer identity: QmNPUynBD5Dvg698rAqNeb6EtBVGY3iEZFUB8qJwgeZALM
-to get started, enter:
-
-> ipfs cat /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/readme
-> ipfs cat /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/quick-start
-```
-
-Check the quick-start file bellow to get started.
-
-##### 3.2.3.2.2 Going online
-
-Once you’re ready to take things online, run the daemon in another terminal
-```shell
-> ipfs daemon
-Initializing daemon...
-Successfully raised file descriptor limit to 2048.
-Swarm listening on /ip4/127.0.0.1/tcp/4001
-Swarm listening on /ip4/192.168.1.72/tcp/4001
-Swarm listening on /ip6/::1/tcp/4001
-Swarm listening on /p2p-circuit/ipfs/QmNPUynBD5Dvg698rAqNeb6EtBVGY3iEZFUB8qJwgeZALM
-Swarm announcing /ip4/127.0.0.1/tcp/4001
-Swarm announcing /ip4/192.168.1.72/tcp/4001
-Swarm announcing /ip4/86.74.223.122/tcp/41331
-Swarm announcing /ip6/::1/tcp/4001
-API server listening on /ip4/127.0.0.1/tcp/5001
-Gateway (readonly) server listening on /ip4/127.0.0.1/tcp/8080
-Daemon is ready
-```
-
-##### 3.2.3.2.3 IPFS gateway
-
-You may access every file/dir (local or external) using its hash as http://localhost:8080/[hash].
-
-You may also use this generic gateway: https://gateway.ipfs.io/ipfs/[hash].
-
-ex : http://localhost:8080/ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/ (this hash is the one generated after the ipfs init command)
-
-
-##### 3.2.3.2.4 Node Web UI and API
-
-[http://localhost:5001/webui](http://localhost:5001/webui)
-
-Lets you manage your IPFS node. 
-- access data on the network using the DAG tab and copy/pasting the target hash
-- add files to the MFS (Mutable FS) (ie: ipfs files cp/read/...) using the Files tab. For info, files added within the webUI are flushed on disk by default.
-- list all peers to which you are connected (ie: ipfs swarm peers)
-
-##### 3.2.3.2.5 MFS
-
-MFS stands for Mutable File System which are files located locally and that can be modified. The commands to interact with MFS are 
-```shell
-ipfs files [command]
-```
-
-By default, the files on MFS are flushed to disk. To avoid auto-flush add "--flush:=false" to your MFS commands. If the daemon is restarted/crashed without flushing, your data is lost.
-
-You may copy/get between IPFS <=> local FS
-```shell
-ipfs add -r ./test                                                       # local FS => IPFS
-ipfs get /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv 			 # IPFS => local FS
-```
-and copy from IPFS/MFS to MFS
-```shell
-ipfs files cp /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv /       # IPFS => MFS
-ipfs files cp --flush=false  /folder/test.txt /folder_unflushed/test.txt   # MFS => MFS
-```
-
-#### TO BE CONTINUED WITH PIN ####
-
-
-**Private notes**
-
-- ipfs ls  /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uV (init hash)
-- ipfs cat  /ipfs/QmZULkCELmmk5XNfCgTnCyFgAVxBRBXyDHGGMVoLFLiXEN (first put file test)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+More on IPFS here : [Getting started with IPFS](./2018-08-23-getting-started-with-ipfs.md)
 
