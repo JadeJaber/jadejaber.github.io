@@ -10,7 +10,7 @@ tags:
   - smart contract
   - embark
 ---
-# 1. Sources : 
+# 1. Sources
 - https://github.com/embark-framework/embark
 - https://embark.readthedocs.io/en/2.6.6/
 - https://ethereumdev.io/getting-started-with-embark-framework/
@@ -106,6 +106,8 @@ $ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Credentials "[\"true\"
 $ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods "[\"PUT\", \"POST\", \"GET\"]"
 ```
 
-
+# 4. Setup
+#### TO Be CONTINED #####
+https://embark.status.im/docs/setup.html
 
 
