@@ -95,5 +95,5 @@ cd go-ipfs
 /usr/local/bin/ipfs #check installation
 ```
 
-More on IPFS here : [Getting started with IPFS]({% 2018-08-23-getting-started-with-ipfs.md %})
+More on IPFS here : [Getting started with IPFS]({% post_url 2018-08-23-getting-started-with-ipfs.md %})
 
