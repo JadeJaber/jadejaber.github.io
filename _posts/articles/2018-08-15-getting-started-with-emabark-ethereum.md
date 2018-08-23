@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 layout: post
 excerpt: description
 categories: articles
@@ -179,18 +179,3 @@ ipfs files cp --flush=false  /folder/test.txt /folder_unflushed/test.txt   # MFS
 
 - ipfs ls  /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uV (init hash)
 - ipfs cat  /ipfs/QmZULkCELmmk5XNfCgTnCyFgAVxBRBXyDHGGMVoLFLiXEN (first put file test)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
