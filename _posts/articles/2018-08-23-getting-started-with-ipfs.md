@@ -15,7 +15,7 @@ Source : [https://ipfs.io/docs/getting-started/](https://ipfs.io/docs/getting-st
 # 1. Installation``
 
 1. [Get the tarball](https://dist.ipfs.io/go-ipfs/v0.4.17/go-ipfs_v0.4.17_darwin-amd64.tar.gz)
-2. Untar and install it. Ipfs binary will be moved to /usr/local
+2. Untar and install it. IPFS binary will be moved to /usr/local
 
 ```shell
 tar -xvzf ./go-ipfs_v0.4.17_darwin-amd64.tar.gz
