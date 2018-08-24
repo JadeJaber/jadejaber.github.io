@@ -12,7 +12,19 @@ tags:
 ---
 Source : [https://ipfs.io/docs/getting-started/](https://ipfs.io/docs/getting-started/)
 
-# 1. Init
+# 1. Installation``
+
+1. [Get the tarball](https://dist.ipfs.io/go-ipfs/v0.4.17/go-ipfs_v0.4.17_darwin-amd64.tar.gz)
+2. Untar and install it. Ipfs binary will be moved to /usr/local
+
+```shell
+tar -xvzf ./go-ipfs_v0.4.17_darwin-amd64.tar.gz
+cd go-ipfs
+./install.sh
+/usr/local/bin/ipfs #check installation
+```
+
+# 2. Init
 ```shell
 > ipfs init
 initializing IPFS node at /Users/jadejaber/.ipfs
@@ -26,7 +38,7 @@ to get started, enter:
 
 Check the quick-start file bellow to get started.
 
-# 2. Going online
+# 3. Going online
 
 Once you’re ready to take things online, run the daemon in another terminal
 ```shell
@@ -46,7 +58,7 @@ Gateway (readonly) server listening on /ip4/127.0.0.1/tcp/8080
 Daemon is ready
 ```
 
-# 3. IPFS gateway
+# 4. IPFS gateway
 
 You may access every file/dir (local or external) using its hash as http://localhost:8080/[hash].
 
@@ -55,7 +67,7 @@ You may also use this generic gateway: https://gateway.ipfs.io/ipfs/[hash].
 ex : http://localhost:8080/ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv/ (this hash is the one generated after the ipfs init command)
 
 
-# 4. Node Web UI and API
+# 5. Node Web UI and API
 
 [http://localhost:5001/webui](http://localhost:5001/webui)
 
@@ -64,7 +76,7 @@ Lets you manage your IPFS node.
 - add files to the MFS (Mutable FS) (ie: ipfs files cp/read/...) using the Files tab. For info, files added within the webUI are flushed on disk by default.
 - list all peers to which you are connected (ie: ipfs swarm peers)
 
-# 5. MFS
+# 6. MFS
 
 MFS stands for Mutable File System which are files located locally and that can be modified. The commands to interact with MFS are 
 ```shell
@@ -84,22 +96,6 @@ ipfs files cp /ipfs/QmS4ustL54uo8FzR9455qaxZwuMiUhyvMcX9Ba8nUH4uVv /       # IPF
 ipfs files cp --flush=false  /folder/test.txt /folder_unflushed/test.txt   # MFS => MFS
 ```
 
-# 6. Pinning
+# 7. Pinning
 
 Pininnng ensures your data to be persisted localy. When you "ipfs add" content, it is pinned by default. If you do not pin your content, it will be garabage collected and not be available anymore.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
