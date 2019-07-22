@@ -50,7 +50,7 @@ docker-machine stop default
 
 
 ## 3. Deploy SpringBootApplication on Docker
-1. Launch Docker by starting the Docker Desktop application
+1. Launch Docker by starting the Docker Desktop application (MacOS)
 2. Test docker with 
 ```bash
 docker run hello-world
@@ -75,30 +75,24 @@ docker image ls
 ```
 6. To launch the container: 
 ```bash
-docker run -p [container port]:[application port] [repository name]
-docker run -p 4000:8080 demorest
+docker run [-d] -p [container port]:[application port] [repository name]
+docker run -d -p 4000:8080 demorest
 ```
 7. To list all the running container or past ones
 ```bash
 docker container ls --all
 ```
+8. To kill your container
+```bash
+docker container kill [container id]
+```
 
 
+###########
+Next step  => Publish your image on dockerhub
 
 4. docker login -u legabz -p N************** https://hub.docker.com
 ######### Je suis la https://dzone.com/articles/run-simple-jar-application-in-docker-container-1   
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
