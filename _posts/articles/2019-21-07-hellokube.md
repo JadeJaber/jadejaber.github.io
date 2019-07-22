@@ -107,7 +107,7 @@ docker push USERNAME/REPO_NAME:TAG
 docker push legabz/hellokube:swagger
 ``` 
  
-
+Next step pull your image from somewhere else and run it.
 
 
 
