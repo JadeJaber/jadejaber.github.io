@@ -51,7 +51,11 @@ docker-machine stop default
 
 ## 3. Deploy SpringBootApplication on Docker
 1. Launch Docker by starting the Docker Desktop application
-2. vim Dockerfile => edit a Docker image conf
+2. Test docker with 
+```bash
+docker run hello-world
+``` 
+3. Create a folder containing the jar and a Dockerfile 
 ```bash
 FROM java:8
 WORKDIR /
@@ -59,33 +63,30 @@ ADD springboot.demo.rest.api-1.0-SNAPSHOT.jar springboot.demo.rest.api-1.0-SNAPS
 EXPOSE 8080
 CMD java -jar springboot.demo.rest.api-1.0-SNAPSHOT.jar
 ```
-3. docker build -t demorest .  => Builds the Docker image
-4. To list all images 
+4. Build the image
+```bash
+build -t demorest . 
+``` 
+5. To list all images 
 ```bash
 docker images
+OR
+docker image ls
 ```
-
-4. docker login -u legabz -p N************** https://hub.docker.com
-######### Je suis la https://dzone.com/articles/run-simple-jar-application-in-docker-container-1   
-
-
-#######
-Je reprends les étapes : 
-1. On installe docker (etape 1 ci-dessus)
-2. On lance l'application  Docker Desktop
-3. On lance "docker run hello-world" pour vérifier que docker tourne bien
-4. On peut ensuite lancer " docker image ls" pour voir toutes les images pullées localement
-5. To launch the container: 
+6. To launch the container: 
 ```bash
 docker run -p [container port]:[application port] [repository name]
 docker run -p 4000:8080 demorest
 ```
-5. On peut aussi lancer "docker container ls --all" pour lister toutes les containers qui tournent ou qui ont tournées (d'ou le --all)
-https://docs.docker.com/get-started/part2/
+7. To list all the running container or past ones
+```bash
+docker container ls --all
+```
 
 
 
-
+4. docker login -u legabz -p N************** https://hub.docker.com
+######### Je suis la https://dzone.com/articles/run-simple-jar-application-in-docker-container-1   
 
 
 
