@@ -50,13 +50,33 @@ docker-machine stop default
 
 
 ## 3. Deploy SpringBootApplication on Docker
-1. vim Dockerfile => edit the Docker image conf
-2. docker build -t demorest .  => Builds the Docker image
-3. docker login -u legabz -p N************** https://hub.docker.com
-######### Je suis la https://dzone.com/articles/run-simple-jar-application-in-docker-container-1   
-######### et j'ai créé ma premiere image (tout est dans le dossier source/kube
-Il faut maintenant créer un compte sur  https://hub.docker.com/ pour publier mon image
+1. Launch Docker by starting the Docker Desktop application
+2. vim Dockerfile => edit a Docker image conf
+```bash
+FROM java:8
+WORKDIR /
+ADD springboot.demo.rest.api-1.0-SNAPSHOT.jar springboot.demo.rest.api-1.0-SNAPSHOT.jar
+EXPOSE 8080
+CMD java -jar springboot.demo.rest.api-1.0-SNAPSHOT.jar
+```
+3. docker build -t demorest .  => Builds the Docker image
+4. To list all images 
+```bash
+docker images
+```
 
+4. docker login -u legabz -p N************** https://hub.docker.com
+######### Je suis la https://dzone.com/articles/run-simple-jar-application-in-docker-container-1   
+
+
+#######
+Je reprends les étapes : 
+1. On installe docker (etape 1 ci-dessus)
+2. On lance l'application  Docker Desktop
+3. On lance "docker run hello-world" pour vérifier que docker tourne bien
+4. On peut ensuite lancer " docker image ls" pour voir toutes les images pullées localement
+5. On peut aussi lancer "docker container ls --all" pour lister toutes les containers qui tournent ou qui ont tournées (d'ou le --all)
+6. 
 
 
 
@@ -209,4 +229,3 @@ docker-machine create \
     --driver=xhyve \
     --xhyve-experimental-nfs-share \
     my-machine
-
