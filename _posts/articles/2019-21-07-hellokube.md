@@ -65,7 +65,7 @@ CMD java -jar springboot.demo.rest.api-1.0-SNAPSHOT.jar
 ```
 4. Build the image
 ```bash
-build -t demorest . 
+build -t IMAGE_NAME . 
 ``` 
 5. To list all images 
 ```bash
@@ -75,7 +75,7 @@ docker image ls
 ```
 6. To launch the container: 
 ```bash
-docker run [-d] -p [container port]:[application port] [repository name]
+docker run [-d] -p CONTAINER_PORT:APPLICATION_PORT IMAGE_NAME
 docker run -d -p 4000:8080 demorest
 ```
 7. To list all the running container or past ones
@@ -84,15 +84,29 @@ docker container ls --all
 ```
 8. To kill your container
 ```bash
-docker container kill [container id]
+docker container stop CONTAINER_ID
 ```
 
+## 4. Share your image
+Dockerhub is a free and public registry that contains repositories. Repositories contain docker images. Let's share our first image.
 
-###########
-Next step  => Publish your image on dockerhub
+1. Login to dockerhub (you need to have an account). Docker will by default use dockerhub registry. But there are others and you may have your private registry.
+```bash
+docker login [registry]
+```
 
-4. docker login -u legabz -p N************** https://hub.docker.com
-######### Je suis la https://dzone.com/articles/run-simple-jar-application-in-docker-container-1   
+2. Tag your image
+```bash
+docker tag IMAGE USERNAME/REPOSITORY:TAG
+docker tag demorest legabz/hellokube:swagger
+``` 
+
+3. Publish your image
+```bash
+docker push USERNAME/REPO_NAME:TAG
+docker push legabz/hellokube:swagger
+``` 
+ 
 
 
 
