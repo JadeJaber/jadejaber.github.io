@@ -75,8 +75,14 @@ Je reprends les étapes :
 2. On lance l'application  Docker Desktop
 3. On lance "docker run hello-world" pour vérifier que docker tourne bien
 4. On peut ensuite lancer " docker image ls" pour voir toutes les images pullées localement
+5. To launch the container: 
+```bash
+docker run -p [container port]:[application port] [repository name]
+docker run -p 4000:8080 demorest
+```
 5. On peut aussi lancer "docker container ls --all" pour lister toutes les containers qui tournent ou qui ont tournées (d'ou le --all)
 https://docs.docker.com/get-started/part2/
+
 
 
 
