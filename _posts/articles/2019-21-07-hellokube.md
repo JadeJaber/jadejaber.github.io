@@ -76,7 +76,8 @@ Je reprends les étapes :
 3. On lance "docker run hello-world" pour vérifier que docker tourne bien
 4. On peut ensuite lancer " docker image ls" pour voir toutes les images pullées localement
 5. On peut aussi lancer "docker container ls --all" pour lister toutes les containers qui tournent ou qui ont tournées (d'ou le --all)
-6. 
+https://docs.docker.com/get-started/part2/
+
 
 
 
