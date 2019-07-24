@@ -13,6 +13,8 @@ tags:
 ---
 You may run docker containers on your host or on VMs that are running on your hosts. In this article we will run our springboot application in a docker container that is running on a VM. This VM will run on virtualBox and will be managed by either Minikube or docker-machine.
 
+Youy may want to read the previous article: [Hello Docker Macos Host](http://www.jadejaber.com/articles/hello-docker-macos-host/)
+
 ## 1. Install Docker and VirtualBox
 
 ### 1.1 Install Docker
@@ -54,8 +56,10 @@ docker-machine ssh machine1
 Set your environment to let docker run its containers on that new VM
 
 ```bash
-eval $(docker-machine env machine1
+eval $(docker-machine env machine1)
 ```
+
+
 
 List the processes running in the container
 
