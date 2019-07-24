@@ -26,10 +26,15 @@ docker run hello-world
 3. Create a folder containing the jar and a Dockerfile 
 ```bash
 FROM java:8
+
 WORKDIR /
+
 ADD springboot.demo.rest.api-1.0-SNAPSHOT.jar springboot.demo.rest.api-1.0-SNAPSHOT.jar
+
 EXPOSE 8080
+
 CMD java -jar springboot.demo.rest.api-1.0-SNAPSHOT.jar
+
 ```
 "EXPOSE port" will expose the specific port on the contaienr, it will be mapped with a host port at runtime.  
 
