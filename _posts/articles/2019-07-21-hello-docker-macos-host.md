@@ -76,6 +76,7 @@ docker container stop CONTAINER_ID
 Dockerhub is a free and public registry that contains repositories. Repositories contain docker images. Let's share our first image.
 
 1. Login to dockerhub (you need to have an account). Docker will by default use dockerhub registry. But there are others and you may have your private registry.
+
 ```bash
 docker login [registry]
 ```
