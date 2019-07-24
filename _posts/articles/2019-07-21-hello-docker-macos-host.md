@@ -12,7 +12,7 @@ tags:
 
 This is a quick tutorial to run your springboot application with a swagger (already packaged) in a Docker container on MAC OS. 
 
-You can package this Maven project if you do not have your own : (https://github.com/JadeJaber/spring-templates/tree/master/srpingboot.rest.api)
+You can package this Maven project if you do not have your own : [https://github.com/JadeJaber/spring-templates/tree/master/srpingboot.rest.api](https://github.com/JadeJaber/spring-templates/tree/master/srpingboot.rest.api)
 
 ## 1. Install Docker
 Download from [docker.com](https://hub.docker.com/editions/community/docker-ce-desktop-mac)
