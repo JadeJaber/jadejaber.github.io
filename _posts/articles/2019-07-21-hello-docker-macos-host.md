@@ -20,39 +20,41 @@ Download from https://hub.docker.com/editions/community/docker-ce-desktop-mac
 ## 2. Deploy SpringBootApplication on Docker
 1. Launch Docker by starting the Docker Desktop application (MacOS)
 2. Test docker with 
+
 ```bash
 docker run hello-world
 ``` 
+
 3. Create a folder containing the jar and a Dockerfile 
 ```bash
 FROM java:8
-
 WORKDIR /
-
 ADD springboot.demo.rest.api-1.0-SNAPSHOT.jar springboot.demo.rest.api-1.0-SNAPSHOT.jar
-
 EXPOSE 8080
-
 CMD java -jar springboot.demo.rest.api-1.0-SNAPSHOT.jar
-
 ```
+
 "EXPOSE port" will expose the specific port on the contaienr, it will be mapped with a host port at runtime.  
 
 4. Build the image
 ```bash
 docker build -t IMAGE_NAME . 
 ``` 
+
 5. To list all images 
 ```bash
 docker images
 OR
 docker image ls
 ```
+
 6. To launch the container: 
+
 ```bash
 docker run [-d] -p HOST_PORT:CONTAINER_PORT IMAGE_NAME
 docker run -d -p 4000:8080 demorest
 ```
+
 -p port:port maps the exposed port to a host port
 
 7. To list all the running container or past ones
