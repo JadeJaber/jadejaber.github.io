@@ -6,9 +6,11 @@ categories: articles
 share: true
 tags:
   - docker
+  - springboot
+  - swagger
 ---
 
-This is a quick tutorial to run your springboot application with a swagger in a Docker container on MAC OS. 
+This is a quick tutorial to run your springboot application with a swagger (already packaged) in a Docker container on MAC OS. 
 
 ## 1. Install Docker
 Download from https://hub.docker.com/editions/community/docker-ce-desktop-mac 
