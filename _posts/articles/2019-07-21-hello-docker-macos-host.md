@@ -26,6 +26,7 @@ docker run hello-world
 ``` 
 
 3. Create a folder containing the jar and a Dockerfile 
+
 ```bash
 FROM java:8
 WORKDIR /
@@ -37,11 +38,13 @@ CMD java -jar springboot.demo.rest.api-1.0-SNAPSHOT.jar
 "EXPOSE port" will expose the specific port on the contaienr, it will be mapped with a host port at runtime.  
 
 4. Build the image
+
 ```bash
 docker build -t IMAGE_NAME . 
 ``` 
 
 5. To list all images 
+
 ```bash
 docker images
 OR
@@ -58,10 +61,13 @@ docker run -d -p 4000:8080 demorest
 -p port:port maps the exposed port to a host port
 
 7. To list all the running container or past ones
+
 ```bash
 docker container ls --all
 ```
+
 8. To kill your container
+
 ```bash
 docker container stop CONTAINER_ID
 ```
@@ -75,24 +81,28 @@ docker login [registry]
 ```
 
 2. Tag your image
+
 ```bash
 docker tag IMAGE USERNAME/REPOSITORY:TAG
 docker tag demorest legabz/hellokube:swagger
 ``` 
 
 3. Publish your image
+
 ```bash
 docker push USERNAME/REPO_NAME:TAG
 docker push legabz/hellokube:swagger
 ```  
  
 4. Run your image from anywhere
+
 ```bash
 docker run username/repository:tag
 docker run -p 4000:80 legabz/hellokube:swagger
 ```
 
 ## 4. Cheat sheet 
+
 ```bash
 docker build -t friendlyhello .  # Create image using this directory's Dockerfile
 docker run -p 4000:80 friendlyhello  # Run "friendlyhello" mapping port 4000 to 80
