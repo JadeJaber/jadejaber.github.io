@@ -18,14 +18,15 @@ You can package this Maven project if you do not have your own : https://github.
 Download from https://hub.docker.com/editions/community/docker-ce-desktop-mac 
 
 ## 2. Deploy SpringBootApplication on Docker
-1. Launch Docker by starting the Docker Desktop application (MacOS)
-2. Test docker with 
+Launch Docker by starting the Docker Desktop application (MacOS)
+
+Test docker with 
 
 ```bash
 docker run hello-world
 ``` 
 
-3. Create a folder containing the jar and a Dockerfile 
+Create a folder containing the jar and a Dockerfile 
 
 ```bash
 FROM java:8
@@ -35,15 +36,15 @@ EXPOSE 8080
 CMD java -jar springboot.demo.rest.api-1.0-SNAPSHOT.jar
 ```
 
-"EXPOSE port" will expose the specific port on the contaienr, it will be mapped with a host port at runtime.  
+> "EXPOSE port" will expose the specific port on the contaienr, it will be mapped with a host port at runtime.  
 
-4. Build the image
+Build the image
 
 ```bash
 docker build -t IMAGE_NAME . 
 ``` 
 
-5. To list all images 
+To list all images 
 
 ```bash
 docker images
@@ -51,22 +52,22 @@ OR
 docker image ls
 ```
 
-6. To launch the container: 
+To launch the container: 
 
 ```bash
 docker run [-d] -p HOST_PORT:CONTAINER_PORT IMAGE_NAME
 docker run -d -p 4000:8080 demorest
 ```
 
--p port:port maps the exposed port to a host port
+> -p port:port maps the exposed port to a host port
 
-7. To list all the running container or past ones
+To list all the running container or past ones
 
 ```bash
 docker container ls --all
 ```
 
-8. To kill your container
+To kill your container
 
 ```bash
 docker container stop CONTAINER_ID
@@ -75,27 +76,27 @@ docker container stop CONTAINER_ID
 ## 3. Share your image
 Dockerhub is a free and public registry that contains repositories. Repositories contain docker images. Let's share our first image.
 
-1. Login to dockerhub (you need to have an account). Docker will by default use dockerhub registry. But there are others and you may have your private registry.
+Login to dockerhub (you need to have an account). Docker will by default use dockerhub registry. But there are others and you may have your private registry.
 
 ```bash
 docker login [registry]
 ```
 
-2. Tag your image
+Tag your image
 
 ```bash
 docker tag IMAGE USERNAME/REPOSITORY:TAG
 docker tag demorest legabz/hellokube:swagger
 ``` 
 
-3. Publish your image
+Publish your image
 
 ```bash
 docker push USERNAME/REPO_NAME:TAG
 docker push legabz/hellokube:swagger
 ```  
  
-4. Run your image from anywhere
+Run your image from anywhere
 
 ```bash
 docker run username/repository:tag
