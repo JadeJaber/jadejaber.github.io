@@ -14,7 +14,7 @@ tags:
 ## 1. Install Docker and VirtualBox
 
 ### 1.1 Install Docker
-Download from https://hub.docker.com/editions/community/docker-ce-desktop-mac 
+Download from [docker.com](https://hub.docker.com/editions/community/docker-ce-desktop-mac)
 
 ### 1.2 Install VirtualBox
 ```bash
@@ -34,7 +34,6 @@ eval $(docker-machine env default)
 docker default ps
 minikube stop
 ```
-
 
 ### 2.2 Instantiate virtual machines With docker-machine (needs VirtualBox installation)
 
