@@ -13,7 +13,7 @@ title: Run your first docker service/stack with swarm (Mono node)
 ---
 In this post we will deploy a web application with a Load Balancer in a docker Service using swarm.
 
-Youy may want to read the previous articles: 
+You may want to read the previous articles: 
 - [Hello Docker Macos Host](http://www.jadejaber.com/articles/hello-docker-macos-host/)
 - [Hello Docker With Docker Machine](http://www.jadejaber.com/articles/hello-docker-with-docker-machine/)
 
