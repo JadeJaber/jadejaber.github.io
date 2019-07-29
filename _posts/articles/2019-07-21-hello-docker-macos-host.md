@@ -26,7 +26,7 @@ Test docker with
 docker run hello-world
 ``` 
 
-Create a folder containing the jar and a Dockerfile 
+Create a folder containing the jar and a Dockerfile (vim Dockerfile)
 
 ```bash
 FROM java:8
@@ -38,10 +38,11 @@ CMD java -jar springboot.demo.rest.api-1.0-SNAPSHOT.jar
 
 > "EXPOSE port" will expose the specific port on the contaienr, it will be mapped with a host port at runtime.  
 
-Build the image and give it a tag
+Build and tag the image.
 
 ```bash
-docker build -t TAG . 
+docker build -t USERNAME/REPOSITORY:TAG . 
+docker build -t legabz/hellokube:swagger .
 ``` 
 
 To list all images 
@@ -55,8 +56,8 @@ docker image ls
 To launch the container: 
 
 ```bash
-docker run [-d] -p HOST_PORT:CONTAINER_PORT IMAGE_NAME
-docker run -d -p 4000:8080 demorest
+docker run [-d] -p HOST_PORT:CONTAINER_PORT TAG
+docker run -d -p 4000:8080 legabz/hellokube:swagger
 ```
 
 > -p port:port maps the exposed port to a host port
@@ -81,13 +82,6 @@ Login to dockerhub (you need to have an account). Docker will by default use doc
 ```bash
 docker login [registry]
 ```
-
-Tag your image
-
-```bash
-docker tag IMAGE USERNAME/REPOSITORY:TAG
-docker tag demorest legabz/hellokube:swagger
-``` 
 
 Publish your image
 
