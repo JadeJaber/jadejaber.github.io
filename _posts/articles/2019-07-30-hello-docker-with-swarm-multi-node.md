@@ -19,3 +19,12 @@ You may want to read the previous articles:
 - [Hello Docker With Docker Machine](http://www.jadejaber.com/articles/hello-docker-with-docker-machine/)
 - [Run your first docker service/stack with swarm (Mono node)](http://www.jadejaber.com/articles/hello-docker-with-swarm-mono-node/)
 
+Create 2 vms with docker-machine
+```bash
+docker-machine create --driver virtualbox machine1
+docker-machine create --driver virtualbox machine2
+```
+
+
+
+
