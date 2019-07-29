@@ -30,7 +30,7 @@ services:
       resources:
         limits:
           cpus: "0.1"
-          memory: 50M
+          memory: 1G
       restart_policy:
         condition: on-failure
     ports:
