@@ -38,10 +38,10 @@ CMD java -jar springboot.demo.rest.api-1.0-SNAPSHOT.jar
 
 > "EXPOSE port" will expose the specific port on the contaienr, it will be mapped with a host port at runtime.  
 
-Build the image
+Build the image and give it a tag
 
 ```bash
-docker build -t IMAGE_NAME . 
+docker build -t TAG . 
 ``` 
 
 To list all images 
