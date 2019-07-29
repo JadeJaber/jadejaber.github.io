@@ -8,6 +8,7 @@ tags:
   - docker
   - springboot
   - swagger
+title: Hello docker on your local MacOS host
 ---
 
 This is a quick tutorial to run your springboot application with a swagger (already packaged) in a Docker container on MAC OS. 
