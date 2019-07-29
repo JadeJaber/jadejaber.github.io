@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 excerpt: Run your first docker service/stack with swarm
 categories: articles
@@ -16,6 +16,7 @@ Youy may want to read the previous articles:
 - [Hello Docker Macos Host](http://www.jadejaber.com/articles/hello-docker-macos-host/)
 - [Hello Docker With Docker Machine](http://www.jadejaber.com/articles/hello-docker-with-docker-machine/)
 
+![hello-docker-with-swarm]({{site.baseurl}}/images/hello-docker-with-swarm.001.jpeg)
 
 Describe the application in a yml
 
