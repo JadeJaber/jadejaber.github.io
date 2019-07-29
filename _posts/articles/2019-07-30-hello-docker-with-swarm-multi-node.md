@@ -50,5 +50,10 @@ View the nodes inthe swarm
 docker-machine ssh machine1 "docker node ls"
 ```
 
+To leave swarm, you need to leave it from each node with
+
+```bash
+docker swarm leave
+```
 
 
