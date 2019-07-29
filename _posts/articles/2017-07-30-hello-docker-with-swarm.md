@@ -18,10 +18,27 @@ Youy may want to read the previous articles:
 
 ![hello-docker-with-swarm]({{site.baseurl}}/images/hello-docker-with-swarm.001.jpeg)
 
-Describe the application in a yml
+Describe the application in a docker-compose.yml
 
-```bash
-docker-compose.yml
+```yml
+version: "3"
+services:
+  web:
+    image: legabz/hellokube:swagger
+    deploy:
+      replicas: 5
+      resources:
+        limits:
+          cpus: "0.1"
+          memory: 50M
+      restart_policy:
+        condition: on-failure
+    ports:
+      - "4000:80"
+    networks:
+      - webnet
+networks:
+  webnet:
 ```
 
 Init host as a swarm host
