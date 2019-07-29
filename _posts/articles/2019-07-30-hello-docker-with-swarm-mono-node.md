@@ -42,7 +42,7 @@ networks:
   webnet:
 ```
 
-Init host as a swarm node
+Init host as a swarm manager node
 
 ```bash
 docker swarm init
