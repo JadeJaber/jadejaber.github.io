@@ -23,7 +23,7 @@ Create 2 vms with docker-machine
 ```bash
 docker-machine create --driver virtualbox <machine name>
 docker-machine create --driver virtualbox machine1
-docker-machine create --driver virtualbox machine2
+docker-machine create --driver virtualbox machine2s
 ```
 
 List your vms (and get their ips)
@@ -55,5 +55,3 @@ To leave swarm, you need to leave it from each node with
 ```bash
 docker swarm leave
 ```
-
-
