@@ -71,3 +71,18 @@ To leave swarm, you need to leave it from each node with
 ```bash
 docker swarm leave
 ```
+
+Deploy your application with the same compose-yml that we have used previously. And  
+```bash
+> docker stack deploy -c docker-compose.yml myApp
+Creating network myApp_webnet
+Creating service myApp_web
+
+> docker service ps myApp
+ID                  NAME                IMAGE                      NODE                DESIRED STATE       CURRENT STATE                ERROR               PORTS
+yp8nldzgaclu        myApp_web.1         legabz/hellokube:swagger   machine1            Running             Running about a minute ago
+mz30tjee1e32        myApp_web.2         legabz/hellokube:swagger   machine2            Running             Running 33 seconds ago
+mll62ap0cvt1        myApp_web.3         legabz/hellokube:swagger   machine2            Running             Running 33 seconds ago
+ly087nai6eia        myApp_web.4         legabz/hellokube:swagger   machine1            Running             Running about a minute ago
+i7ejraewwcge        myApp_web.5         legabz/hellokube:swagger   machine2            Running             Running 33 seconds ago
+```
