@@ -23,7 +23,7 @@ Create 2 vms with docker-machine
 ```bash
 docker-machine create --driver virtualbox <machine name>
 docker-machine create --driver virtualbox machine1
-docker-machine create --driver virtualbox machine2s
+docker-machine create --driver virtualbox machine2
 ```
 
 List your vms (and get their ips)
@@ -39,12 +39,28 @@ docker-machine ssh <machine name> "docker swarm init --advertise-addr <myvm1 ip>
 docker-machine ssh machine1 "docker swarm init --advertise-addr 192.168.99.105"
 ```
 
-Add a swarm worker to your swarm cluster (the join command is returned by the init command)
+OR
+
+```bash
+eval $(docker-machine env machine1)
+docker swarm init --advertise-addr <myvm1 ip> 
+docker swarm init --advertise-addr 192.168.99.105
+```
+
+Add a swarm worker to your swarm cluster (the join command is returned by the "swarm init" command above)
+
 ```bash
 docker-machine ssh machine2 "docker swarm join --token SWMTKN-1-4udgeg63gvom4fliqgomj2vk25zf1mnk03l5yz0stb9cc4y6ft-9q938913xdtt4eymor8d186oq 192.168.99.105:2377"
 ```
 
-View the nodes inthe swarm
+OR 
+
+```bash
+eval $(docker-machine env machine2)
+docker swarm join --token SWMTKN-1-4udgeg63gvom4fliqgomj2vk25zf1mnk03l5yz0stb9cc4y6ft-9q938913xdtt4eymor8d186oq 192.168.99.105:2377
+```
+
+View the nodes in the swarm
 
 ```bash
 docker-machine ssh machine1 "docker node ls"
