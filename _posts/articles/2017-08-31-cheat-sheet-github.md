@@ -67,16 +67,23 @@ git log origin/feature..HEAD
 
 ## 4. git bisect
 
-If you find out a bug in your application, "git bisect" helps you find the last commit that was not buggy. 
+If you find out a bug in your application, "git bisect" helps you find the commit that introduced the bug. 
 
 ```shell
 git bisecg stat #tells git to start the bisect process
 git bisect bad #tells git that the current commit is buggy
-git bisect good <commit hash|tag> #tells git that this commit was not buggy
+git bisect good <commit hash|tag> #tells git that this commit was not buggy (coz I remember so...)
 
 # from here you need to deploy/test your application after each "git bisect <bad|good>" command
 # git will pick a commit in the middle of the remaining commits after each "git bisect <bad|good>"
-# until it finds the commit wich indroduced the bug
+# until it reaches the commit wich indroduced the bug
 
 git bisect <bad|good>
-...
+
+# This may be automated with any CI tool 
+
+```shell
+git bisect start HEAD v2.0 
+git bisect run my test  # Git will run "my test" to decide if a commit is a good or bad one.
+```
+
