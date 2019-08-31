@@ -58,7 +58,7 @@ git log --before=01/01/2019
 git log --author=jade 
 ```
 
-List the delta of commits between 2 branches, remotes ones ncluded
+List the delta of commits between 2 branches, remotes ones included
 ```shell
 git log origin/master..HEAD
 git log origin/feature..<mybranch>
