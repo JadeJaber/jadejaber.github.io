@@ -72,13 +72,19 @@ To leave swarm, you need to leave it from each node with
 docker swarm leave
 ```
 
-Deploy your application with the same compose-yml that we have used previously.  
+Deploy your application from machine1 with the same compose-yml that we have used previously.  
 ```bash
-> docker stack deploy -c docker-compose.yml myApp_web
+> eval $(docker-machine env machine1)
+> docker stack deploy -c docker-compose.yml myApp
 Creating network myApp_webnet
 Creating service myApp_web
+```
 
-> docker service ps myApp
+
+List the replicated containers of your myApp_web service
+```shell
+> eval $(docker-machine env machine1)
+> docker service ps myApp_web
 ID                  NAME                IMAGE                      NODE                DESIRED STATE       CURRENT STATE                ERROR               PORTS
 yp8nldzgaclu        myApp_web.1         legabz/hellokube:swagger   machine1            Running             Running about a minute ago
 mz30tjee1e32        myApp_web.2         legabz/hellokube:swagger   machine2            Running             Running 33 seconds ago
@@ -86,3 +92,16 @@ mll62ap0cvt1        myApp_web.3         legabz/hellokube:swagger   machine2     
 ly087nai6eia        myApp_web.4         legabz/hellokube:swagger   machine1            Running             Running about a minute ago
 i7ejraewwcge        myApp_web.5         legabz/hellokube:swagger   machine2            Running             Running 33 seconds ago
 ```
+
+Or list all the containers of the services of your myApp stack.
+```shell
+> eval $(docker-machine env machine1)
+> docker stack ps myApp
+ID                  NAME                IMAGE                      NODE                DESIRED STATE       CURRENT STATE                ERROR               PORTS
+b7uavyisdyh6        myApp_web.1         legabz/hellokube:swagger   machine1            Running             Running about a minute ago
+2zl5w78r4ql8        myApp_web.2         legabz/hellokube:swagger   machine2            Running             Running about a minute ago
+vhvc3o5oypdv        myApp_web.3         legabz/hellokube:swagger   machine1            Running             Running about a minute ago
+wgwh6jbv3f0e        myApp_web.4         legabz/hellokube:swagger   machine2            Running             Running about a minute ago
+z8azc6dq1jvw        myApp_web.5         legabz/hellokube:swagger   machine2            Running             Running about a minute ago
+```
+
