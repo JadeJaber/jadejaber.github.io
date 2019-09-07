@@ -72,9 +72,9 @@ To leave swarm, you need to leave it from each node with
 docker swarm leave
 ```
 
-Deploy your application with the same compose-yml that we have used previously. And  
+Deploy your application with the same compose-yml that we have used previously.  
 ```bash
-> docker stack deploy -c docker-compose.yml myApp
+> docker stack deploy -c docker-compose.yml myApp_web
 Creating network myApp_webnet
 Creating service myApp_web
 
