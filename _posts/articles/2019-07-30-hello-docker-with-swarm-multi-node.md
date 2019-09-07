@@ -72,7 +72,7 @@ To leave swarm, you need to leave it from each node with
 docker swarm leave
 ```
 
-Deploy your application from machine1 with the same compose-yml that we have used previously.  
+Only swarm managers like machine1 execute Docker commands; workers are just for capacity. Deploy your application from machine1 with the same compose-yml that we have used previously. We will use the "docker-machine env" command before deploying our stack because it allows you to use your local docker-compose.yml file to deploy the stack “remotely” without having to copy it anywhere. Otherwise you can use "docker-machine scp <file> <machine>:~" to copy files from your local machine to a docker machine.
 ```bash
 > eval $(docker-machine env machine1)
 > docker stack deploy -c docker-compose.yml myApp
@@ -80,9 +80,14 @@ Creating network myApp_webnet
 Creating service myApp_web
 ```
 
+> Note: If your image is stored on a private registry instead of Docker Hub, you need to be logged in using docker login <your-registry\> and then you need to add the --with-registry-auth flag to the above command. For example:
+```bash
+docker login myregistry.example.com
+docker stack deploy --with-registry-auth -c docker-compose.yml myApp
+```
 
 List the replicated containers of your myApp_web service
-```shell
+```bash
 > eval $(docker-machine env machine1)
 > docker service ps myApp_web
 ID                  NAME                IMAGE                      NODE                DESIRED STATE       CURRENT STATE                ERROR               PORTS
