@@ -113,6 +113,10 @@ z8azc6dq1jvw        myApp_web.5         legabz/hellokube:swagger   machine2     
 Yo may access your application using either of your swarm nodes ip. (http://192.168.99.105:4000/swagger-ui.html or http://192.168.99.105:4000/swagger-ui.html). All swarm nodes have a load balancer listening on the mapped port (set in the docker-compose.yml). These load balancers will redirect your request to one of the replicated containers which are listening on the exposed port (set in the DockeFile).
   
 ![hello-docker-with-swarm]({{site.baseurl}}/images/swarm-cluster-lb.002.jpeg)
+
+**Some tips**
+- [Swam visualizer](https:/github.com/dockersamples/docker-swarm-visualizer)
+  
   
 **Cheat sheet**  
 
